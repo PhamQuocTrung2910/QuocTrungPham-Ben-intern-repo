@@ -34,7 +34,7 @@ I've been trying to keep in mind my posture but it has been hard to consistently
 
 3. How can you remind yourself to maintain good posture and take breaks throughout the day? (Hint: Use Focus Bear to schedule movement breaks!)
 
-Funny enough i just noticed the hint as was copying this question but yes i've been trying to use focus bear more in my daily life to keep myself on track, i wish their was like an instruction manual of how to properly use each feature but for now i'll just try to figure it out.
+Funny enough i just noticed the hint as was copying this question but yes i've been trying to use focus bear more in my daily life to keep myself on track, i wish their was like an instruction manual that i can read of how to properly use each feature but for now i'll just try to figure it out.
 
 🛠️ Task
 
