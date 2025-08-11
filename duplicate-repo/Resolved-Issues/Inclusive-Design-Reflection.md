@@ -78,7 +78,7 @@
 
 3. What is one practical change you can make in your work to better support vulnerable populations?
 
-A practical change you can make right now is to use clear, simple language in all your communication, whether in emails, documentation, or user interfaces. This helps ensure everyone, including vulnerable populations with diverse cognitive or language abilities, can understand and engage without confusion.
+A practical change I can make right now is to use clear, simple language in all my communication, whether in emails, documentation, or user interfaces. This helps ensure everyone, including vulnerable populations with diverse cognitive or language abilities, can understand and engage without confusion.
 
 🛠️ Task
 

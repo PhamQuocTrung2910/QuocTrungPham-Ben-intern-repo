@@ -71,7 +71,7 @@ Be mindful when gathering sensitive information—collect only what is absolutel
 Handle sensitive information only as authorized and necessary. Improper use can breach privacy and harm the individuals or groups the data concerns.
 
 - Maintain device security:
-Protecting your devices helps secure the data they contain. Follow good cybersecurity practices like using antivirus software, regularly updating software, whitelisting trusted applications, setting device passcodes, enabling firewalls, suspending inactive sessions, and employing full disk encryption
+Protecting my devices helps secure the data they contain. Follow good cybersecurity practices like using antivirus software, regularly updating software, whitelisting trusted applications, setting device passcodes, enabling firewalls, suspending inactive sessions, and employing full disk encryption
 
 4. How should you respond to a suspected data breach or accidental disclosure of confidential information?
 
@@ -107,7 +107,7 @@ When responding to a suspected data breach or accidental disclosure of confident
     - Updating policies and procedures.
     - Enhancing staff training.
     - Improving security controls.
-- Regularly test and update your data breach response plan to ensure preparedness.
+- Regularly test and update my personal data breach response plan to ensure preparedness.
 
 📝 Reflection
 
