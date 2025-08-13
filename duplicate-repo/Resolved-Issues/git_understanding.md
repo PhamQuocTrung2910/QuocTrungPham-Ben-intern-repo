@@ -16,6 +16,7 @@ Causes:
 
 
 "This is the merge conflict - 1"
+"This is the merge conflict - 2"
 
 
 
