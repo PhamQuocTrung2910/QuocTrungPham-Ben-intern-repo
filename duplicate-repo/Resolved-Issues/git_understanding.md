@@ -25,14 +25,14 @@ Causes:
 4. Write about your experience in git_understanding.md:
 - What caused the conflict?
 
-
+A change in the same line of an md file
 
 - How did you resolve it?
 
-
+By letting the changes on both branch go through
 
 - What did you learn?
 
-
+Merge Conflicts are easy to resolve if you are able to understand what's causing the conflict and what changes are actually needed
 
 Commit and push your changes to GitHub.
