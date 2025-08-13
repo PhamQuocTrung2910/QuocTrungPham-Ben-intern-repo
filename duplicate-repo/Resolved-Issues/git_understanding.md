@@ -15,11 +15,8 @@ Causes:
 - Merging the branch back into main.
 
 
-<<<<<<< HEAD
 "This is the merge conflict - 1"
-=======
 "This is the merge conflict - 2"
->>>>>>> MergeConflict
 
 
 
