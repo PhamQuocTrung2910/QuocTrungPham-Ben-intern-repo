@@ -295,3 +295,7 @@ Commit Excercise:
   - Documentation: Each PR creates a record of what was changed, why, and by whom, which is useful for future reference.
   - Testing and validation: Many workflows integrate automated tests that run when a PR is created, ensuring code meets quality standards.
 - In short, PRs are a formal, collaborative way to propose, review, and merge code safely and transparently.
+
+Pull Request Exercise:
+
+"Small change"
