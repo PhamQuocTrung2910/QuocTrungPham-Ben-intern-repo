@@ -261,4 +261,5 @@ When debugging a problem and you need to see who last touched the affected code 
   - Lack of action: Fails to convey what the commit accomplishes.
 
 1. A vague commit message
+2. An overly detailed commit message.
 
