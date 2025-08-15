@@ -155,4 +155,37 @@ Debugging with git bisect
   - A bad commit (where the bug exists)
 - Then Git automatically checks out commits halfway between them, letting you test until it narrows down the exact commit that introduced the problem.
 
+2.  When would you use it in a real-world debugging situation?
 
+- When a bug or error appears in your project, but you don’t know which commit introduced it.
+- Particularly useful in long-running projects with many commits or multiple developers.
+- Ideal for regression bugs: something that used to work suddenly breaks, and you need to pinpoint the exact change causing it.
+- Helps save time when the project history is too large to manually inspect every commit.
+
+3. How does it compare to manually reviewing commits?
+
+- Here’s a direct comparison of git bisect vs manually reviewing commits:
+
+  - Speed:
+    - Git bisect: Fast, uses binary search to quickly find the problematic commit.
+    - Manual review: Slow, requires checking each commit one by one.
+  
+  - Accuracy:
+    - Git bisect: High, systematically identifies the exact commit causing the bug.
+    - Manual review: Lower, prone to missing the offending commit or misidentifying it.
+
+  - Effort:
+    - Git bisect: Minimal, automates testing across commits.
+    - Manual review: High, requires manual reading and testing.
+
+  - Scalability:
+    - Git bisect: Works well for large projects with many commits or developers.
+    - Manual review: Impractical for long histories or complex projects.
+
+  - Consistency:
+    - Git bisect: Systematic and repeatable.
+    - Manual review: Inconsistent; depends on the reviewer’s attention and memory.
+
+  - Error reduction:
+    - Git bisect: Reduces human error.
+    - Manual review: Higher risk of oversight or mistakes.
