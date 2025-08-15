@@ -77,6 +77,7 @@ Summary:
 
 
 
+
 Branching & Team Collaboration
 
 1. Why is pushing directly to main problematic?
@@ -95,4 +96,5 @@ Branching & Team Collaboration
 - When the branches are later merged, Git will try to combine the changes automatically.
 - If the edits affect the same lines or overlapping parts, Git can’t decide which version to keep — this creates a merge conflict.
 - The conflict must be resolved manually by choosing, combining, or editing the changes.
+
 
