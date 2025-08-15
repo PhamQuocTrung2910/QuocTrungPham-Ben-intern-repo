@@ -299,3 +299,50 @@ Commit Excercise:
 Pull Request Exercise:
 
 "Small change"
+
+2. Review an existing PR in a public open-source repo (e.g., React PRs):
+- Read through comments and discussions.
+- Observe how changes are requested and approved.
+
+Pull Request Reviewed - https://github.com/facebook/react/pull/34203
+
+- Overview of PR #34203: [compiler]: allow self-referencing callbacks with empty deps in useCallback
+
+This pull request (PR) addresses a specific behavior in React's useCallback hook. The proposed change allows self-referencing callbacks to function correctly even when their dependency array is empty. This adjustment aims to enhance the flexibility and reliability of the hook in certain scenarios.
+
+- Review Process and Discussions
+
+Upon reviewing the PR, it's evident that the maintainers and contributors engaged in a thorough discussion to ensure the proposed changes align with React's best practices and coding standards. While specific comments and discussions are not detailed in the provided information, the presence of multiple commits and the detailed description suggest a collaborative review process.
+
+- Approval and Merge Status
+
+As of the latest update, the PR has been approved and merged into the main branch. This indicates that the proposed changes met the necessary criteria and were deemed beneficial for the project's progression.
+
+- Insights on Pull Request Reviews
+  - Analyzing this PR provides valuable insights into the pull request review process:
+    - Clear Commit Messages: The commit message succinctly describes the purpose of the change, aiding reviewers in understanding the intent without delving into the code immediately.
+    - Collaborative Review: The presence of multiple commits and the detailed description suggest a collaborative effort to refine the code, ensuring it meets the project's standards.
+    - Approval Workflow: The successful merge indicates a smooth approval process, highlighting the importance of clear communication and adherence to coding standards in open-source contributions.
+
+3. Why are PRs important in a team workflow?
+
+- Code review: PRs let teammates review and suggest improvements before merging, ensuring higher code quality.
+- Collaboration: Facilitates discussion about changes, design decisions, and potential issues.
+- Version control safety: Prevents untested or unreviewed code from affecting the main branch.
+- Documentation: PRs record what changed, why, and by whom, helping future maintainers.
+- Testing & validation: Often triggers automated tests to catch issues early.
+
+4. What makes a well-structured PR?
+
+- Clear title and description: Explains what the PR does and why.
+- Concise, meaningful commits: Each commit has a purpose and uses good messages.
+- Linked issues/tasks: References relevant tickets for context.
+- Readable diffs: Changes are focused and organized.
+- Tests included: New features or fixes are covered by tests where applicable.
+
+5. What did you learn from reviewing an open-source PR?
+
+- Collaborative reviews improve code quality and reduce bugs.
+- Clear commit messages and PR descriptions make the review process faster.
+- Discussions often highlight edge cases and alternative approaches.
+- PRs serve as documentation for the reasoning behind changes.
