@@ -262,4 +262,4 @@ When debugging a problem and you need to see who last touched the affected code 
 
 1. A vague commit message
 2. An overly detailed commit message.
-
+3. A well-structured commit message.
