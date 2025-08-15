@@ -143,3 +143,16 @@ When debugging a problem and you need to see who last touched the affected code 
 
 
 
+
+Debugging with git bisect
+
+1. Research git bisect and how it helps in debugging.
+
+- Git bisect is a built-in Git command that helps you find the commit that introduced a bug by performing a binary search through your project’s history.
+
+- Instead of manually checking each commit one by one (which could be hundreds or thousands), Git bisect lets you mark:
+  - A good commit (where the bug didn’t exist)
+  - A bad commit (where the bug exists)
+- Then Git automatically checks out commits halfway between them, letting you test until it narrows down the exact commit that introduced the problem.
+
+
