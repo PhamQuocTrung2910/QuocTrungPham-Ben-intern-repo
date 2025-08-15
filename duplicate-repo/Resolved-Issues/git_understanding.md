@@ -77,7 +77,6 @@ Summary:
 
 
 
-
 Branching & Team Collaboration
 
 1. Why is pushing directly to main problematic?
@@ -96,5 +95,51 @@ Branching & Team Collaboration
 - When the branches are later merged, Git will try to combine the changes automatically.
 - If the edits affect the same lines or overlapping parts, Git can’t decide which version to keep — this creates a merge conflict.
 - The conflict must be resolved manually by choosing, combining, or editing the changes.
+
+
+
+
+
+
+Advanced Git Commands & When to Use Them
+
+1. What does each command do?
+- git checkout main -- <file>
+This command allows you to restore a specific file from the main branch into your current working directory—without impacting other changes around it. It’s handy if you need to revert or inspect just one file from another branch.
+
+- git cherry-pick <commit>
+This command applies the changes from a specific commit on another branch to your current branch. It’s especially useful when you want to integrate a bug fix or small improvement without merging the entire branch.
+
+- git log
+This command shows the commit history of your repository—displaying each commit’s hash, author, date, and message. It’s a powerful way to review how the project has evolved and understand the context behind changes.
+
+- git blame <file>
+The git blame command annotates each line in a file with information about who last modified it and when. It helps you trace code ownership—great for debugging or understanding code history.
+
+2. When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?
+
+- git checkout main -- <file>
+If another developer fixed a bug in main and you just need that single file’s update without pulling everything else. For example, restoring a config file that you accidentally broke while working on a feature branch.
+
+- git cherry-pick <commit>
+When a critical hotfix was committed to another branch and you need it applied to yours immediately, without merging unrelated changes. Common in production bug fixes.
+
+- git log
+During code reviews or troubleshooting to understand when and why a feature was added, or to see what’s changed before a release.
+
+- git blame <file> 
+When debugging a problem and you need to see who last touched the affected code lines, so you can ask for context or understand the reasoning.
+
+3. What surprised you while testing these commands?
+
+- How git checkout main -- <file> instantly replaced only that file without touching anything else—super precise, almost like a “surgically removing an organ.”
+
+- How git cherry-pick felt both powerful and dangerous, if you pick the wrong commit or have merge conflicts, you could end up spending a lot of time fixing them. I can already see myself messing this up and destroying hours of effort, so i'll definitely be careful with this one.
+
+- git log has so many formatting options (--oneline, --graph, --author) that it can be turned into a quick visual history of the project. I haven't used it regularly before so i didn't know that to exit you press q so i just logged through my whole history and had to close the terminal. 
+
+- git blame isn’t just for “blaming”—it’s more like a detective tool. Seeing the exact commit that last touched each line makes understanding code history so much faster. This looks like one i should definiely be using more and i probably will whenever an error has occured.
+
+
 
 
