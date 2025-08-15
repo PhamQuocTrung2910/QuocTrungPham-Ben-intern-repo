@@ -1,3 +1,5 @@
+Merge Conflicts & Conflict Resolution
+
 1. Research what causes merge conflicts in Git.
 
 Merge conflicts happen when Git cannot automatically reconcile differences between two branches you’re trying to merge. This usually occurs when changes affect the same lines of code or nearby sections in the same file, or when there are incompatible changes in the project history.
@@ -50,3 +52,29 @@ Staging vs Committing
 3. Check the status (git status).
 4. Unstage the file (git reset HEAD <file> or equivalent).
 5. Commit the file and observe the difference.
+
+Summary:
+1. What is the difference between staging and committing?
+
+- Staging means selecting specific changes you want to include in your next commit. The changes are placed into Git’s staging area, but they aren’t yet saved to the repository’s history.
+- Committing means taking everything currently staged and creating a permanent snapshot in the repository’s history with a commit message.
+
+2. Why does Git separate these two steps?
+
+- Git separates staging and committing so you can:
+  - Review and fine-tune exactly which changes go into a commit.
+  - Group related changes into one commit and exclude unrelated changes.
+  - Avoid committing incomplete or experimental edits accidentally.
+
+3. When would you want to stage changes without committing?
+
+- You might stage without committing when:
+  - You want to prepare part of your work for a clean commit but are still making more edits.
+  - You need to group related file changes together before committing.
+  - You’re working on a large feature and want to commit it in logical chunks later.
+
+
+
+
+
+Branching & Team Collaboration
