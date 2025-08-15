@@ -32,6 +32,7 @@
   - Ctrl + Shift + C — Open new external terminal
 
 3. Which shortcuts do you think will be the most useful in your daily work?
+
 - Ctrl + P (Quick file open): Speeds up switching between files without leaving the keyboard.
 - Alt + Click (Multiple cursors): Great for editing repeated code or making simultaneous changes efficiently.
 - Ctrl + / (Toggle line comment): Quickly comment or uncomment code blocks during debugging or review.

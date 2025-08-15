@@ -1,24 +1,20 @@
 🔍 Research & Learn
 
 1. What are the key roles in an Agile team, and what does each role do?
-- Developers
 
+- Developers
   - Build and implement product features, fix bugs, write and maintain code, and collaborate on technical solutions. They also participate in sprint planning, daily stand-ups, and retrospectives.
 
 - QA (Quality Assurance)
-
   - Test the product to ensure it meets requirements, is bug-free, and delivers a smooth user experience. They create and run test cases, report bugs, and help maintain quality standards.
 
 - Product Manager (PM)
-
   - Defines the product vision and strategy, prioritizes features based on user needs and business goals, and manages the product roadmap. Acts as the bridge between stakeholders and the development team.
 
 - Agile Project Manager (Agile PM)
-
   - Facilitates Agile ceremonies, removes obstacles that block the team’s progress, and ensures the team follows Agile principles. Helps improve efficiency and communication.
 
 - Other supporting roles (e.g., stakeholders, UX, customer support)
-
   - UX/UI Designers – Create intuitive, accessible, and engaging designs based on user research.
   - Customer Support – Brings feedback from users to help guide improvements.
   - Stakeholders – Provide input, funding, and strategic direction.
@@ -56,4 +52,3 @@ I contribute to the Agile process by developing and maintaining mobile app featu
 2. Identify one other role you frequently collaborate with and describe how you can improve teamwork with them.
 
 A role I'll be frequently collaborating with is QA (Quality Assurance) and I can improve teamwork with QA by sharing feature changes early, providing clear documentation for how features work, and staying available for quick clarifications during testing.
-

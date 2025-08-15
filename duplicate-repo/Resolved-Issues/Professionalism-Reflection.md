@@ -69,7 +69,7 @@ Be kind to everyone but don't enable someone to slack off just because you can d
 
 4. How can you prepare effectively for meetings with supervisors and colleagues?
 
-Before the meeting think about the things that will be discussed during the meeting and what you can add to the discussion, this will help you follow the conversations people are having in the discussion. 
+Before the meeting think about the things that will be discussed during the meeting and what you can add to the discussion, this will help you follow the conversations people are having in the discussion.
 
 5. What would it look like to be proactive during your internship?
 
@@ -77,7 +77,7 @@ I assume it would be to try to complete the onboarding as quickly as you can and
 
 6. How might you follow up with colleagues or supervisors if you need information/action from them? How would you escalate it further if you don't get a response and when would you escalate?
 
-As stated previosly in the summary the order should go Email, Discord/Teams, SMS, Call 
+As stated previosly in the summary the order should go Email, Discord/Teams, SMS, Call
 You should only start escalating ahead once the estimated time for the action is over, for example you should only Go SMS only after 24 hous of no response from discord.
 
 7. What are some things you won't do?

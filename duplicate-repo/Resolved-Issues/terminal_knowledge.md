@@ -9,4 +9,3 @@ I personally like the classic black theme and the normal default font as its wha
 3. What was the most useful command you learned today?
 
 The most useful command was git status, because it quickly shows the state of my working directory, including changes staged for commit, unstaged changes, and untracked files. This helps me stay organized and avoid mistakes.
-

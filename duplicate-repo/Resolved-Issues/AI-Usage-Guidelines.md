@@ -9,7 +9,7 @@ I use CoPilot to help with coding projects like autofilling sections that are ob
 I have tried to use other AI but have been unsuccessful in making them work as effectively as the 3 above.
 
 2. What are the benefits and risks of using AI in a professional setting?
-For the purpose of this question i'll be using my position as a Mobile App Developer Intern.
+   For the purpose of this question i'll be using my position as a Mobile App Developer Intern.
 
 - Benefits
   - Faster onboarding – AI-powered documentation or chatbots can help you quickly find company policies, code snippets, or app design guidelines.
@@ -28,10 +28,11 @@ For the purpose of this question i'll be using my position as a Mobile App Devel
 3. What types of information should never be entered into AI tools?
 
 Refering to Data-Privacy-Reflection.md these data are what i would say should never to accesable to AI:
- - Personally Identifiable Information (PII)
-  - Full names linked with other personal details
-  - Home addresses, phone numbers, email addresses
-  - Government IDs (passport, driver’s license, tax ID)
+
+- Personally Identifiable Information (PII)
+- Full names linked with other personal details
+- Home addresses, phone numbers, email addresses
+- Government IDs (passport, driver’s license, tax ID)
 
 - Confidential Company Data
   - Source code or proprietary algorithms not approved for public sharing
@@ -52,7 +53,7 @@ Refering to Data-Privacy-Reflection.md these data are what i would say should ne
 
 4. How can you fact-check and validate AI-generated content to ensure accuracy?
 
-I would personally do the following: 
+I would personally do the following:
 
 - Cross-reference with credible sources
   - Check official websites, reputable news outlets, or peer-reviewed research.
@@ -78,12 +79,14 @@ I would personally do the following:
 1. When should you use AI for assistance, and when should you rely on your own skills?
 
 You should use AI when:
+
 - Brainstorming ideas (UI layouts, feature names, marketing copy drafts).
 - Getting unstuck (explaining a programming concept, summarising documentation).
 - Speeding up repetitive tasks (drafting outlines, creating placeholder text, generating test data).
 - Learning new tools or frameworks (getting an overview before deeper research).
 
 You shouldn't use AI when:
+
 - Making final design or coding decisions that affect production.
 - Handling sensitive data (never paste personal code, credentials, or customer info into AI tools).
 - Following company policies or compliance rules (always check official guidance first).
@@ -139,15 +142,15 @@ You shouldn't use AI when:
 🛠️ Task
 
 1. Identify one task you can improve using an AI tool, and try it out.
-I attempted to use Focus Bears most recent update on 17/07/2025, It simply said Fix Bugs and Improve UI/UX which in my opinion was too simple and lacking impact, after the AI had a look it converted it into a more impressionable description.
+   I attempted to use Focus Bears most recent update on 17/07/2025, It simply said Fix Bugs and Improve UI/UX which in my opinion was too simple and lacking impact, after the AI had a look it converted it into a more impressionable description.
 
-Whats New                         What’s New in This Update:
+Whats New What’s New in This Update:
 
-- Fix Bugs       ---------------> - Squashed several bugs to make your 
-                                    app xperience smoother and more reliable.
+- Fix Bugs ---------------> - Squashed several bugs to make your
+  app xperience smoother and more reliable.
 
-- Improve UI/UX                   - Enhanced the user interface and overall 
-                                    user experience for easier navigation and a fresher look.
+- Improve UI/UX - Enhanced the user interface and overall
+  user experience for easier navigation and a fresher look.
 
 2. Review the AI-generated output critically—did it require editing or fact-checking?
 
@@ -155,4 +158,4 @@ The AI Generated output in the case above improved the details of the updates an
 
 3. Document one best practice you will follow when using AI tools at Focus Bear.
 
-I will make sure that i use AI in moderation to solve the more mundane and repetitive task while trying to solve the actual issues myself and learning from them. 
+I will make sure that i use AI in moderation to solve the more mundane and repetitive task while trying to solve the actual issues myself and learning from them.

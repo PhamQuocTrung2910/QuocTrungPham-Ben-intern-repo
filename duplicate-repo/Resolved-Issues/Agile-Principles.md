@@ -3,7 +3,7 @@
 1. What is Agile, and how does it differ from traditional project management?
 
 - Agile is an iterative, flexible approach to project management that focuses on delivering value in small increments, adapting quickly to change, and involving stakeholders throughout the process.
-In traditional project management (like Waterfall), work is planned in full detail upfront and executed in sequential phases. Agile, by contrast, adapts plans based on feedback and changing priorities.
+  In traditional project management (like Waterfall), work is planned in full detail upfront and executed in sequential phases. Agile, by contrast, adapts plans based on feedback and changing priorities.
 
 2. What are the core values and principles of Agile? (Hint: Check the Agile Manifesto.)
 

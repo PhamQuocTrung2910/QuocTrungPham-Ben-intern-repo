@@ -1,6 +1,7 @@
 🔍 Research & Learn
+
 1. What are the risks of using a laptop without an external monitor or keyboard?
-Using a laptop without an external monitor or keyboard can lead to ergonomic and productivity issues over time. The fixed low screen position encourages bending your neck forward (“tech neck”), causing neck, back, and shoulder strain. The shallow, cramped keyboard angles wrists awkwardly, increasing the risk of repetitive strain injuries. Small screens force you to sit closer, leading to eye strain.
+   Using a laptop without an external monitor or keyboard can lead to ergonomic and productivity issues over time. The fixed low screen position encourages bending your neck forward (“tech neck”), causing neck, back, and shoulder strain. The shallow, cramped keyboard angles wrists awkwardly, increasing the risk of repetitive strain injuries. Small screens force you to sit closer, leading to eye strain.
 
 Productivity can also suffer due to limited screen space and less comfortable typing, slowing multitasking. Long term, constant awkward opening/closing may stress the hinge, and using the laptop on your lap can trap heat, affecting comfort and device lifespan.
 
@@ -30,7 +31,7 @@ As i am currently just using a basic Laptop and Mouse Set Up, i would like to ge
 
 2. What behavioural changes can you implement to improve posture and reduce strain? (e.g., sitting upright, taking regular breaks, adjusting screen height)
 
-I've been trying to keep in mind my posture but it has been hard to consistently staright at all times i'll be setting up reminders on Focus Bear later on to build this habit. I'm still new to using Focus Bear but i've been trying to set up proper schedules and routines mostly to streamline my mornings so i dont have to constantly think of what i have to do. 
+I've been trying to keep in mind my posture but it has been hard to consistently staright at all times i'll be setting up reminders on Focus Bear later on to build this habit. I'm still new to using Focus Bear but i've been trying to set up proper schedules and routines mostly to streamline my mornings so i dont have to constantly think of what i have to do.
 
 3. How can you remind yourself to maintain good posture and take breaks throughout the day? (Hint: Use Focus Bear to schedule movement breaks!)
 
@@ -38,7 +39,7 @@ Funny enough i just noticed the hint as was copying this question but yes i've b
 
 🛠️ Task
 
-1. Adjust your laptop setup based on ergonomic best practices. 
+1. Adjust your laptop setup based on ergonomic best practices.
 
 ✅
 
@@ -53,5 +54,3 @@ I would love to get a laptop stand, i'll go online later today to get one.
 4. Document at least one workspace change or habit adjustment you made.
 
 Setting up Focus Bear to be able to regulate workplace productivity.
-
-

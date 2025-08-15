@@ -4,7 +4,7 @@
 
 - Vulnerable populations are groups that may experience greater risks or barriers due to social, economic, physical, or cognitive factors. In digital spaces, they often include:
   - Elderly individuals — May struggle with digital literacy or accessibility.
-  - People with disabilities — Face challenges if websites/apps lack proper accessibility features. 
+  - People with disabilities — Face challenges if websites/apps lack proper accessibility features.
   - Low-income communities — Limited access to reliable internet or devices.
   - Children and minors — Vulnerable to online exploitation and privacy risks.
   - Ethnic minorities and marginalized groups — May experience discrimination or digital exclusion.
@@ -88,12 +88,12 @@ I have watched the Team Building, ADHD, and Embracing the “Spicy Brain” with
 
 2. Identify one design or communication improvement that could make Focus Bear more accessible.
 
-While Focus Bear has the feature to set task and timers i would like something a bit more specialized with more forceful notifications as i struggle to voluntarily flick through each activity. 
+While Focus Bear has the feature to set task and timers i would like something a bit more specialized with more forceful notifications as i struggle to voluntarily flick through each activity.
 
 3. Practice writing a clear, patient, and supportive response to a hypothetical user struggling with executive functioning.
-Lets have this question as the example: Can you help me break down organizing my weekly schedule into smaller, easier steps? I’m having trouble figuring out where to start?
+   Lets have this question as the example: Can you help me break down organizing my weekly schedule into smaller, easier steps? I’m having trouble figuring out where to start?
 
-My response to it would be: 
+My response to it would be:
 List your tasks and appointments, Write down everything you need to do this week, no matter how small.
 
 Prioritize — Decide which tasks are most important or time-sensitive.

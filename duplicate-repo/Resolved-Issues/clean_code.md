@@ -32,10 +32,10 @@ print(c([1,2,3,4,5,6]))
 def sum_even_numbers(numbers):
     """
     Returns the sum of all even numbers in the provided list.
-    
+
     Parameters:
         numbers (list of int): List of integers to evaluate.
-    
+
     Returns:
         int: Sum of even numbers.
     """
@@ -50,6 +50,7 @@ sample_numbers = [1, 2, 3, 4, 5, 6]
 print(sum_even_numbers(sample_numbers))
 
 ```
+
 Improvements:
 
 Function and variable names are descriptive.

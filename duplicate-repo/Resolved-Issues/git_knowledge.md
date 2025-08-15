@@ -4,7 +4,7 @@ Yes, I’ve used Git for version control in personal projects and coursework. I�
 
 2. Which Git client (if any) did you choose? Why?
 
- I primarily use GitHub Desktop for quick visual commits and repository management since it’s more user-friendly for reviewing changes. I've also recently been using Git on VSCode for some projects.
+I primarily use GitHub Desktop for quick visual commits and repository management since it’s more user-friendly for reviewing changes. I've also recently been using Git on VSCode for some projects.
 
 3. What was the most interesting thing you learned about Git today?
 

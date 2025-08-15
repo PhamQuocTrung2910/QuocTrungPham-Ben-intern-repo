@@ -19,25 +19,25 @@
 2. What categories are helpful to include? (e.g., communication style, work habits, feedback preferences)
 
 - Communication Style
-(Preferred channels, response time, tone, clarity needs)
+  (Preferred channels, response time, tone, clarity needs)
 
 - Work Habits and Productivity
-(Best times of day, focus strategies, need for breaks, multitasking ability)
+  (Best times of day, focus strategies, need for breaks, multitasking ability)
 
 - Feedback Preferences
-(How and when to give feedback, preferred tone, constructive vs. direct)
+  (How and when to give feedback, preferred tone, constructive vs. direct)
 
 - Sensory and Environmental Needs
-(Light, noise sensitivity, preferred workspace setup)
+  (Light, noise sensitivity, preferred workspace setup)
 
 - Strengths and Challenges
-(Skills you excel at, areas you find difficult)
+  (Skills you excel at, areas you find difficult)
 
 - Collaboration and Teamwork
-(How you like to work with others, decision-making style)
+  (How you like to work with others, decision-making style)
 
 - Stress Triggers and Support Strategies
-(What causes stress, how teammates can help)
+  (What causes stress, how teammates can help)
 
 3. How can writing a personal user manual improve teamwork and reduce misunderstandings?
 
@@ -53,7 +53,7 @@
 
 1. What do you need from teammates to do your best work? (e.g., direct communication, flexibility, detailed instructions, minimal interruptions)
 
-direct communication and detailed instructions would help significantly as i'll be able to communicate and understand the task. 
+direct communication and detailed instructions would help significantly as i'll be able to communicate and understand the task.
 
 2. How do you prefer to communicate? (e.g., async messages, video calls, quick check-ins, long discussions)
 
@@ -75,30 +75,30 @@ Need time to process ideas as i'm gonna be actively mapping it out in my head of
 
 - User Manual for Quoc Trung Pham
   - My role
-I am working on finishing my Onboarding Task
-The days and times I work are: Mondays, Tuesdays, Fridays from 12 to 17
+    I am working on finishing my Onboarding Task
+    The days and times I work are: Mondays, Tuesdays, Fridays from 12 to 17
   - How I Work Best
-I do my best work when you give me clear instructions on what needs to be done and when it needs to be donw by.
-I struggle when there are unclear details in the instruction as i worry about the end product not being what is required.
+    I do my best work when you give me clear instructions on what needs to be done and when it needs to be donw by.
+    I struggle when there are unclear details in the instruction as i worry about the end product not being what is required.
   - Communication Style
-I prefer messages to be detailed and to the point when it is work related, i'm fine with goofing around and casual conversations outside of work.
-The best way to reach me is probably discord as i've been on it a lot more recently due to another project.
-If you need something urgent, call me directly on discord i'll always have my phone on me so i'll be able to pick up.
+    I prefer messages to be detailed and to the point when it is work related, i'm fine with goofing around and casual conversations outside of work.
+    The best way to reach me is probably discord as i've been on it a lot more recently due to another project.
+    If you need something urgent, call me directly on discord i'll always have my phone on me so i'll be able to pick up.
   - Collaboration & Teamwork
-I work best in a team when everyone is contributing, talking, and willing to express their own opnions good or bad.
-My biggest pet peeve in teamwork is if everyone is just quiet and no informations is passsed around making it harder to progress.
-If I seem quiet in a meeting, it usually means i've got nothing to add to the conversation or topic being discussed otherwise i'll be providing what i know and what i think.
+    I work best in a team when everyone is contributing, talking, and willing to express their own opnions good or bad.
+    My biggest pet peeve in teamwork is if everyone is just quiet and no informations is passsed around making it harder to progress.
+    If I seem quiet in a meeting, it usually means i've got nothing to add to the conversation or topic being discussed otherwise i'll be providing what i know and what i think.
   - Focus & Productivity
-I stay focused by listening to music and being in my own world.
-Things that distract me loud noises and food smells.
-The best way to support my productivity is to give me a task and a time it needs to be completed by then i'll be able to plan ahead when things need to be done.
+    I stay focused by listening to music and being in my own world.
+    Things that distract me loud noises and food smells.
+    The best way to support my productivity is to give me a task and a time it needs to be completed by then i'll be able to plan ahead when things need to be done.
   - Feedback & Growth
-I like feedback to be direct with examples of what went wrong and how i can improve as i dont tend to make the same mistake twice.
-When I make a mistake, the best way to let me know is just to tell me directly or just shoot me a text if i'm not in the office i'll quickly make time to find out what the mistake was and how i can fix it.
-I appreciate it when teammates are able to find fault in each other and willing to talk it through as that makes teams a lot more relaxed and everyone isn't so stressed about every little issue. 
+    I like feedback to be direct with examples of what went wrong and how i can improve as i dont tend to make the same mistake twice.
+    When I make a mistake, the best way to let me know is just to tell me directly or just shoot me a text if i'm not in the office i'll quickly make time to find out what the mistake was and how i can fix it.
+    I appreciate it when teammates are able to find fault in each other and willing to talk it through as that makes teams a lot more relaxed and everyone isn't so stressed about every little issue.
   - Fun Facts & Quirks
-One thing people often misunderstand about me is that i'm mean which while not wrong it is more so that i can't really tolerate wasting time when there are other things that i could be doing with that time whether its work or leisure.
-A fun fact about me, i'm really like reading books and playing games normally if i have nothing to do so when i do have work to do i'll try to complete it to the best of my ability while keeping a quality of work i'm satisfied with.
-My work superpower is the ability to forget about everything else when i'm actively trying to complete a task i'll be able to hear you but i won't be able to  turn to look at you or able to answer any questions especially when i'm close to completing the task.
+    One thing people often misunderstand about me is that i'm mean which while not wrong it is more so that i can't really tolerate wasting time when there are other things that i could be doing with that time whether its work or leisure.
+    A fun fact about me, i'm really like reading books and playing games normally if i have nothing to do so when i do have work to do i'll try to complete it to the best of my ability while keeping a quality of work i'm satisfied with.
+    My work superpower is the ability to forget about everything else when i'm actively trying to complete a task i'll be able to hear you but i won't be able to turn to look at you or able to answer any questions especially when i'm close to completing the task.
 
 2. Share it with your manager or teammates so they can better understand how to work with you.
