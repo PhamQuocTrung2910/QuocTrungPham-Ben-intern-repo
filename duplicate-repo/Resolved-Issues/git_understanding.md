@@ -1,4 +1,4 @@
-Merge Conflicts & Conflict Resolution
+📌 Merge Conflicts & Conflict Resolution
 
 1. Research what causes merge conflicts in Git.
 
@@ -38,13 +38,7 @@ By letting the changes on both branch go through
 Merge Conflicts are easy to resolve if you are able to understand what's causing the conflict and what changes are actually needed
 
 
-
-
-
-
-
-
-Staging vs Committing
+📌 Staging vs Committing
 
 - Git Exercise
 1. Modify a file and try the following:
@@ -77,7 +71,7 @@ Summary:
 
 
 
-Branching & Team Collaboration
+📌 Branching & Team Collaboration
 
 1. Why is pushing directly to main problematic?
 - It can introduce bugs directly into the live, production-ready code without review.
@@ -101,7 +95,7 @@ Branching & Team Collaboration
 
 
 
-Advanced Git Commands & When to Use Them
+📌 Advanced Git Commands & When to Use Them
 
 1. What does each command do?
 - git checkout main -- <file>
@@ -144,7 +138,7 @@ When debugging a problem and you need to see who last touched the affected code 
 
 
 
-Debugging with git bisect
+📌 Debugging with git bisect
 
 1. Research git bisect and how it helps in debugging.
 
@@ -189,3 +183,82 @@ Debugging with git bisect
   - Error reduction:
     - Git bisect: Reduces human error.
     - Manual review: Higher risk of oversight or mistakes.
+
+
+
+📌 Writing Meaningful Commit Messages
+
+1. Research best practices for writing commit messages.
+
+- Use a short, descriptive summary (50 characters or less)
+  - The first line should summarize the change clearly.
+  - Example: Fix login button alignment on mobile screens
+
+- Separate subject and body
+  - Leave a blank line between the summary and the detailed description.
+  - The body can explain what, why, and how the change was made.
+
+- Use imperative mood
+  - Write as if giving a command: “Add feature” instead of “Added feature” or “Adds feature.”
+  - Example: Update API endpoint for user authentication
+
+- Be concise but informative
+  - Include enough context to understand the change without being overly verbose.
+
+- Reference relevant issues or tickets
+  - Link to Jira, GitHub issues, or bug trackers when applicable.
+  - Example: Fix crash on signup page (#42)
+
+- Group related changes
+  - Avoid committing unrelated changes in the same commit.
+  - Each commit should focus on a single logical change.
+
+- Use consistent style
+  - Follow your team or project’s commit message conventions for readability.
+
+2. Explore commit histories in an open-source GitHub project (e.g., React, Node.js) and analyze good vs. bad commit messages.
+
+- React Commit History
+  - Good Commit Message
+    - Commit: Add support for concurrent rendering
+      - Why it's good:
+        - Clear and concise: The message succinctly describes the purpose of the commit.
+        - Action-oriented: Uses the imperative mood ("Add") to indicate what the commit does.
+        - Contextual: Provides insight into the feature being introduced, aiding future developers in understanding the project's evolution.
+
+  - Bad Commit Message
+    - Commit: Fix stuff
+      - Why it's bad:
+        - Vague: "Fix stuff" doesn't specify what was fixed or why.
+        - Lacks context: Future developers or collaborators would struggle to understand the nature of the change.
+        - Non-descriptive: Fails to provide any meaningful information about the commit's purpose.
+
+- Node.js Commit History
+  - Good Commit Message
+    - Commit: lib: improve performance of string concatenation
+      - Why it's good:
+        - Specific: Clearly states the area of improvement ("string concatenation").
+        - Technical: Indicates the nature of the change, which is beneficial for performance-related commits.
+        - Actionable: The message provides enough detail for reviewers and future maintainers to understand the intent.
+
+  - Bad Commit Message
+    - Commit: Update files
+      - Why it's bad:
+        - Overly broad: "Update files" doesn't specify which files were updated or why.
+        - Lacks detail: Provides no insight into the purpose or scope of the changes.
+        - Unhelpful: Future developers would find it challenging to discern the commit's significance.
+
+- Characteristics of Good Commit Messages
+  - Clarity: Clearly describes the purpose and scope of the change.
+  - Action-oriented: Uses the imperative mood to indicate what the commit does.
+  - Contextual: Provides enough information for future developers to understand the intent behind the change.
+  - Concise: Avoids unnecessary words while conveying the necessary details.
+
+- Characteristics of Bad Commit Messages
+  - Vagueness: Lacks specification about what was changed or why.
+  - Ambiguity: Leaves future developers guessing about the commit's purpose.
+  - Over-generalization: Uses broad terms like "fix" or "update" without context.
+  - Lack of action: Fails to convey what the commit accomplishes.
+
+1. A vague commit message
+
