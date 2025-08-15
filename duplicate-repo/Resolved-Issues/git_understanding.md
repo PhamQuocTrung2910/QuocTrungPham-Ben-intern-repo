@@ -260,6 +260,38 @@ When debugging a problem and you need to see who last touched the affected code 
   - Over-generalization: Uses broad terms like "fix" or "update" without context.
   - Lack of action: Fails to convey what the commit accomplishes.
 
+3. How does a clear commit message help in team collaboration?
+
+- Quick understanding: Team members can immediately know what a commit does without digging into the code
+- Efficient code reviews: Reviewers can focus on the purpose of changes rather than figuring out what was modified.
+- Easier debugging: When issues arise, clear messages make it faster to locate relevant changes.
+- Improved documentation: Serves as a readable project history, helping new team members understand the evolution of the codebase.
+- Better coordination: Makes merging, branching, and collaboration smoother, especially in larger teams.
+
+4. How can poor commit messages cause issues later?
+
+- Confusion: Team members may not understand why changes were made.
+- Slower debugging: It’s harder to trace bugs or regressions if commits are vague.
+- Inefficient reviews: Code reviewers spend more time figuring out the purpose of a commit.
+- Poor project history: Makes onboarding new developers and maintaining the project more difficult.
+- Merge conflicts: Ambiguous messages may lead to repeated work or incorrect merges.
+
+Commit Excercise:
 1. A vague commit message
 2. An overly detailed commit message.
 3. A well-structured commit message.
+
+
+📌 Creating & Reviewing Pull Requests
+
+1. Research what a Pull Request (PR) is and why it’s used.
+
+- A Pull Request (PR) is a feature used in version control systems like GitHub, GitLab, or Bitbucket that allows developers to propose changes to a codebase and request that those changes be reviewed and merged into another branch (usually the main or master branch). For the purpose of answering this question we are specifically refering to the GitHub Pull Request.
+
+- Why Pull Requests are used:
+  - Code review: PRs allow team members to review code for quality, bugs, or style issues before it’s merged.
+  - Collaboration: Multiple developers can discuss and suggest improvements directly within the PR.
+  - Version control safety: PRs prevent unreviewed code from being merged directly into main branches, reducing the risk of breaking the project.
+  - Documentation: Each PR creates a record of what was changed, why, and by whom, which is useful for future reference.
+  - Testing and validation: Many workflows integrate automated tests that run when a PR is created, ensuring code meets quality standards.
+- In short, PRs are a formal, collaborative way to propose, review, and merge code safely and transparently.
