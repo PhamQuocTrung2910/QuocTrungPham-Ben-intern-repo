@@ -294,7 +294,7 @@ Commit Excercise:
   - Version control safety: PRs prevent unreviewed code from being merged directly into main branches, reducing the risk of breaking the project.
   - Documentation: Each PR creates a record of what was changed, why, and by whom, which is useful for future reference.
   - Testing and validation: Many workflows integrate automated tests that run when a PR is created, ensuring code meets quality standards.
-- In short, PRs are a formal, collaborative way to propose, review, and merge code safely and transparently.
+  - In short, PRs are a formal, collaborative way to propose, review, and merge code safely and transparently.
 
 Pull Request Exercise:
 
@@ -346,3 +346,4 @@ As of the latest update, the PR has been approved and merged into the main branc
 - Clear commit messages and PR descriptions make the review process faster.
 - Discussions often highlight edge cases and alternative approaches.
 - PRs serve as documentation for the reasoning behind changes.
+
