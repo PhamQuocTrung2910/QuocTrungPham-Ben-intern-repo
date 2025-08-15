@@ -35,4 +35,18 @@ By letting the changes on both branch go through
 
 Merge Conflicts are easy to resolve if you are able to understand what's causing the conflict and what changes are actually needed
 
-Commit and push your changes to GitHub.
+
+
+
+
+
+
+
+Staging vs Committing
+
+- Git Exercise
+1. Modify a file and try the following:
+2. Stage it but don’t commit (git add <file> or equivalent in your client).
+3. Check the status (git status).
+4. Unstage the file (git reset HEAD <file> or equivalent).
+5. Commit the file and observe the difference.
