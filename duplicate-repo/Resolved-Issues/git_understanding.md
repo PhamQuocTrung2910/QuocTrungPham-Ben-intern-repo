@@ -1,4 +1,4 @@
-Merge Conflicts & Conflict Resolution
+📌 Merge Conflicts & Conflict Resolution
 
 1. Research what causes merge conflicts in Git.
 
@@ -38,13 +38,7 @@ By letting the changes on both branch go through
 Merge Conflicts are easy to resolve if you are able to understand what's causing the conflict and what changes are actually needed
 
 
-
-
-
-
-
-
-Staging vs Committing
+📌 Staging vs Committing
 
 - Git Exercise
 1. Modify a file and try the following:
@@ -77,7 +71,7 @@ Summary:
 
 
 
-Branching & Team Collaboration
+📌 Branching & Team Collaboration
 
 1. Why is pushing directly to main problematic?
 - It can introduce bugs directly into the live, production-ready code without review.
@@ -101,7 +95,7 @@ Branching & Team Collaboration
 
 
 
-Advanced Git Commands & When to Use Them
+📌 Advanced Git Commands & When to Use Them
 
 1. What does each command do?
 - git checkout main -- <file>
@@ -144,7 +138,7 @@ When debugging a problem and you need to see who last touched the affected code 
 
 
 
-Debugging with git bisect
+📌 Debugging with git bisect
 
 1. Research git bisect and how it helps in debugging.
 
@@ -155,4 +149,149 @@ Debugging with git bisect
   - A bad commit (where the bug exists)
 - Then Git automatically checks out commits halfway between them, letting you test until it narrows down the exact commit that introduced the problem.
 
+2.  When would you use it in a real-world debugging situation?
 
+- When a bug or error appears in your project, but you don’t know which commit introduced it.
+- Particularly useful in long-running projects with many commits or multiple developers.
+- Ideal for regression bugs: something that used to work suddenly breaks, and you need to pinpoint the exact change causing it.
+- Helps save time when the project history is too large to manually inspect every commit.
+
+3. How does it compare to manually reviewing commits?
+
+- Here’s a direct comparison of git bisect vs manually reviewing commits:
+
+  - Speed:
+    - Git bisect: Fast, uses binary search to quickly find the problematic commit.
+    - Manual review: Slow, requires checking each commit one by one.
+  
+  - Accuracy:
+    - Git bisect: High, systematically identifies the exact commit causing the bug.
+    - Manual review: Lower, prone to missing the offending commit or misidentifying it.
+
+  - Effort:
+    - Git bisect: Minimal, automates testing across commits.
+    - Manual review: High, requires manual reading and testing.
+
+  - Scalability:
+    - Git bisect: Works well for large projects with many commits or developers.
+    - Manual review: Impractical for long histories or complex projects.
+
+  - Consistency:
+    - Git bisect: Systematic and repeatable.
+    - Manual review: Inconsistent; depends on the reviewer’s attention and memory.
+
+  - Error reduction:
+    - Git bisect: Reduces human error.
+    - Manual review: Higher risk of oversight or mistakes.
+
+
+
+📌 Writing Meaningful Commit Messages
+
+1. Research best practices for writing commit messages.
+
+- Use a short, descriptive summary (50 characters or less)
+  - The first line should summarize the change clearly.
+  - Example: Fix login button alignment on mobile screens
+
+- Separate subject and body
+  - Leave a blank line between the summary and the detailed description.
+  - The body can explain what, why, and how the change was made.
+
+- Use imperative mood
+  - Write as if giving a command: “Add feature” instead of “Added feature” or “Adds feature.”
+  - Example: Update API endpoint for user authentication
+
+- Be concise but informative
+  - Include enough context to understand the change without being overly verbose.
+
+- Reference relevant issues or tickets
+  - Link to Jira, GitHub issues, or bug trackers when applicable.
+  - Example: Fix crash on signup page (#42)
+
+- Group related changes
+  - Avoid committing unrelated changes in the same commit.
+  - Each commit should focus on a single logical change.
+
+- Use consistent style
+  - Follow your team or project’s commit message conventions for readability.
+
+2. Explore commit histories in an open-source GitHub project (e.g., React, Node.js) and analyze good vs. bad commit messages.
+
+- React Commit History
+  - Good Commit Message
+    - Commit: Add support for concurrent rendering
+      - Why it's good:
+        - Clear and concise: The message succinctly describes the purpose of the commit.
+        - Action-oriented: Uses the imperative mood ("Add") to indicate what the commit does.
+        - Contextual: Provides insight into the feature being introduced, aiding future developers in understanding the project's evolution.
+
+  - Bad Commit Message
+    - Commit: Fix stuff
+      - Why it's bad:
+        - Vague: "Fix stuff" doesn't specify what was fixed or why.
+        - Lacks context: Future developers or collaborators would struggle to understand the nature of the change.
+        - Non-descriptive: Fails to provide any meaningful information about the commit's purpose.
+
+- Node.js Commit History
+  - Good Commit Message
+    - Commit: lib: improve performance of string concatenation
+      - Why it's good:
+        - Specific: Clearly states the area of improvement ("string concatenation").
+        - Technical: Indicates the nature of the change, which is beneficial for performance-related commits.
+        - Actionable: The message provides enough detail for reviewers and future maintainers to understand the intent.
+
+  - Bad Commit Message
+    - Commit: Update files
+      - Why it's bad:
+        - Overly broad: "Update files" doesn't specify which files were updated or why.
+        - Lacks detail: Provides no insight into the purpose or scope of the changes.
+        - Unhelpful: Future developers would find it challenging to discern the commit's significance.
+
+- Characteristics of Good Commit Messages
+  - Clarity: Clearly describes the purpose and scope of the change.
+  - Action-oriented: Uses the imperative mood to indicate what the commit does.
+  - Contextual: Provides enough information for future developers to understand the intent behind the change.
+  - Concise: Avoids unnecessary words while conveying the necessary details.
+
+- Characteristics of Bad Commit Messages
+  - Vagueness: Lacks specification about what was changed or why.
+  - Ambiguity: Leaves future developers guessing about the commit's purpose.
+  - Over-generalization: Uses broad terms like "fix" or "update" without context.
+  - Lack of action: Fails to convey what the commit accomplishes.
+
+3. How does a clear commit message help in team collaboration?
+
+- Quick understanding: Team members can immediately know what a commit does without digging into the code
+- Efficient code reviews: Reviewers can focus on the purpose of changes rather than figuring out what was modified.
+- Easier debugging: When issues arise, clear messages make it faster to locate relevant changes.
+- Improved documentation: Serves as a readable project history, helping new team members understand the evolution of the codebase.
+- Better coordination: Makes merging, branching, and collaboration smoother, especially in larger teams.
+
+4. How can poor commit messages cause issues later?
+
+- Confusion: Team members may not understand why changes were made.
+- Slower debugging: It’s harder to trace bugs or regressions if commits are vague.
+- Inefficient reviews: Code reviewers spend more time figuring out the purpose of a commit.
+- Poor project history: Makes onboarding new developers and maintaining the project more difficult.
+- Merge conflicts: Ambiguous messages may lead to repeated work or incorrect merges.
+
+Commit Excercise:
+1. A vague commit message
+2. An overly detailed commit message.
+3. A well-structured commit message.
+
+
+📌 Creating & Reviewing Pull Requests
+
+1. Research what a Pull Request (PR) is and why it’s used.
+
+- A Pull Request (PR) is a feature used in version control systems like GitHub, GitLab, or Bitbucket that allows developers to propose changes to a codebase and request that those changes be reviewed and merged into another branch (usually the main or master branch). For the purpose of answering this question we are specifically refering to the GitHub Pull Request.
+
+- Why Pull Requests are used:
+  - Code review: PRs allow team members to review code for quality, bugs, or style issues before it’s merged.
+  - Collaboration: Multiple developers can discuss and suggest improvements directly within the PR.
+  - Version control safety: PRs prevent unreviewed code from being merged directly into main branches, reducing the risk of breaking the project.
+  - Documentation: Each PR creates a record of what was changed, why, and by whom, which is useful for future reference.
+  - Testing and validation: Many workflows integrate automated tests that run when a PR is created, ensuring code meets quality standards.
+- In short, PRs are a formal, collaborative way to propose, review, and merge code safely and transparently.
