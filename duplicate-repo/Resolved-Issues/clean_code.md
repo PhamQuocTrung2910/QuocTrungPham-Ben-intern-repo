@@ -219,11 +219,10 @@ test('handleLoginPress sets isLoggedIn to true', () => { ... })
 
 1. Best Practices for Writing Small, Single-Purpose Functions
 
-- Single Responsibility Principle (SRP): Each function should focus on one task only—do that well.
+- Single Responsibility Principle (SRP): Each function should focus on one task and do it to the best of its ability.
 - Keep it small: Limit functions to roughly 4–25 lines to maintain clarity and focus.
 - Avoid side effects: Functions should not alter external state or perform unrelated tasks.
-- Limit parameters: Prefer 3 or fewer parameters—if more are needed, consider packaging them in an object 
-CodeSignal.
+- Limit parameters: Prefer 3 or fewer parameters, if more are needed then consider packaging them in an object.
 - Use descriptive names: Function names should clearly reflect their purpose.
 - Improve testability and reusability: Small, focused functions are easier to unit test and reuse.
 
