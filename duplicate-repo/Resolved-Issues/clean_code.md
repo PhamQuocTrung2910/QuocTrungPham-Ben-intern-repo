@@ -653,7 +653,7 @@ References:
 
 1. Research the importance of unit testing in software development.
 
-
+Unit testing is critical in software development because it verifies that individual functions or modules work correctly before integrating them into the larger system/code base. It helps detect bugs early, reducing the cost and effort of fixing issues later. Unit tests also provide a safety net for developers when refactoring code, ensuring that changes do not introduce regressions. They promote better design practices, maintainability, and team collaboration by making code behavior explicit and predictable. Additionally, unit tests improve confidence in code quality, making deployments safer and more reliable.
 
 2. Choose a testing framework (e.g., Jest for JavaScript, PyTest for Python).
 
@@ -661,16 +661,28 @@ I'll Choose Jest as its more relevant to Focus Bear.
 
 3. Write a few unit tests for a function in your test repo.
 
-
+I have written a couple of test in the file sum.test.js for the simple addition function in sum.js.
 
 4. How do unit tests help keep code clean?
 
+Unit testing encourages writing small, focused functions that are easier to test and understand. If a function is too large or complex, it becomes difficult to write effective tests, highlighting areas that need refactoring. Tests also enforce handling of edge cases, proper input validation, and consistent outputs. Over time, this results in code that is more modular, readable, and maintainable.
 
 5. What issues did you find while testing?
 
+During testing, common issues include functions failing with unexpected inputs or edge cases, inconsistent return values, or missing input validation. Dependencies between modules can make it difficult to isolate and test functions properly. Sometimes tests reveal overly complex or poorly structured code that is hard to maintain, emphasizing the need for refactoring. Unit tests thus not only catch bugs but also drive improvements in overall code quality. 
 
-
-
+- Issues Found While Testing sum(a, b):
+  - Non-numeric inputs are not tested
+    - What happens if someone calls sum('2', 3) or sum(null, 5)?
+    - Currently, the function will likely coerce or throw an unexpected result. Adding tests for invalid inputs will prevent suh bugs from occuring.
+  - Edge cases like Infinity or NaN are not tested
+    - E.g., sum(Infinity, 1) or sum(NaN, 5) could produce results that might break dependent code.
+  - Floating point precision handled only with toBeCloseTo
+    - Currently i've used toBeCloseTo, but other floating point cases could still fail, e.g., sum(0.1, 0.7).
+  - No test for missing arguments
+    - Calling sum(5) or sum() could result in NaN because undefined + number in JavaScript is NaN.
+  - No test for very large negative numbers or mixed extreme values
+    - Extreme positive + extreme negative combinations could be tested to ensure consistency.
 
 
 
