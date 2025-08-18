@@ -649,8 +649,23 @@ References:
 - Defensive Programming: Wikipedia overview of defensive coding techniques 
 - Error Swallowing Issues: Wikipedia on anti-patterns in error handling
 
+📌 Writing Unit Tests for Clean Code
+
+1. Research the importance of unit testing in software development.
 
 
+
+2. Choose a testing framework (e.g., Jest for JavaScript, PyTest for Python).
+
+I'll Choose Jest as its more relevant to Focus Bear.
+
+3. Write a few unit tests for a function in your test repo.
+
+
+4. How do unit tests help keep code clean?
+
+
+5. What issues did you find while testing?
 
 
 
