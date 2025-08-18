@@ -215,6 +215,213 @@ test('handleLoginPress sets isLoggedIn to true', () => { ... })
 ```
 - Reduces bugs: Developers are less likely to accidentally misuse variables, props, or functions.
 
+📌 Writing Small, Focused Functions
+
+1. Best Practices for Writing Small, Single-Purpose Functions
+
+- Single Responsibility Principle (SRP): Each function should focus on one task only—do that well.
+- Keep it small: Limit functions to roughly 4–25 lines to maintain clarity and focus.
+- Avoid side effects: Functions should not alter external state or perform unrelated tasks.
+- Limit parameters: Prefer 3 or fewer parameters—if more are needed, consider packaging them in an object 
+CodeSignal.
+- Use descriptive names: Function names should clearly reflect their purpose.
+- Improve testability and reusability: Small, focused functions are easier to unit test and reuse.
+
+2. Find an example of a long, complex function in an existing codebase (or write your own).
+
+- Here is a React Native snippet that violates these principles:
+``` javascript
+function submitUserData(user, data, isAdmin, notify) {
+  let processed = {};
+
+  // Validate user
+  if (!user || !user.id) {
+    console.error('Invalid user');
+    return;
+  }
+
+  // Process data
+  Object.keys(data).forEach(key => {
+    processed[key] = data[key].trim();
+  });
+
+  // Admin extra action
+  if (isAdmin) {
+    processed.adminNote = 'Processed by admin';
+  }
+
+  // Optional notification
+  if (notify) {
+    sendNotification(user.id, processed);
+  }
+
+  // Save to API
+  api.saveUserData(user.id, processed);
+}
+
+```
+- Issues:
+  - Mixes data validation, processing, optional notifications, and API calls into one function.
+  - Difficult to test, maintain, or reuse individual behaviors.
+
+3. Refactor it into multiple smaller functions with clear responsibilities.
+
+``` javascript
+function validateUser(user) {
+  if (!user || !user.id) {
+    console.error('Invalid user');
+    return false;
+  }
+  return true;
+}
+
+function processData(data) {
+  return Object.fromEntries(
+    Object.entries(data).map(([k, v]) => [k, v.trim()])
+  );
+}
+
+function addAdminNote(processed, isAdmin) {
+  if (isAdmin) {
+    processed.adminNote = 'Processed by admin';
+  }
+  return processed;
+}
+
+function notifyUser(userId, processedData, notify) {
+  if (notify) {
+    sendNotification(userId, processedData);
+  }
+}
+
+function saveData(userId, processedData) {
+  api.saveUserData(userId, processedData);
+}
+
+function submitUserData(user, data, isAdmin, notify) {
+  if (!validateUser(user)) return;
+
+  let processed = processData(data);
+  processed = addAdminNote(processed, isAdmin);
+  notifyUser(user.id, processed, notify);
+  saveData(user.id, processed);
+}
+```
+- Here is the code refractored with proper indentation for better readability. 
+
+4. Why is breaking down functions beneficial?
+
+- Readability: Each function is concise and clearly titled.
+- Maintainability: Isolated behavior lets you change one part without breaking others.
+- Testability: You can write unit tests for each function independently.
+- Reusability: Functions like processData or saveData can be reused in other parts of the app.
+- Debugging: Easier to trace where an issue started because each piece is isolated.
+
+5. How did refactoring improve the structure of the code?
+
+- Readability: Each function is concise and clearly titled.
+- Maintainability: Isolated behavior lets you change one part without breaking others.
+- Testability: You can write unit tests for each function independently.
+- Reusability: Functions like processData or saveData can be reused in other parts of the app.
+- Debugging: Easier to trace where an issue started because each piece is isolate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
