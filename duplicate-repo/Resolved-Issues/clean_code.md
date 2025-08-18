@@ -387,24 +387,195 @@ logUserEvent(user, 'checked out');
 - Easier extension: If event logging grows (e.g. logging to a server), you only update one function, not multiple.
 
 
+📌 Refactoring Code for Simplicity
+
+1. Research common refactoring techniques.
+
+- Based on sources like GeeksforGeeks, MarutiTech, and Refactoring.Guru, here are widely used refactoring techniques:
+  - Red–Green–Refactor (TDD-style): 
+    - Red: Write a test that fails.
+    - Green: Write minimal code to make the test pass.
+    - Refactor: Clean up the implementation without breaking tests.
+
+  - Extract Method: Identify and extract repetitive or complex code into its own function, improving reuse and clarity.
+
+  - Refactoring by Abstraction / Extract Class: Encapsulate shared logic or data into new components or classes to reduce duplication and better organize code.
+  
+  - Simplify Conditionals / Guard Clauses: Replace nested or complex if-else logic with early returns or clearer constructs.
+
+  - Inline Variable / Extract Variable: Simplify complex expressions by replacing or extracting into well-named variables.
+
+2. Find an example of overly complicated code in an existing project (or write your own).
+
+- Here is a JavaScript snippet simulating React Native data handling:
+
+``` javascript
+function handleUserFormSubmission(formData, userId, isEdit) {
+  let name = formData.userName.trim();
+  let email = formData.userEmail.toLowerCase();
+
+  if (!isEdit) {
+    api.createUser({ name, email, userId });
+  } else {
+    api.updateUser(userId, { name, email });
+  }
+
+  analytics.track('UserFormSubmitted', {
+    userId,
+    isNew: !isEdit,
+    timestamp: new Date().toISOString()
+  });
+}
+
+function handleUserFormSubmission(formData, userId, isEdit) {
+  let name = formData.userName.trim();
+  let email = formData.userEmail.toLowerCase();
+
+  if (!isEdit) {
+    api.createUser({ name, email, userId });
+  } else {
+    api.updateUser(userId, { name, email });
+  }
+
+  analytics.track('UserFormSubmitted', {
+    userId,
+    isNew: !isEdit,
+    timestamp: new Date().toISOString()
+  });
+}
+```
+- Why it’s complex:
+  - Performs multiple responsibilities: data formatting, API logic, and analytics, severely violating single responsibility principles.
+  - Hard to read and harder to test when each task is mixed in one function.
+
+3. Refactor it to make it simpler and more readable.
+
+- Here is how i would break it down into clear, single-purpose functions:
+
+``` javascript
+function formatUserData({ userName, userEmail }) {
+  return {
+    name: userName.trim(),
+    email: userEmail.toLowerCase(),
+  };
+}
+
+function submitUserData(userData, userId, isEdit) {
+  if (isEdit) {
+    return api.updateUser(userId, userData);
+  } else {
+    return api.createUser({ ...userData, userId });
+  }
+}
+
+function trackFormSubmission(userId, isNew) {
+  analytics.track('UserFormSubmitted', {
+    userId,
+    isNew,
+    timestamp: new Date().toISOString(),
+  });
+}
+
+function handleUserFormSubmission(formData, userId, isEdit) {
+  const userData = formatUserData(formData);
+  submitUserData(userData, userId, isEdit);
+  trackFormSubmission(userId, !isEdit);
+}
+```
+
+4. What made the original code complex?
+
+- Mixed responsibilities: Due to the code having multiple responsibilities such as handling formatting, API communication, and event tracking in one function.
+- Low readability: Multiple actions inline makes it harder to follow and understand what the code is trying to do.
+- Testing difficulty: You can’t easily do unit test formatting logic independently do to all the responbilities being in the same function.
+
+5. How did refactoring improve it?
+
+- Readability: Each function has a clear, focused responsibility making it easier for future developers to understand where to continue.
+- Maintainability: Isolated behavior lets you update formatting or analytics separately for any future scaling.
+- Reusability: Formatting logic (formatUserData) can be reused elsewhere decreasing code repetition.
+- Testability: Each component function (format, submit, track) can be unit tested in isolation preventing flase positive test results.
+- Scalability: New features (e.g., validation middleware) can be inserted cleanly without disrupting flow.
+
+References for this issue: 
+- https://marutitech.com/code-refactoring-best-practices/?utm_source=chatgpt.com
+- https://algocademy.com/blog/the-comprehensive-guide-to-refactoring-and-improving-existing-code/?utm_source=chatgpt.com
+- https://codelucky.com/code-refactoring-improving-quality/?utm_source=chatgpt.com
+- https://www.geeksforgeeks.org/software-engineering/code-refactoring-techniques-in-software-engineering/?utm_source=chatgpt.com
+- https://newdigitalstreet.com/code-refactoring/?utm_source=chatgpt.com
+- https://howik.com/refactoring-techniques?utm_source=chatgpt.com
+- https://victoronsoftware.com/posts/common-refactorings/?utm_source=chatgpt.com
 
 
+📌 Commenting & Documentation
 
+1. Research best practices for writing comments and documentation.
 
+- Explain why, not what: Comments should clarify the reasoning behind code, not restate what the code does. Clear code should minimize the need for comments. 
+- Avoid duplication: Do not write comments that simply repeat the code logic—it’s redundant and adds maintenance overhead. 
+- Self-documenting code: Use descriptive naming and structure so the code is easier to understand without relying heavily on comments. 
+- Be concise, consistent, and grammatically correct: Well-written comments enhance clarity; use consistent style and avoid jargon or informal language. 
+- Use comments selectively: Add comments when code is complex, counterintuitive, or justified by external factors; otherwise, focus on improving code readability.
 
+2. Find an example of poorly commented code and rewrite the comments to be more useful.
 
+- Original (Poor Comments):
 
+``` javascript
+// loop through array
+for (let i = 0; i < items.length; i++) {
+  // print item
+  console.log(items[i]);
+}
+```
+- Issues: The comments merely restate what is obvious from the code.
 
+- Refactored with meaningful commentary:
 
+``` javascript
+// Log each item for debugging when item list is unexpectedly empty
+for (const item of items) {
+  console.log(item);
+}
 
+```
+Improvement: The code is clearer, and the comment adds valuable context about when this logging is useful.
 
+3. When should you add comments?
 
+- When the code’s reasoning or intent isn’t obvious (e.g., complex algorithms, business logic, or workarounds for bugs).
+- To document assumptions, edge cases, or external dependencies.
+- To describe the purpose of functions or classes (e.g., with JSDoc or docstrings).
+- For documentation needed by external consumers (e.g., APIs or modules)
 
+4. When should you avoid comments and instead improve the code?
 
+- If the comment simply repeats the code’s functionality.
+- When the code structure or naming can be improved to make the intent clear without comments.
+- Avoid over-commenting every line—it can clutter the code and reduce readability. 
+- Never leave outdated comments—they create confusion and technical debt.
 
-
-
-
+References:
+- Swimm.io – Comments in Code: Best Practices and Mistakes to Avoid
+https://swimm.io/learn/code-collaboration/comments-in-code-best-practices-and-mistakes-to-avoid
+- Wired – Commenting Your Code: What’s Too Much? Too Little?
+https://www.wired.com/2008/07/commenting-your-code-what-s-too-much-too-little
+- Codingem – How to Comment Code? (The Right Way)
+https://www.codingem.com/how-to-comment-code
+- Stack Overflow Blog – Best Practices for Writing Code Comments
+https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments
+- PullChecklist – Code Documentation Best Practices
+https://www.pullchecklist.com/posts/code-documentation-best-practices
+- Wikipedia – Self-documenting Code
+https://en.wikipedia.org/wiki/Self-documenting_code
+- MIT Communication Lab – Coding and Comment Style
+https://mitcommlab.mit.edu/broad/commkit/coding-and-comment-style
+- AlgoCademy – How to Effectively Use Comments in Your Code
+https://algocademy.com/blog/how-to-effectively-use-comments-in-your-code-a-comprehensive-guide
+- Boot.dev – Clean Code: Code Comments
+https://blog.boot.dev/clean-code/code-comments
+- Wired – The Best Way to Comment Your Code
+https://www.wired.com/2012/09/the-best-way-to-comment-your-code
 
 
 
