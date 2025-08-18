@@ -324,10 +324,67 @@ function submitUserData(user, data, isAdmin, notify) {
 - Reusability: Functions like processData or saveData can be reused in other parts of the app.
 - Debugging: Easier to trace where an issue started because each piece is isolate.
 
+📌 Avoiding Code Duplication
 
+1. Research the "Don't Repeat Yourself" (DRY) principle.
 
+- The DRY principle emphasizes that “every piece of knowledge must have a single, unambiguous representation within a system”, a principle originating from The Pragmatic Programmer by Andy Hunt and Dave Thomas.
 
+- By avoiding redundant code or information, DRY helps ensure consistency and maintainability even when changes are needed, they only occur in one place rather than across multiple duplicated segments. 
 
+- Duplication is about more than mere code—it’s about logic and knowledge. A duplicated business rule in different forms still violates DRY, making updates error-prone and harder to track. 
+
+- While DRY is powerful, it must be applied judiciously: premature abstraction can create unnecessary complexity and tight coupling, especially when duplications might be incidental.
+
+2. Find a section of code in your test repo with unnecessary repetition.
+
+- As i've not done any issues that require extensive coding i'm unable to locate a code snippet showcasing repetition therefore i'll be making up an example for the purpose of this question.
+
+``` javascript
+function logLoginTime(user) {
+  const now = new Date().toLocaleString();
+  console.log(`User ${user.name} logged in at ${now}`);
+}
+
+function logCheckoutTime(user) {
+  const now = new Date().toLocaleString();
+  console.log(`User ${user.name} checked out at ${now}`);
+}
+```
+- Both functions use similar logic: getting the current timestamp and logging a message. That’s DRY violation.
+
+3. Refactor the code to eliminate duplication.
+
+- Here’s a cleaner version by extracting the shared logic:
+
+``` javascript
+function formatTimestamp() {
+  return new Date().toLocaleString();
+}
+
+function logUserEvent(user, event) {
+  console.log(`User ${user.name} ${event} at ${formatTimestamp()}`);
+}
+
+// Usage:
+logUserEvent(user, 'logged in');
+logUserEvent(user, 'checked out');
+```
+4. What were the issues with duplicated code?
+
+- Maintenance overhead: Updating timestamp logic in two places doubles the effort and increases risk of inconsistency. 
+
+- Higher error rate: If one function is updated but the other is forgotten, behavior diverges. 
+
+- Increased cognitive load: Repetition forces developers to understand and maintain similar code in multiple spots.
+
+5. How did refactoring improve maintainability?
+
+- Single source of truth: Timestamp formatting logic is centralized in formatTimestamp().
+- Simpler updates: Any required formatting changes are applied once and propagate everywhere.
+- Enhanced readability: logUserEvent(user, 'checked out') is expressive and self-documenting.
+- Reduced errors: Less duplication means fewer paths for bugs to hide.
+- Easier extension: If event logging grows (e.g. logging to a server), you only update one function, not multiple.
 
 
 
