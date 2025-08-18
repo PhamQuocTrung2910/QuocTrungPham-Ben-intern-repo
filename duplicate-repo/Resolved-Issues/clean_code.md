@@ -105,3 +105,136 @@ Linter Currently Doesnt detect any issues as i've not entered the Version of Rea
   - Professionalism and Consistency: Well-formatted code reflects professionalism and adherence to industry standards. It signals attention to detail and makes onboarding new team members easier.
   - Tool Integration: Many tools (linters, IDEs, CI/CD pipelines) rely on consistent formatting for automated checks. Proper formatting ensures these tools work effectively and reduces friction in automated workflows.
 
+
+📌 Naming Variables & Functions
+
+1. Research best practices for naming variables and functions. 
+
+- Be descriptive: Names should reflect the data or component purpose.
+- Use camelCase for variables/functions and PascalCase for components:
+  - userName, fetchData()
+  - UserProfile, LoginScreen
+- Avoid ambiguous abbreviations: Only use widely recognized ones (id, url, btn).
+- Use verbs for functions, nouns for variables/components:
+  - Function: handleButtonPress()
+  - Variable: userList
+  - Component: ProfileCard
+- Be consistent: Stick to naming conventions across your project.
+
+2. Find examples of unclear variable names in an existing codebase (or write your own).
+
+```javascript
+const x = 'John Doe';
+const y = true;
+function fn(a) {
+  console.log(a);
+}
+```
+- Issues with the code:
+  - Hard to know what x or y represents. fn doesn’t indicate its action.
+
+3. Refactor the code by renaming variables/functions for better clarity.
+
+```javascript
+const userName = 'John Doe';
+const isLoggedIn = true;
+function handleLogin(user) {
+  console.log(user);
+}
+```
+
+Fixed: Now variables and functions clearly indicate purpose and behavior.
+
+4. What makes a good variable or function name?
+
+Poor Naming Convention:
+
+``` javascript
+function C1() {
+  return <View><Text>Profile</Text></View>
+}
+```
+
+Good Naming Convention:
+
+``` javascript
+function ProfileCard() {
+  return (
+    <View>
+      <Text>Profile</Text>
+    </View>
+  );
+}
+```
+Improvement: The name ProfileCard immediately communicates what the component represents.
+5. What issues can arise from poorly named variables?
+
+- Poor naming can cause a variety of problems in React Native projects:
+  - Confusing JSX/Props: If you pass props with ambiguous names, it’s unclear what they represent.
+
+``` javascript
+<UserCard a={user} b={true} />
+```
+  - It’s hard to know what a and b are doing.
+
+- Debugging difficulty: Error messages referencing vague variable names like x or fn1 require more mental effort to trace.
+- Misuse of variables/functions: Developers might use the wrong variable because its name doesn’t reflect its purpose.
+- Increased onboarding time: New team members must spend extra time understanding the codebase.
+- Async and state bugs: With hooks, ambiguous names can cause subtle issues:
+``` javascript
+const [d, setD] = useState(null); // What is d? Data? Date?
+```
+6. How did refactoring improve code readability?
+
+- Refactoring names makes the code self-documenting, reducing cognitive load:
+
+  - Clear JSX props:
+``` javascript
+<UserCard user={currentUser} isActive={true} />
+```
+  - Meaningful state hooks:
+``` javascript
+const [userProfile, setUserProfile] = useState(null);   
+```
+  - Easier debugging: Error logs like Cannot read property 'name' of userProfile are intuitive.
+  - Predictable behavior in functions:
+``` javascript
+function handleLoginPress() { ... }
+function fetchUserData(userId) { ... }
+```
+  - You immediately understand what each function does without reading its full implementation.
+
+7. How Refactoring Improves Maintainability & Collaboration
+
+- Team collaboration: Developers can quickly understand and use your components/functions without constant clarification.
+- Consistency across project: Consistent naming conventions reduce confusion when integrating multiple components or modules.
+- Enhanced scalability: As projects grow, meaningful names prevent spaghetti code and make it easier to add features.
+- Supports documentation & testing: Clear names improve automated test readability and documentation clarity.
+``` javascript
+test('handleLoginPress sets isLoggedIn to true', () => { ... })
+```
+- Reduces bugs: Developers are less likely to accidentally misuse variables, props, or functions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
