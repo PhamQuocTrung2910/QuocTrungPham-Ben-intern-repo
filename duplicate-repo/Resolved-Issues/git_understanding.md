@@ -51,14 +51,13 @@ the conflict and what changes are actually needed
 📌 Staging vs Committing
 
 - Git Exercise
+  - Modify a file and try the following:
+  - Stage it but don’t commit (git add <file> or equivalent in your client).
+  - Check the status (git status).
+  - Unstage the file (git reset HEAD <file> or equivalent).
+  - Commit the file and observe the difference.
 
-1. Modify a file and try the following:
-1. Stage it but don’t commit (git add <file> or equivalent in your client).
-1. Check the status (git status).
-1. Unstage the file (git reset HEAD <file> or equivalent).
-5. Commit the file and observe the difference.
-
-Summary:
+Summary:  
 
 1. What is the difference between staging and committing?
 
