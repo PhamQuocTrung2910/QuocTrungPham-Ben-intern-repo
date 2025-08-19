@@ -1,3 +1,5 @@
+# Terminal Knowledge
+
 1. Which terminal client did you choose? Why?
 
 I chose Git Bash because it provides a Unix-like environment on Windows, supports all standard Git commands, and integrates well with other tools like VS Code.
