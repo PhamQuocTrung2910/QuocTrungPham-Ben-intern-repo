@@ -26,4 +26,4 @@ jobs:
         run: npx markdownlint-cli2 "**/*.md" "!node_modules"
 
       - name: Run Spell Check
-        run: npx cspell "**/*.md"
+        run: npx cspell --config cspell.json "**/*.md"
