@@ -4,7 +4,8 @@
   "description": "",
   "main": "duplicate-repo.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "dotenv": "^16.4.7"
   },
   "devDependencies": {
+    "husky": "^8.0.0",
     "jest": "^30.0.5",
     "prettier": "^3.6.2"
   }
