@@ -2,9 +2,11 @@
   "scripts": {
     "test": "jest"
   },
-  
-  "lint-staged": {
-  "*.md": "npx cspell --no-color"
-  }
 
+  "lint-staged": {
+  "**/*.md": [
+    "npx cspell --no-progress",
+    "git add"
+  ]
+}
 }
