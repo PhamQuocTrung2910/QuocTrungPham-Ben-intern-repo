@@ -77,6 +77,7 @@ npm install
    cp .env.sample .env
    ```
 2. Open `.env` and edit the following:
+
    ```ini
    GITHUB_TOKEN=your_github_token_here
    SOURCE_REPO=Focus-Bear/onboarding-react-native

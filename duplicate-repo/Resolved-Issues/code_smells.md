@@ -1,7 +1,6 @@
 1. Research common code smells and how they impact code quality.
 
 - Code smells are indicators of potential problems in a codebase. They are not bugs themselves, but they suggest areas where the code may become difficult to maintain, extend, or debug. Detecting code smells early allows developers to refactor and maintain high-quality, sustainable code.
-
   - Magic Numbers & Strings
     - Description: Using hardcoded numeric values or string literals instead of named constants.
     - Impact: Makes code difficult to understand and modify. Changes require hunting down every instance of the value, increasing the risk of errors.
@@ -69,14 +68,14 @@
 
 Here are the examples of i'll be using to demonstrate code smells:
 
-``` javascript
+```javascript
 // Magic Number
 function calculateDiscount(price) {
   return price * 0.1; // What does 0.1 represent?
 }
-``` 
+```
 
-``` javascript
+```javascript
 // Long Function
 function processOrder(order) {
   validateOrder(order);
@@ -86,9 +85,9 @@ function processOrder(order) {
   sendConfirmationEmail(order);
   logOrder(order);
 }
-``` 
+```
 
-``` javascript
+```javascript
 // Duplicate Code
 function addUser(user) {
   database.push(user);
@@ -98,9 +97,9 @@ function addAdmin(admin) {
   database.push(admin); // duplicate push logic
   log(admin);
 }
-``` 
+```
 
-``` javascript
+```javascript
 // Large Class
 class UserManager {
   constructor(users) {
@@ -112,39 +111,38 @@ class UserManager {
   logActivity(user) {}
   generateReports() {}
 }
-``` 
+```
 
-``` javascript
+```javascript
 // Deeply Nested Conditionals
 function checkAccess(user) {
-  if(user) {
-    if(user.role === 'admin') {
-      if(user.active) {
+  if (user) {
+    if (user.role === "admin") {
+      if (user.active) {
         return true;
       }
     }
   }
   return false;
 }
-``` 
+```
 
-``` javascript
+```javascript
 // Commented-Out Code
 // function oldFunction() {
 //   console.log("Old logic");
 // }
-``` 
+```
 
-``` javascript
+```javascript
 // Inconsistent Naming
 let x = 10;
 let y = "John Doe";
-
 ```
 
 Here are the code examples properly refractored to eliminate code smells:
 
-``` javascript
+```javascript
 // Magic Number
 const DISCOUNT_RATE = 0.1;
 function calculateDiscount(price) {
@@ -152,7 +150,7 @@ function calculateDiscount(price) {
 }
 ```
 
-``` javascript
+```javascript
 // Long Function
 function processOrder(order) {
   validateOrder(order);
@@ -167,7 +165,7 @@ function updateInventoryAndNotify(order) {
 }
 ```
 
-``` javascript
+```javascript
 // Duplicate Code
 function addEntity(entity) {
   database.push(entity);
@@ -175,41 +173,51 @@ function addEntity(entity) {
 }
 ```
 
-``` javascript
+```javascript
 // Large Class
 class UserRepository {
-  constructor(users) { this.users = users; }
-  addUser(user) { this.users.push(user); }
-  deleteUser(user) { /* logic */ }
+  constructor(users) {
+    this.users = users;
+  }
+  addUser(user) {
+    this.users.push(user);
+  }
+  deleteUser(user) {
+    /* logic */
+  }
 }
 
 class UserNotifier {
-  sendEmail(user) { /* logic */ }
+  sendEmail(user) {
+    /* logic */
+  }
 }
 
 class ReportGenerator {
-  generateReports(users) { /* logic */ }
+  generateReports(users) {
+    /* logic */
+  }
 }
 ```
 
-``` javascript
+```javascript
 // Deeply Nested Conditionals
 function checkAccess(user) {
-  return user?.role === 'admin' && user.active;
+  return user?.role === "admin" && user.active;
 }
 ```
 
-``` javascript
+```javascript
 // Commented-Out Code
 // Deleted oldFunction()
 ```
 
-``` javascript
+```javascript
 // Inconsistent Naming
 let userAge = 10;
 let userName = "John Doe";
-
 ```
+
 4. What code smells did you find in your code?
 
 - Here were the code smells in each of the example i've given:
@@ -239,29 +247,3 @@ let userName = "John Doe";
   - Faster Onboarding: New team members can more quickly understand and contribute to a clean codebase.
   - Simplified Maintenance: Modular code allows for easier updates and modifications, reducing the risk of introducing new issues.
   - Improved Testing: Code that adheres to best practices is often more testable, allowing for effective unit tests that can catch bugs early.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

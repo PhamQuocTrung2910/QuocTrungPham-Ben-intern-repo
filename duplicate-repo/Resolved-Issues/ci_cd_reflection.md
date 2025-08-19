@@ -12,11 +12,7 @@
 
 2. Set up a CI workflow that runs Markdown linting and spell checks on PRs in your repo.
 
-
-
 3. Experiment with Git Hooks (e.g., Husky) to enforce linting before commits.
-
-
 
 4. Open a test PR in your repository and review the automated checks.
 

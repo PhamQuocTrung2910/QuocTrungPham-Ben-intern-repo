@@ -34,10 +34,10 @@ print(c([1,2,3,4,5,6]))
 def sum_even_numbers(numbers):
     """
     Returns the sum of all even numbers in the provided list.
-    
+
     Parameters:
         numbers (list of int): List of integers to evaluate.
-    
+
     Returns:
         int: Sum of even numbers.
     """
@@ -52,13 +52,13 @@ sample_numbers = [1, 2, 3, 4, 5, 6]
 print(sum_even_numbers(sample_numbers))
 
 ```
+
 Improvements:
+
 - Function and variable names are descriptive.
 - Added a docstring explaining the function.
 - Logic is easier to read with proper formatting.
 - Supports maintainability and clarity for future developers.
-
-
 
 📌 Code Formatting & Style Guides
 
@@ -69,7 +69,7 @@ Improvements:
 - Error Detection: Consistent style makes anomalies (like an out-of-place bracket or inconsistent variable usage) more obvious.
 - Team Collaboration: When every team member follows the same style guide, there’s less debate over formatting, letting the team focus on functionality.
 - Tool Integration: Linters, formatters, and IDE features rely on predictable code formatting to analyze and correct code automatically.
- 
+
 2. Review the Airbnb javascript style guide.
 
 - The Airbnb style guide is one of the most popular JavaScript conventions due to the following attributes:
@@ -90,6 +90,7 @@ Improvements:
 - Reduces cognitive load: Consistent patterns make understanding code faster.
 - Supports collaboration: Developers can work on the same codebase without confusion or formatting conflicts.
 - Prevents errors: Formatting issues like missing brackets, extra spaces, or misaligned indentation can hide bugs or mislead the logic.
+
 5. What issues did the linter detect?
 
 Linter Currently Doesnt detect any issues as i've not entered the Version of React into its settings as i have not reached the stage where react is relevant.
@@ -97,7 +98,6 @@ Linter Currently Doesnt detect any issues as i've not entered the Version of Rea
 6. Did formatting the code make it easier to read?
 
 - I have seen the following improvements after formatting the code:
-
   - Improved Readability: Consistently formatted code is easier to read and understand, reducing the cognitive load for you and your teammates. Clear indentation, spacing, and alignment make it obvious where code blocks begin and end.
   - Easier Collaboration: When everyone follows the same style, developers can focus on logic rather than style disagreements. Pull requests and code reviews become smoother because formatting changes don’t get cluttered.
   - Reduced Errors: Consistent formatting can help prevent syntax mistakes or logic errors that might be hidden in messy code. For example, correctly indented blocks make it easier to spot missing braces or misplaced statements.
@@ -105,10 +105,9 @@ Linter Currently Doesnt detect any issues as i've not entered the Version of Rea
   - Professionalism and Consistency: Well-formatted code reflects professionalism and adherence to industry standards. It signals attention to detail and makes onboarding new team members easier.
   - Tool Integration: Many tools (linters, IDEs, CI/CD pipelines) rely on consistent formatting for automated checks. Proper formatting ensures these tools work effectively and reduces friction in automated workflows.
 
-
 📌 Naming Variables & Functions
 
-1. Research best practices for naming variables and functions. 
+1. Research best practices for naming variables and functions.
 
 - Be descriptive: Names should reflect the data or component purpose.
 - Use camelCase for variables/functions and PascalCase for components:
@@ -124,19 +123,20 @@ Linter Currently Doesnt detect any issues as i've not entered the Version of Rea
 2. Find examples of unclear variable names in an existing codebase (or write your own).
 
 ```javascript
-const x = 'John Doe';
+const x = "John Doe";
 const y = true;
 function fn(a) {
   console.log(a);
 }
 ```
+
 - Issues with the code:
   - Hard to know what x or y represents. fn doesn’t indicate its action.
 
 3. Refactor the code by renaming variables/functions for better clarity.
 
 ```javascript
-const userName = 'John Doe';
+const userName = "John Doe";
 const isLoggedIn = true;
 function handleLogin(user) {
   console.log(user);
@@ -149,15 +149,19 @@ Fixed: Now variables and functions clearly indicate purpose and behavior.
 
 Poor Naming Convention:
 
-``` javascript
+```javascript
 function C1() {
-  return <View><Text>Profile</Text></View>
+  return (
+    <View>
+      <Text>Profile</Text>
+    </View>
+  );
 }
 ```
 
 Good Naming Convention:
 
-``` javascript
+```javascript
 function ProfileCard() {
   return (
     <View>
@@ -166,43 +170,51 @@ function ProfileCard() {
   );
 }
 ```
-Improvement: The name ProfileCard immediately communicates what the component represents.
-5. What issues can arise from poorly named variables?
+
+Improvement: The name ProfileCard immediately communicates what the component represents. 5. What issues can arise from poorly named variables?
 
 - Poor naming can cause a variety of problems in React Native projects:
   - Confusing JSX/Props: If you pass props with ambiguous names, it’s unclear what they represent.
 
-``` javascript
+```javascript
 <UserCard a={user} b={true} />
 ```
-  - It’s hard to know what a and b are doing.
+
+- It’s hard to know what a and b are doing.
 
 - Debugging difficulty: Error messages referencing vague variable names like x or fn1 require more mental effort to trace.
 - Misuse of variables/functions: Developers might use the wrong variable because its name doesn’t reflect its purpose.
 - Increased onboarding time: New team members must spend extra time understanding the codebase.
 - Async and state bugs: With hooks, ambiguous names can cause subtle issues:
-``` javascript
+
+```javascript
 const [d, setD] = useState(null); // What is d? Data? Date?
 ```
+
 6. How did refactoring improve code readability?
 
 - Refactoring names makes the code self-documenting, reducing cognitive load:
-
   - Clear JSX props:
-``` javascript
+
+```javascript
 <UserCard user={currentUser} isActive={true} />
 ```
-  - Meaningful state hooks:
-``` javascript
-const [userProfile, setUserProfile] = useState(null);   
+
+- Meaningful state hooks:
+
+```javascript
+const [userProfile, setUserProfile] = useState(null);
 ```
-  - Easier debugging: Error logs like Cannot read property 'name' of userProfile are intuitive.
-  - Predictable behavior in functions:
-``` javascript
+
+- Easier debugging: Error logs like Cannot read property 'name' of userProfile are intuitive.
+- Predictable behavior in functions:
+
+```javascript
 function handleLoginPress() { ... }
 function fetchUserData(userId) { ... }
 ```
-  - You immediately understand what each function does without reading its full implementation.
+
+- You immediately understand what each function does without reading its full implementation.
 
 7. How Refactoring Improves Maintainability & Collaboration
 
@@ -210,9 +222,11 @@ function fetchUserData(userId) { ... }
 - Consistency across project: Consistent naming conventions reduce confusion when integrating multiple components or modules.
 - Enhanced scalability: As projects grow, meaningful names prevent spaghetti code and make it easier to add features.
 - Supports documentation & testing: Clear names improve automated test readability and documentation clarity.
-``` javascript
+
+```javascript
 test('handleLoginPress sets isLoggedIn to true', () => { ... })
 ```
+
 - Reduces bugs: Developers are less likely to accidentally misuse variables, props, or functions.
 
 📌 Writing Small, Focused Functions
@@ -229,24 +243,25 @@ test('handleLoginPress sets isLoggedIn to true', () => { ... })
 2. Find an example of a long, complex function in an existing codebase (or write your own).
 
 - Here is a React Native snippet that violates these principles:
-``` javascript
+
+```javascript
 function submitUserData(user, data, isAdmin, notify) {
   let processed = {};
 
   // Validate user
   if (!user || !user.id) {
-    console.error('Invalid user');
+    console.error("Invalid user");
     return;
   }
 
   // Process data
-  Object.keys(data).forEach(key => {
+  Object.keys(data).forEach((key) => {
     processed[key] = data[key].trim();
   });
 
   // Admin extra action
   if (isAdmin) {
-    processed.adminNote = 'Processed by admin';
+    processed.adminNote = "Processed by admin";
   }
 
   // Optional notification
@@ -257,18 +272,18 @@ function submitUserData(user, data, isAdmin, notify) {
   // Save to API
   api.saveUserData(user.id, processed);
 }
-
 ```
+
 - Issues:
   - Mixes data validation, processing, optional notifications, and API calls into one function.
   - Difficult to test, maintain, or reuse individual behaviors.
 
 3. Refactor it into multiple smaller functions with clear responsibilities.
 
-``` javascript
+```javascript
 function validateUser(user) {
   if (!user || !user.id) {
-    console.error('Invalid user');
+    console.error("Invalid user");
     return false;
   }
   return true;
@@ -276,13 +291,13 @@ function validateUser(user) {
 
 function processData(data) {
   return Object.fromEntries(
-    Object.entries(data).map(([k, v]) => [k, v.trim()])
+    Object.entries(data).map(([k, v]) => [k, v.trim()]),
   );
 }
 
 function addAdminNote(processed, isAdmin) {
   if (isAdmin) {
-    processed.adminNote = 'Processed by admin';
+    processed.adminNote = "Processed by admin";
   }
   return processed;
 }
@@ -306,7 +321,8 @@ function submitUserData(user, data, isAdmin, notify) {
   saveData(user.id, processed);
 }
 ```
-- Here is the code refractored with proper indentation for better readability. 
+
+- Here is the code refractored with proper indentation for better readability.
 
 4. Why is breaking down functions beneficial?
 
@@ -330,9 +346,9 @@ function submitUserData(user, data, isAdmin, notify) {
 
 - The DRY principle emphasizes that “every piece of knowledge must have a single, unambiguous representation within a system”, a principle originating from The Pragmatic Programmer by Andy Hunt and Dave Thomas.
 
-- By avoiding redundant code or information, DRY helps ensure consistency and maintainability even when changes are needed, they only occur in one place rather than across multiple duplicated segments. 
+- By avoiding redundant code or information, DRY helps ensure consistency and maintainability even when changes are needed, they only occur in one place rather than across multiple duplicated segments.
 
-- Duplication is about more than mere code—it’s about logic and knowledge. A duplicated business rule in different forms still violates DRY, making updates error-prone and harder to track. 
+- Duplication is about more than mere code—it’s about logic and knowledge. A duplicated business rule in different forms still violates DRY, making updates error-prone and harder to track.
 
 - While DRY is powerful, it must be applied judiciously: premature abstraction can create unnecessary complexity and tight coupling, especially when duplications might be incidental.
 
@@ -340,7 +356,7 @@ function submitUserData(user, data, isAdmin, notify) {
 
 - As i've not done any issues that require extensive coding i'm unable to locate a code snippet showcasing repetition therefore i'll be making up an example for the purpose of this question.
 
-``` javascript
+```javascript
 function logLoginTime(user) {
   const now = new Date().toLocaleString();
   console.log(`User ${user.name} logged in at ${now}`);
@@ -351,13 +367,14 @@ function logCheckoutTime(user) {
   console.log(`User ${user.name} checked out at ${now}`);
 }
 ```
+
 - Both functions use similar logic: getting the current timestamp and logging a message. That’s DRY violation.
 
 3. Refactor the code to eliminate duplication.
 
 - Here’s a cleaner version by extracting the shared logic:
 
-``` javascript
+```javascript
 function formatTimestamp() {
   return new Date().toLocaleString();
 }
@@ -367,14 +384,15 @@ function logUserEvent(user, event) {
 }
 
 // Usage:
-logUserEvent(user, 'logged in');
-logUserEvent(user, 'checked out');
+logUserEvent(user, "logged in");
+logUserEvent(user, "checked out");
 ```
+
 4. What were the issues with duplicated code?
 
-- Maintenance overhead: Updating timestamp logic in two places doubles the effort and increases risk of inconsistency. 
+- Maintenance overhead: Updating timestamp logic in two places doubles the effort and increases risk of inconsistency.
 
-- Higher error rate: If one function is updated but the other is forgotten, behavior diverges. 
+- Higher error rate: If one function is updated but the other is forgotten, behavior diverges.
 
 - Increased cognitive load: Repetition forces developers to understand and maintain similar code in multiple spots.
 
@@ -386,13 +404,12 @@ logUserEvent(user, 'checked out');
 - Reduced errors: Less duplication means fewer paths for bugs to hide.
 - Easier extension: If event logging grows (e.g. logging to a server), you only update one function, not multiple.
 
-
 📌 Refactoring Code for Simplicity
 
 1. Research common refactoring techniques.
 
 - Based on sources like GeeksforGeeks, MarutiTech, and Refactoring.Guru, here are widely used refactoring techniques:
-  - Red–Green–Refactor (TDD-style): 
+  - Red–Green–Refactor (TDD-style):
     - Red: Write a test that fails.
     - Green: Write minimal code to make the test pass.
     - Refactor: Clean up the implementation without breaking tests.
@@ -400,7 +417,6 @@ logUserEvent(user, 'checked out');
   - Extract Method: Identify and extract repetitive or complex code into its own function, improving reuse and clarity.
 
   - Refactoring by Abstraction / Extract Class: Encapsulate shared logic or data into new components or classes to reduce duplication and better organize code.
-  
   - Simplify Conditionals / Guard Clauses: Replace nested or complex if-else logic with early returns or clearer constructs.
 
   - Inline Variable / Extract Variable: Simplify complex expressions by replacing or extracting into well-named variables.
@@ -409,7 +425,7 @@ logUserEvent(user, 'checked out');
 
 - Here is a JavaScript snippet simulating React Native data handling:
 
-``` javascript
+```javascript
 function handleUserFormSubmission(formData, userId, isEdit) {
   let name = formData.userName.trim();
   let email = formData.userEmail.toLowerCase();
@@ -420,10 +436,10 @@ function handleUserFormSubmission(formData, userId, isEdit) {
     api.updateUser(userId, { name, email });
   }
 
-  analytics.track('UserFormSubmitted', {
+  analytics.track("UserFormSubmitted", {
     userId,
     isNew: !isEdit,
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
   });
 }
 
@@ -437,13 +453,14 @@ function handleUserFormSubmission(formData, userId, isEdit) {
     api.updateUser(userId, { name, email });
   }
 
-  analytics.track('UserFormSubmitted', {
+  analytics.track("UserFormSubmitted", {
     userId,
     isNew: !isEdit,
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
   });
 }
 ```
+
 - Why it’s complex:
   - Performs multiple responsibilities: data formatting, API logic, and analytics, severely violating single responsibility principles.
   - Hard to read and harder to test when each task is mixed in one function.
@@ -452,7 +469,7 @@ function handleUserFormSubmission(formData, userId, isEdit) {
 
 - Here is how i would break it down into clear, single-purpose functions:
 
-``` javascript
+```javascript
 function formatUserData({ userName, userEmail }) {
   return {
     name: userName.trim(),
@@ -469,7 +486,7 @@ function submitUserData(userData, userId, isEdit) {
 }
 
 function trackFormSubmission(userId, isNew) {
-  analytics.track('UserFormSubmitted', {
+  analytics.track("UserFormSubmitted", {
     userId,
     isNew,
     timestamp: new Date().toISOString(),
@@ -497,7 +514,8 @@ function handleUserFormSubmission(formData, userId, isEdit) {
 - Testability: Each component function (format, submit, track) can be unit tested in isolation preventing flase positive test results.
 - Scalability: New features (e.g., validation middleware) can be inserted cleanly without disrupting flow.
 
-References for this issue: 
+References for this issue:
+
 - https://marutitech.com/code-refactoring-best-practices/?utm_source=chatgpt.com
 - https://algocademy.com/blog/the-comprehensive-guide-to-refactoring-and-improving-existing-code/?utm_source=chatgpt.com
 - https://codelucky.com/code-refactoring-improving-quality/?utm_source=chatgpt.com
@@ -506,39 +524,39 @@ References for this issue:
 - https://howik.com/refactoring-techniques?utm_source=chatgpt.com
 - https://victoronsoftware.com/posts/common-refactorings/?utm_source=chatgpt.com
 
-
 📌 Commenting & Documentation
 
 1. Research best practices for writing comments and documentation.
 
-- Explain why, not what: Comments should clarify the reasoning behind code, not restate what the code does. Clear code should minimize the need for comments. 
-- Avoid duplication: Do not write comments that simply repeat the code logic—it’s redundant and adds maintenance overhead. 
-- Self-documenting code: Use descriptive naming and structure so the code is easier to understand without relying heavily on comments. 
-- Be concise, consistent, and grammatically correct: Well-written comments enhance clarity; use consistent style and avoid jargon or informal language. 
+- Explain why, not what: Comments should clarify the reasoning behind code, not restate what the code does. Clear code should minimize the need for comments.
+- Avoid duplication: Do not write comments that simply repeat the code logic—it’s redundant and adds maintenance overhead.
+- Self-documenting code: Use descriptive naming and structure so the code is easier to understand without relying heavily on comments.
+- Be concise, consistent, and grammatically correct: Well-written comments enhance clarity; use consistent style and avoid jargon or informal language.
 - Use comments selectively: Add comments when code is complex, counterintuitive, or justified by external factors; otherwise, focus on improving code readability.
 
 2. Find an example of poorly commented code and rewrite the comments to be more useful.
 
 - Original (Poor Comments):
 
-``` javascript
+```javascript
 // loop through array
 for (let i = 0; i < items.length; i++) {
   // print item
   console.log(items[i]);
 }
 ```
+
 - Issues: The comments merely restate what is obvious from the code.
 
 - Refactored with meaningful commentary:
 
-``` javascript
+```javascript
 // Log each item for debugging when item list is unexpectedly empty
 for (const item of items) {
   console.log(item);
 }
-
 ```
+
 Improvement: The code is clearer, and the comment adds valuable context about when this logging is useful.
 
 3. When should you add comments?
@@ -552,40 +570,41 @@ Improvement: The code is clearer, and the comment adds valuable context about wh
 
 - If the comment simply repeats the code’s functionality.
 - When the code structure or naming can be improved to make the intent clear without comments.
-- Avoid over-commenting every line—it can clutter the code and reduce readability. 
+- Avoid over-commenting every line—it can clutter the code and reduce readability.
 - Never leave outdated comments—they create confusion and technical debt.
 
 References:
+
 - Swimm.io – Comments in Code: Best Practices and Mistakes to Avoid
-https://swimm.io/learn/code-collaboration/comments-in-code-best-practices-and-mistakes-to-avoid
+  https://swimm.io/learn/code-collaboration/comments-in-code-best-practices-and-mistakes-to-avoid
 - Wired – Commenting Your Code: What’s Too Much? Too Little?
-https://www.wired.com/2008/07/commenting-your-code-what-s-too-much-too-little
+  https://www.wired.com/2008/07/commenting-your-code-what-s-too-much-too-little
 - Codingem – How to Comment Code? (The Right Way)
-https://www.codingem.com/how-to-comment-code
+  https://www.codingem.com/how-to-comment-code
 - Stack Overflow Blog – Best Practices for Writing Code Comments
-https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments
+  https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments
 - PullChecklist – Code Documentation Best Practices
-https://www.pullchecklist.com/posts/code-documentation-best-practices
+  https://www.pullchecklist.com/posts/code-documentation-best-practices
 - Wikipedia – Self-documenting Code
-https://en.wikipedia.org/wiki/Self-documenting_code
+  https://en.wikipedia.org/wiki/Self-documenting_code
 - MIT Communication Lab – Coding and Comment Style
-https://mitcommlab.mit.edu/broad/commkit/coding-and-comment-style
+  https://mitcommlab.mit.edu/broad/commkit/coding-and-comment-style
 - AlgoCademy – How to Effectively Use Comments in Your Code
-https://algocademy.com/blog/how-to-effectively-use-comments-in-your-code-a-comprehensive-guide
+  https://algocademy.com/blog/how-to-effectively-use-comments-in-your-code-a-comprehensive-guide
 - Boot.dev – Clean Code: Code Comments
-https://blog.boot.dev/clean-code/code-comments
+  https://blog.boot.dev/clean-code/code-comments
 - Wired – The Best Way to Comment Your Code
-https://www.wired.com/2012/09/the-best-way-to-comment-your-code
+  https://www.wired.com/2012/09/the-best-way-to-comment-your-code
 
 📌 Handling Errors & Edge Cases
 
 1. Research strategies for handling errors and edge cases in code (include Guard Clauses).
 
-- Understand Edge Cases: Code must handle extreme inputs or behaviors like invalid or null inputs, empty arrays, or unexpected data types to avoid crashes or undefined behavior. 
+- Understand Edge Cases: Code must handle extreme inputs or behaviors like invalid or null inputs, empty arrays, or unexpected data types to avoid crashes or undefined behavior.
 
-- Use Guard Clauses: Immediately validate inputs and exit early if conditions aren’t met. This simplifies logic and reduces nesting. For example, instead of deeply nested otherwise check for invalid cases first and return early. 
+- Use Guard Clauses: Immediately validate inputs and exit early if conditions aren’t met. This simplifies logic and reduces nesting. For example, instead of deeply nested otherwise check for invalid cases first and return early.
 
-- Apply Defensive Programming: Anticipate and guard against invalid inputs and unexpected behaviors. Design code to fail quickly and predictably. 
+- Apply Defensive Programming: Anticipate and guard against invalid inputs and unexpected behaviors. Design code to fail quickly and predictably.
 
 - Handle Errors Thoughtfully: Avoid silent failures (error swallowing). Errors should be surfaced through meaningful messages, logs, or exceptions to aid debugging.
 
@@ -594,36 +613,41 @@ https://www.wired.com/2012/09/the-best-way-to-comment-your-code
 - As prviously stated in this .md file, i've not done any code extensive task therefore i'll be providing a personal example for the purpose of this question.
 
 - A JavaScript function that processes a user’s profile:
-``` javascript
+
+```javascript
 function getInitials(user) {
-  const names = user.name.split(' ');
-  return names[0][0].toUpperCase() + (names[1] ? names[1][0].toUpperCase() : '');
+  const names = user.name.split(" ");
+  return (
+    names[0][0].toUpperCase() + (names[1] ? names[1][0].toUpperCase() : "")
+  );
 }
 ```
+
 - Issue: This code assumes user and user.name always exist and that name includes at least one space. It will break if user is null, name is missing, or it's a single-word name.
 
 3. Refactor the function to improve error handling.
 
-``` javascript
+```javascript
 function getInitials(user) {
-  if (!user || typeof user.name !== 'string') {
-    console.error('Invalid user or name property');
-    return '';
+  if (!user || typeof user.name !== "string") {
+    console.error("Invalid user or name property");
+    return "";
   }
 
-  const parts = user.name.trim().split(' ').filter(Boolean);
+  const parts = user.name.trim().split(" ").filter(Boolean);
   if (parts.length === 0) {
-    return '';
+    return "";
   }
 
   const initials = parts
     .slice(0, 2)
-    .map(part => part[0].toUpperCase())
-    .join('');
+    .map((part) => part[0].toUpperCase())
+    .join("");
 
   return initials;
 }
 ```
+
 - Improvements:
   - Guard clauses handle invalid inputs early with logging.
   - Input validation ensures user.name is a non-empty string.
@@ -643,10 +667,11 @@ function getInitials(user) {
 - Easier debugging: Logs pinpoint where invalid input occurs, making bug resolution faster.
 
 References:
-- Guard Clauses & Early Exits: Dev.to on guard clauses and flattening control flow 
-- Reducing Nested Conditionals: Boot.dev on restructuring complex conditionals 
-- JavaScript Guard Clauses: GeeksforGeeks example and explanation 
-- Defensive Programming: Wikipedia overview of defensive coding techniques 
+
+- Guard Clauses & Early Exits: Dev.to on guard clauses and flattening control flow
+- Reducing Nested Conditionals: Boot.dev on restructuring complex conditionals
+- JavaScript Guard Clauses: GeeksforGeeks example and explanation
+- Defensive Programming: Wikipedia overview of defensive coding techniques
 - Error Swallowing Issues: Wikipedia on anti-patterns in error handling
 
 📌 Writing Unit Tests for Clean Code
@@ -669,7 +694,7 @@ Unit testing encourages writing small, focused functions that are easier to test
 
 5. What issues did you find while testing?
 
-During testing, common issues include functions failing with unexpected inputs or edge cases, inconsistent return values, or missing input validation. Dependencies between modules can make it difficult to isolate and test functions properly. Sometimes tests reveal overly complex or poorly structured code that is hard to maintain, emphasizing the need for refactoring. Unit tests thus not only catch bugs but also drive improvements in overall code quality. 
+During testing, common issues include functions failing with unexpected inputs or edge cases, inconsistent return values, or missing input validation. Dependencies between modules can make it difficult to isolate and test functions properly. Sometimes tests reveal overly complex or poorly structured code that is hard to maintain, emphasizing the need for refactoring. Unit tests thus not only catch bugs but also drive improvements in overall code quality.
 
 - Issues Found While Testing sum(a, b):
   - Non-numeric inputs are not tested
@@ -683,88 +708,3 @@ During testing, common issues include functions failing with unexpected inputs o
     - Calling sum(5) or sum() could result in NaN because undefined + number in JavaScript is NaN.
   - No test for very large negative numbers or mixed extreme values
     - Extreme positive + extreme negative combinations could be tested to ensure consistency.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
