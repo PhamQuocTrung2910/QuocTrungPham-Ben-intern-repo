@@ -1,208 +1,255 @@
-# AI Usage Guidelines
+# Git Understanding
 
-🔍 Research & Learn
+📌 Merge Conflicts & Conflict Resolution
 
-1. What AI tools are typically used for your role?
+1. Research what causes merge conflicts in Git.
 
-I typically use ChatGPT to answer simple questions, write text, do simple coding
-functions. I use Lovable.dev to create full projects and working applications
-for personal use. I use CoPilot to help with coding projects like autofilling
-sections that are obvious.
+Merge conflicts happen when Git cannot automatically reconcile differences
+between two branches you’re trying to merge. This usually occurs when changes
+affect the same lines of code or nearby sections in the same file, or when there
+are incompatible changes in the project history.
 
-I have tried to use other AI but have been unsuccessful in making them work as
-effectively as the 3 above.
+Causes:
 
-1. What are the benefits and risks of using AI in a professional setting? For
-   the purpose of this question i'll be using my position as a Mobile App
-   Developer Intern.
+- Concurrent edits to the same lines: If two people edit the same line(s) in a
+  file differently, Git doesn’t know which change to keep.
+- Overlapping changes in nearby lines: Even if edits are not on the exact same
+  line, if they’re close enough, Git might not be able to merge them cleanly.
+- File deletions and modifications: If one branch deletes a file while another
+  modifies it, Git will flag a conflict.
+- Different changes to the same file metadata: Changes to file permissions or
+  renaming can also cause conflicts.
+- Merging unrelated histories: When trying to merge two repos or branches
+  without a common ancestor, Git can’t automatically combine the histories.
 
-- Benefits
-  - Faster onboarding – AI-powered documentation or chatbots can help you
-    quickly find company policies, code snippets, or app design guidelines.
-  - Code assistance – AI tools (like GitHub Copilot) can suggest code, fix bugs,
-    or help you learn new frameworks faster.
-  - User feedback analysis – AI can process thousands of app reviews to spot
-    common issues or feature requests.
-  - Design inspiration – AI image generators or UI suggestion tools can speed up
-    mockups and wireframes.
-  - Testing and QA – AI-powered testing tools can detect bugs or performance
-    issues more efficiently.
+1. Create a merge conflict in your test repo by:
 
-- Risks
-  - Incorrect suggestions – AI-generated code might look right but contain
-    hidden bugs or security flaws.
-  - Data privacy – Using real customer data with AI tools could violate privacy
-    laws if not anonymized.
-  - Skill atrophy – Relying too much on AI for answers could slow development of
-    independent problem-solving.
-  - Bias in AI tools – Design suggestions or content generation might
-    unintentionally exclude certain user groups.
-  - Security vulnerabilities – AI-generated code could introduce exploitable
-    weaknesses.
+- Creating a branch and editing a file.
+- Switching back to main, making a conflicting edit in the same file, and
+  committing it.
+- Merging the branch back into main.
 
-1. What types of information should never be entered into AI tools?
+`"This is the merge conflict - 1"` and `"This is the merge conflict - 2"`
 
-Refering to Data-Privacy-Reflection.md these data are what i would say should
-never to accesable to AI:
+1. Use your Git desktop client to resolve the conflict.
 
-- Personally Identifiable Information (PII)
-- Full names linked with other personal details
-- Home addresses, phone numbers, email addresses
-- Government IDs (passport, driver’s license, tax ID)
+1. Write about your experience in `git_understanding.md`:
 
-- Confidential Company Data
-  - Source code or proprietary algorithms not approved for public sharing
-  - Internal business plans, financial statements, or strategy documents
-  - API keys, server credentials, or encryption keys
+- What caused the conflict?
+  - A change in the same line of an md file
 
-- Customer/User Data
-  - Login credentials, passwords, PINs
-  - Customer support tickets containing private info
-  - Payment information (credit card numbers, bank details)
+- How did you resolve it?
+  - By letting the changes on both branch go through
 
-- Legally Protected or Sensitive Info
-  - Health data covered under laws like HIPAA
-  - Legal case details
-  - Trade secrets or patentable inventions
+- What did you learn?
+  - Merge Conflicts are easy to resolve if you are able to understand what's
+    causing the conflict and what changes are actually needed
 
-- Rule of thumb: If sharing it publicly would harm the company, breach privacy
-  laws, or compromise security, don’t paste it into an AI tool unless the
-  company explicitly approves it and it’s on a secure, internal AI system.
+📌 Staging vs Committing
 
-1. How can you fact-check and validate AI-generated content to ensure accuracy?
+- Git Exercise
+  - Modify a file and try the following:
+  - Stage it but don’t commit (`git add <file>` or equivalent in your client).
+  - Check the status (`git status`).
+  - Unstage the file (`git reset HEAD <file>` or equivalent).
+  - Commit the file and observe the difference.
 
-I would personally do the following:
+Summary:  
 
-- Cross-reference with credible sources
-  - Check official websites, reputable news outlets, or peer-reviewed research.
-  - For technical info, verify against trusted documentation.
+1. What is the difference between staging and committing?
 
-- Check for recent updates
-  - AI can produce outdated info make sure to confirm dates, version numbers,
-    and current best practices.
+- Staging means selecting specific changes you want to include in your next
+  commit. The changes are placed into Git’s staging area, but they aren’t yet
+  saved to the repository’s history.
+- Committing means taking everything currently staged and creating a permanent
+  snapshot in the repository’s history with a commit message.
 
-- Verify data and statistics
-  - Trace numbers back to their original source, not just blogs that repeat
-    them.
+1. Why does Git separate these two steps?
 
-- Test technical instructions
-  - If AI gives code or steps, run them in a safe, test environment first. DO
-    NOT RUN THEM IN THE CODE BASE.
+- Git separates staging and committing so you can:
+  - Review and fine-tune exactly which changes go into a commit.
+  - Group related changes into one commit and exclude unrelated changes.
+  - Avoid committing incomplete or experimental edits accidentally.
 
-- Watch for confident but wrong answers
-  - Be skeptical of absolute statements without sources.
+1. When would you want to stage changes without committing?
 
-- Ask a human expert
-  - When in doubt, confirm with a teammate, supervisor, or an expert on the
-    matter.
+- You might stage without committing when:
+  - You want to prepare part of your work for a clean commit but are still
+    making more edits.
+  - You need to group related file changes together before committing.
+  - You’re working on a large feature and want to commit it in logical chunks
+    later.
 
-📝 Reflection
+📌 Branching & Team Collaboration
 
-1. When should you use AI for assistance, and when should you rely on your own
-   skills?
+1. Why is pushing directly to main problematic?
 
-You should use AI when:
+- It can introduce bugs directly into the live, production-ready code without
+  review.
+- It bypasses collaboration checks, meaning mistakes or incomplete features
+  could affect everyone.
+- It makes tracking changes harder since all edits pile into one branch without
+  clear feature separation.
 
-- Brainstorming ideas (UI layouts, feature names, marketing copy drafts).
-- Getting unstuck (explaining a programming concept, summarising documentation).
-- Speeding up repetitive tasks (drafting outlines, creating placeholder text,
-  generating test data).
-- Learning new tools or frameworks (getting an overview before deeper research).
+1. How do branches help with reviewing code?
 
-You shouldn't use AI when:
+- Branches isolate changes so you can develop features, fixes, or experiments
+  without touching main.
+- They make it easier to open pull requests (or merge requests) for teammates
+  to review before merging.
+- They allow discussions, suggestions, and testing to happen before code
+  reaches the main branch.
 
-- Making final design or coding decisions that affect production.
-- Handling sensitive data (never paste personal code, credentials, or customer
-  info into AI tools).
-- Following company policies or compliance rules (always check official guidance
-  first).
-- Evaluating accuracy-critical work (e.g., security settings, financial
-  figures).
+1. What happens if two people edit the same file on different branches?
 
-1. How can you avoid over-reliance on AI while still benefiting from it?
+- When the branches are later merged, Git will try to combine the changes
+  automatically.
+- If the edits affect the same lines or overlapping parts, Git can’t decide
+  which version to keep — this creates a merge conflict.
+- The conflict must be resolved manually by choosing, combining, or editing the
+  changes.
 
-- Treat AI outputs as drafts, not final answers
-  - Always review, fact-check, and refine what AI gives you.
-  - Asking myself: “Does this align with my own knowledge and the project’s
-    goals?”
+📌 Advanced Git Commands & When to Use Them
 
-- Keep practicing core skills
-  - If AI writes code, i'd try to understand and replicate the logic myself.
-  - If AI explains something, rewriting it in my own words to confirm that i've
-    learned it.
+1. What does each command do?
 
-- Set “AI boundaries”
-  - Use AI for ideas, structure, and speed, but make final decisions myself.
-  - Avoid feeding it confidential or sensitive information so you keep control
-    over risk.
+- `git checkout main -- <file>`  
+  This command allows you to restore a specific file from the main branch into
+  your current working directory—without impacting other changes around it.
+  It’s handy if you need to revert or inspect just one file from another branch.
 
-- Build a habit of independent problem-solving first
-  - Try solving a problem on my own before asking AI, it strengthens technical
-    skills.
-  - Only turn to AI if you’re stuck or need a fresh perspective.
+- `git cherry-pick <commit>`  
+  This command applies the changes from a specific commit on another branch to
+  your current branch. It’s especially useful when you want to integrate a bug
+  fix or small improvement without merging the entire branch.
 
-- Learn from the AI, not just use it
-  - Treat every AI answer as a learning opportunity, ask why it made that
-    choice.
-  - Over time, you’ll need it less for basic tasks and more for creativity or
-    efficiency.
+- `git log`  
+  This command shows the commit history of your repository—displaying each
+  commit’s hash, author, date, and message. It’s a powerful way to review how
+  the project has evolved and understand the context behind changes.
 
-1. What steps will you take to ensure data privacy when using AI tools?
+- `git blame <file>`  
+  The `git blame` command annotates each line in a file with information about
+  who last modified it and when. It helps you trace code ownership—great for
+  debugging or understanding code history.
 
-- Know the privacy policy
-  - Check the AI tool’s terms of service and data usage policy to see if it
-    stores or uses my inputs.
-  - Avoid tools that claim ownership of anything you submit unless explicitly
-    approved by Foucs bear.
+1. When would you use it in a real project?
 
-- Never enter sensitive or confidential information
-  - Never paste customer data, source code, financial records, internal
-    documents, or proprietary designs into AI tools.
-  - If you must reference sensitive content, replace details with generic
-    placeholders.
+- `git checkout main -- <file>`  
+  If another developer fixed a bug in main and you just need that single file’s
+  update without pulling everything else. For example, restoring a config file
+  that you accidentally broke while working on a feature branch.
 
-- Use company-approved AI platforms
-  - I would stick to AI tools that have been vetted and approved by Focus Bears
-    IT/security team.
+- `git cherry-pick <commit>`  
+  When a critical hotfix was committed to another branch and you need it
+  applied to yours immediately, without merging unrelated changes. Common in
+  production bug fixes.
 
-- Limit data exposure
-  - Share only the minimum amount of context needed for AI to help.
-  - If a small summary works instead of full raw data, use the summary.
+- `git log`  
+  During code reviews or troubleshooting to understand when and why a feature
+  was added, or to see what’s changed before a release.
 
-- Keep devices and accounts secure
-  - Enable two-factor authentication on AI tool accounts.
-  - Keep software updated to patch security vulnerabilities.
+- `git blame <file>`  
+  When debugging a problem and you need to see who last touched the affected
+  code lines, so you can ask for context or understand the reasoning.
 
-- Follow company data handling policies
-  - Focus Bear already have rules for data classification and storage.
-  - Making sure my AI use aligns with those guidelines.
+1. What surprised you while testing these commands?
 
-🛠️ Task
+- How `git checkout main -- <file>` instantly replaced only that file without
+  touching anything else—super precise, almost like a “surgically removing an
+  organ.”
 
-1. Identify one task you can improve using an AI tool, and try it out. I
-   attempted to use Focus Bears most recent update on 17/07/2025, It simply said
-   Fix Bugs and Improve UI/UX which in my opinion was too simple and lacking
-   impact, after the AI had a look it converted it into a more impressionable
-   description.
+- How `git cherry-pick` felt both powerful and dangerous, if you pick the wrong
+  commit or have merge conflicts, you could end up spending a lot of time fixing
+  them. I can already see myself messing this up and destroying hours of effort,
+  so I'll definitely be careful with this one.
 
-Whats New What’s New in This Update:
+- `git log` has so many formatting options (`--oneline`, `--graph`, `--author`) that it can be turned into a quick visual history of the project. I hadn't used it regularly before so I didn't know that to exit you press `q`.
 
-- Fix Bugs ---------------> - Squashed several bugs to make your app xperience
-  smoother and more reliable.
+- `git blame` isn’t just for “blaming”—it’s more like a detective tool. Seeing the exact commit that last touched each line makes understanding code history so much faster. This looks like one I should definitely be using more and I probably will whenever an error has occurred.
 
-- Improve UI/UX - Enhanced the user interface and overall user experience for
-  easier navigation and a fresher look.
+📌 Debugging with git bisect
 
-1. Review the AI-generated output critically—did it require editing or
-   fact-checking?
+1. Research git bisect and how it helps in debugging.
 
-The AI Generated output in the case above improved the details of the updates
-and this description would be beter if i was able to know exactly what bug was
-fixed and what exactly the improvements made on th UI/UX are but that would
-require more information that i do not possess.
+- Git bisect is a built-in Git command that helps you find the commit that
+  introduced a bug by performing a binary search through your project’s history.
 
-1. Document one best practice you will follow when using AI tools at Focus Bear.
+- Instead of manually checking each commit one by one (which could be hundreds
+  or thousands), Git bisect lets you mark:
+  - A good commit (where the bug didn’t exist)
+  - A bad commit (where the bug exists)
+- Then Git automatically checks out commits halfway between them, letting you
+  test until it narrows down the exact commit that introduced the problem.
 
-I will make sure that i use AI in moderation to solve the more mundane and
-repetitive task while trying to solve the actual issues myself and learning from
-them.
+1. When would you use it in a real-world debugging situation?
+
+- When a bug or error appears in your project, but you don’t know which commit
+  introduced it.
+- Particularly useful in long-running projects with many commits or multiple
+  developers.
+- Ideal for regression bugs: something that used to work suddenly breaks, and
+  you need to pinpoint the exact change causing it.
+- Helps save time when the project history is too large to manually inspect
+  every commit.
+
+1. How does it compare to manually reviewing commits?
+
+- Git bisect is faster, more accurate, scalable, systematic, and reduces human
+  error compared to manually checking commits.
+
+📌 Writing Meaningful Commit Messages
+
+1. Research best practices for writing commit messages.
+
+- Use a short, descriptive summary (50 characters or less)
+- Separate subject and body
+- Use imperative mood
+- Be concise but informative
+- Reference relevant issues or tickets
+- Group related changes
+- Use consistent style
+
+1. Explore commit histories in an open-source GitHub project (e.g., React, Node.js) and analyze good vs. bad commit messages.
+
+- Good examples: descriptive, concise, action-oriented.
+- Bad examples: vague, ambiguous, non-descriptive.
+
+1. How does a clear commit message help in team collaboration?
+
+- Quick understanding, efficient code reviews, easier debugging, improved documentation, better coordination.
+
+1. How can poor commit messages cause issues later?
+
+- Confusion, slower debugging, inefficient reviews, poor project history, merge conflicts.
+
+📌 Creating & Reviewing Pull Requests
+
+1. Research what a Pull Request (PR) is and why it’s used.
+
+- A Pull Request (PR) is a feature used in version control systems like GitHub
+  that allows developers to propose changes to a codebase and request that
+  those changes be reviewed and merged into another branch.
+
+- PRs are used for code review, collaboration, version control safety,
+  documentation, testing and validation.
+
+1. Pull Request Exercise:
+
+- Review an existing PR in a public open-source repo (e.g., React PRs):
+- Pull Request Reviewed - [React PR #34203](https://github.com/facebook/react/pull/34203)
+
+1. Why are PRs important in a team workflow?
+
+- Code review, collaboration, version control safety, documentation, testing & validation.
+
+1. What makes a well-structured PR?
+
+- Clear title and description, concise commits, linked issues, readable diffs, tests included.
+
+1. What did you learn from reviewing an open-source PR?
+
+- Collaborative reviews improve code quality and reduce bugs.
+- Clear commit messages and PR descriptions make the review process faster.
+- Discussions often highlight edge cases and alternative approaches.
+- PRs serve as documentation for the reasoning behind changes.
