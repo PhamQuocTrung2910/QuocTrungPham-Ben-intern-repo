@@ -80,8 +80,8 @@ things on a bigger screen so i'll stick with just the laptop screen.
 I've been trying to keep in mind my posture but it has been hard to consistently
 straight at all times i'll be setting up reminders on Focus Bear later on to
 build this habit. I'm still new to using Focus Bear but i've been trying to set
-up proper schedules and routines mostly to streamline my mornings so i don't have
-to constantly think of what i have to do.
+up proper schedules and routines mostly to streamline my mornings so i don't
+have to constantly think of what i have to do.
 
 1. How can you remind yourself to maintain good posture and take breaks
    throughout the day? (Hint: Use Focus Bear to schedule movement breaks!)

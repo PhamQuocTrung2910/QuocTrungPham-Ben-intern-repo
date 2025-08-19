@@ -110,8 +110,8 @@ what it should look like.
     urgent, call me directly on discord i'll always have my phone on me so i'll
     be able to pick up.
   - Collaboration & Teamwork I work best in a team when everyone is
-    contributing, talking, and willing to express their own opinions good or bad.
-    My biggest pet peeve in teamwork is if everyone is just quiet and no
+    contributing, talking, and willing to express their own opinions good or
+    bad. My biggest pet peeve in teamwork is if everyone is just quiet and no
     information is passed around making it harder to progress. If I seem quiet
     in a meeting, it usually means i've got nothing to add to the conversation
     or topic being discussed otherwise i'll be providing what i know and what i

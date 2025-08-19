@@ -387,7 +387,8 @@ function submitUserData(user, data, isAdmin, notify) {
 }
 ```
 
-- Here is the code after going through restructuring with proper indentation for better readability.
+- Here is the code after going through restructuring with proper indentation for
+  better readability.
 
 1. Why is breaking down functions beneficial?
 
