@@ -54,7 +54,7 @@ Causes:
   - Unstage the file (`git reset HEAD <file>` or equivalent).
   - Commit the file and observe the difference.
 
-Summary:  
+Summary:
 
 1. What is the difference between staging and committing?
 
@@ -95,10 +95,10 @@ Summary:
 
 - Branches isolate changes so you can develop features, fixes, or experiments
   without touching main.
-- They make it easier to open pull requests (or merge requests) for teammates
-  to review before merging.
-- They allow discussions, suggestions, and testing to happen before code
-  reaches the main branch.
+- They make it easier to open pull requests (or merge requests) for teammates to
+  review before merging.
+- They allow discussions, suggestions, and testing to happen before code reaches
+  the main branch.
 
 1. What happens if two people edit the same file on different branches?
 
@@ -115,8 +115,8 @@ Summary:
 
 - `git checkout main -- <file>`  
   This command allows you to restore a specific file from the main branch into
-  your current working directory—without impacting other changes around it.
-  It’s handy if you need to revert or inspect just one file from another branch.
+  your current working directory—without impacting other changes around it. It’s
+  handy if you need to revert or inspect just one file from another branch.
 
 - `git cherry-pick <commit>`  
   This command applies the changes from a specific commit on another branch to
@@ -141,9 +141,9 @@ Summary:
   that you accidentally broke while working on a feature branch.
 
 - `git cherry-pick <commit>`  
-  When a critical hotfix was committed to another branch and you need it
-  applied to yours immediately, without merging unrelated changes. Common in
-  production bug fixes.
+  When a critical hotfix was committed to another branch and you need it applied
+  to yours immediately, without merging unrelated changes. Common in production
+  bug fixes.
 
 - `git log`  
   During code reviews or troubleshooting to understand when and why a feature
@@ -164,9 +164,14 @@ Summary:
   them. I can already see myself messing this up and destroying hours of effort,
   so I'll definitely be careful with this one.
 
-- `git log` has so many formatting options (`--oneline`, `--graph`, `--author`) that it can be turned into a quick visual history of the project. I hadn't used it regularly before so I didn't know that to exit you press `q`.
+- `git log` has so many formatting options (`--oneline`, `--graph`, `--author`)
+  that it can be turned into a quick visual history of the project. I hadn't
+  used it regularly before so I didn't know that to exit you press `q`.
 
-- `git blame` isn’t just for “blaming”—it’s more like a detective tool. Seeing the exact commit that last touched each line makes understanding code history so much faster. This looks like one I should definitely be using more and I probably will whenever an error has occurred.
+- `git blame` isn’t just for “blaming”—it’s more like a detective tool. Seeing
+  the exact commit that last touched each line makes understanding code history
+  so much faster. This looks like one I should definitely be using more and I
+  probably will whenever an error has occurred.
 
 📌 Debugging with git bisect
 
@@ -210,26 +215,29 @@ Summary:
 - Group related changes
 - Use consistent style
 
-1. Explore commit histories in an open-source GitHub project (e.g., React, Node.js) and analyze good vs. bad commit messages.
+1. Explore commit histories in an open-source GitHub project (e.g., React,
+   Node.js) and analyze good vs. bad commit messages.
 
 - Good examples: descriptive, concise, action-oriented.
 - Bad examples: vague, ambiguous, non-descriptive.
 
 1. How does a clear commit message help in team collaboration?
 
-- Quick understanding, efficient code reviews, easier debugging, improved documentation, better coordination.
+- Quick understanding, efficient code reviews, easier debugging, improved
+  documentation, better coordination.
 
 1. How can poor commit messages cause issues later?
 
-- Confusion, slower debugging, inefficient reviews, poor project history, merge conflicts.
+- Confusion, slower debugging, inefficient reviews, poor project history, merge
+  conflicts.
 
 📌 Creating & Reviewing Pull Requests
 
 1. Research what a Pull Request (PR) is and why it’s used.
 
 - A Pull Request (PR) is a feature used in version control systems like GitHub
-  that allows developers to propose changes to a codebase and request that
-  those changes be reviewed and merged into another branch.
+  that allows developers to propose changes to a codebase and request that those
+  changes be reviewed and merged into another branch.
 
 - PRs are used for code review, collaboration, version control safety,
   documentation, testing and validation.
@@ -237,15 +245,18 @@ Summary:
 1. Pull Request Exercise:
 
 - Review an existing PR in a public open-source repo (e.g., React PRs):
-- Pull Request Reviewed - [React PR #34203](https://github.com/facebook/react/pull/34203)
+- Pull Request Reviewed -
+  [React PR #34203](https://github.com/facebook/react/pull/34203)
 
 1. Why are PRs important in a team workflow?
 
-- Code review, collaboration, version control safety, documentation, testing & validation.
+- Code review, collaboration, version control safety, documentation, testing &
+  validation.
 
 1. What makes a well-structured PR?
 
-- Clear title and description, concise commits, linked issues, readable diffs, tests included.
+- Clear title and description, concise commits, linked issues, readable diffs,
+  tests included.
 
 1. What did you learn from reviewing an open-source PR?
 
