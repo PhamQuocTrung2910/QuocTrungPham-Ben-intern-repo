@@ -1,7 +1,5 @@
 # Agile Ceremonies
 
-🔍 Research & Learn
-
 1. What are the main Agile ceremonies, and what is their purpose?
 
 - Daily Stand-ups
@@ -28,7 +26,7 @@
   - Regular sessions to review and clarify backlog items, ensure they are
     well-defined, and re-prioritize if necessary, it helps the team stay ready
     for future work and prevents last-minute surprises.
-
+    
 1. How do Agile teams collaborate asynchronously and across time zones?
 
 - Use project management tools (e.g., Jira, Trello) to track progress visually.
@@ -38,7 +36,7 @@
   discuss without requiring real-time meetings.
 - Overlap working hours where possible for critical discussions.
 
-📝 Reflection
+
 
 1. How do Agile ceremonies help with communication and alignment?
 
@@ -53,8 +51,6 @@
   because they keep me updated on what others are doing, help me quickly flag
   blockers, and give me a chance to align my work with ongoing tasks in
   real-time. Also gives me time to share my progress with the team.
-
-🛠️ Task
 
 1. Attend a stand-up meeting and observe how updates are shared.
 
