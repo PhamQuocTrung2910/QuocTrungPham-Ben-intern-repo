@@ -139,7 +139,7 @@ Summary:
   - A bad commit (where the bug exists)
 - Then Git automatically checks out commits halfway between them, letting you test until it narrows down the exact commit that introduced the problem.
 
-2.  When would you use it in a real-world debugging situation?
+2. When would you use it in a real-world debugging situation?
 
 - When a bug or error appears in your project, but you don’t know which commit introduced it.
 - Particularly useful in long-running projects with many commits or multiple developers.
@@ -291,7 +291,7 @@ Pull Request Exercise:
 - Read through comments and discussions.
 - Observe how changes are requested and approved.
 
-Pull Request Reviewed - https://github.com/facebook/react/pull/34203
+Pull Request Reviewed - <https://github.com/facebook/react/pull/34203>
 
 - Overview of PR #34203: [compiler]: allow self-referencing callbacks with empty deps in useCallback
 

@@ -73,9 +73,11 @@ npm install
 #### **Create a `.env` File**
 
 1. Copy the example file:
+
    ```sh
    cp .env.sample .env
    ```
+
 2. Open `.env` and edit the following:
 
    ```ini
@@ -123,6 +125,6 @@ This will **copy all issues, labels, and milestones** into your new repository.
 
 ---
 
-## 🎉 Congratulations!
+## 🎉 Congratulations
 
 You have successfully set up your own project repository! Now, move on to your first assigned issue and get started. 🚀

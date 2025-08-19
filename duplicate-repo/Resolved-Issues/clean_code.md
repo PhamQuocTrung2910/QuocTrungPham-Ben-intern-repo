@@ -516,13 +516,13 @@ function handleUserFormSubmission(formData, userId, isEdit) {
 
 References for this issue:
 
-- https://marutitech.com/code-refactoring-best-practices/?utm_source=chatgpt.com
-- https://algocademy.com/blog/the-comprehensive-guide-to-refactoring-and-improving-existing-code/?utm_source=chatgpt.com
-- https://codelucky.com/code-refactoring-improving-quality/?utm_source=chatgpt.com
-- https://www.geeksforgeeks.org/software-engineering/code-refactoring-techniques-in-software-engineering/?utm_source=chatgpt.com
-- https://newdigitalstreet.com/code-refactoring/?utm_source=chatgpt.com
-- https://howik.com/refactoring-techniques?utm_source=chatgpt.com
-- https://victoronsoftware.com/posts/common-refactorings/?utm_source=chatgpt.com
+- <https://marutitech.com/code-refactoring-best-practices/?utm_source=chatgpt.com>
+- <https://algocademy.com/blog/the-comprehensive-guide-to-refactoring-and-improving-existing-code/?utm_source=chatgpt.com>
+- <https://codelucky.com/code-refactoring-improving-quality/?utm_source=chatgpt.com>
+- <https://www.geeksforgeeks.org/software-engineering/code-refactoring-techniques-in-software-engineering/?utm_source=chatgpt.com>
+- <https://newdigitalstreet.com/code-refactoring/?utm_source=chatgpt.com>
+- <https://howik.com/refactoring-techniques?utm_source=chatgpt.com>
+- <https://victoronsoftware.com/posts/common-refactorings/?utm_source=chatgpt.com>
 
 📌 Commenting & Documentation
 
@@ -576,25 +576,25 @@ Improvement: The code is clearer, and the comment adds valuable context about wh
 References:
 
 - Swimm.io – Comments in Code: Best Practices and Mistakes to Avoid
-  https://swimm.io/learn/code-collaboration/comments-in-code-best-practices-and-mistakes-to-avoid
+  <https://swimm.io/learn/code-collaboration/comments-in-code-best-practices-and-mistakes-to-avoid>
 - Wired – Commenting Your Code: What’s Too Much? Too Little?
-  https://www.wired.com/2008/07/commenting-your-code-what-s-too-much-too-little
+  <https://www.wired.com/2008/07/commenting-your-code-what-s-too-much-too-little>
 - Codingem – How to Comment Code? (The Right Way)
-  https://www.codingem.com/how-to-comment-code
+  <https://www.codingem.com/how-to-comment-code>
 - Stack Overflow Blog – Best Practices for Writing Code Comments
-  https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments
+  <https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments>
 - PullChecklist – Code Documentation Best Practices
-  https://www.pullchecklist.com/posts/code-documentation-best-practices
+  <https://www.pullchecklist.com/posts/code-documentation-best-practices>
 - Wikipedia – Self-documenting Code
-  https://en.wikipedia.org/wiki/Self-documenting_code
+  <https://en.wikipedia.org/wiki/Self-documenting_code>
 - MIT Communication Lab – Coding and Comment Style
-  https://mitcommlab.mit.edu/broad/commkit/coding-and-comment-style
+  <https://mitcommlab.mit.edu/broad/commkit/coding-and-comment-style>
 - AlgoCademy – How to Effectively Use Comments in Your Code
-  https://algocademy.com/blog/how-to-effectively-use-comments-in-your-code-a-comprehensive-guide
+  <https://algocademy.com/blog/how-to-effectively-use-comments-in-your-code-a-comprehensive-guide>
 - Boot.dev – Clean Code: Code Comments
-  https://blog.boot.dev/clean-code/code-comments
+  <https://blog.boot.dev/clean-code/code-comments>
 - Wired – The Best Way to Comment Your Code
-  https://www.wired.com/2012/09/the-best-way-to-comment-your-code
+  <https://www.wired.com/2012/09/the-best-way-to-comment-your-code>
 
 📌 Handling Errors & Edge Cases
 

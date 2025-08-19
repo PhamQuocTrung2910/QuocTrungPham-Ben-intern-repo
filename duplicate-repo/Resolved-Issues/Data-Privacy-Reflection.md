@@ -4,13 +4,13 @@
 
 - Who Controls Your Data
 
-* Data Controller: Focus Bear Pty Ltd (based in Australia) is responsible for your data. You can contact them at privacy@focusbear.io.
+- Data Controller: Focus Bear Pty Ltd (based in Australia) is responsible for your data. You can contact them at <privacy@focusbear.io>.
 
-* EU Representation & DPO: They’ve appointed by Data—based in Spain—as their EU representative and Data Protection Officer. Any GDPR-related queries can be directed to them.
+- EU Representation & DPO: They’ve appointed by Data—based in Spain—as their EU representative and Data Protection Officer. Any GDPR-related queries can be directed to them.
 
 - What Data is Collected & Why
 
-* Personal data types include:
+- Personal data types include:
   - Identification (email, phone) for login
   - Lifestyle and habit info (even sensitive data like ADHD status), double encrypted and anonymised in surveys
   - Technical usage data (device, OS, crash logs)
@@ -19,9 +19,9 @@
 
 - Usage Purposes & Legal Basis
 
-* Data serves a wide range of purposes: account management, customer service, marketing (opt-in), analytics, social media, security, and legal compliance.
+- Data serves a wide range of purposes: account management, customer service, marketing (opt-in), analytics, social media, security, and legal compliance.
 
-* Legal grounds include:
+- Legal grounds include:
   - Consent (clear opt-in)
   - Contractual necessity
   - Legal obligations
@@ -29,20 +29,20 @@
 
 - Data Retention & Rights
 
-* Data is held only as long as needed to fulfill its purpose, adhere to legal requirements, or for anonymized statistical purposes.
-* Users have full GDPR rights—access, correction, deletion, portability, objection, and more—by contacting Focus Bear or their DPO.
-* You may also file complaints with the Australian Information Commissioner or a European supervisory authority
+- Data is held only as long as needed to fulfill its purpose, adhere to legal requirements, or for anonymized statistical purposes.
+- Users have full GDPR rights—access, correction, deletion, portability, objection, and more—by contacting Focus Bear or their DPO.
+- You may also file complaints with the Australian Information Commissioner or a European supervisory authority
   Focus Bear.
 
 - Third Party Sharing & Security
 
-* Data may be shared with trusted third parties for operations like email marketing (Brevo), analytics (Google, PostHog), chat functionality (Zoho), hosting (Webflow), AI (OpenAI), payments (Stripe, RevenueCat), and more.
-* Focus Bear ensures that all partners adhere to frameworks such as GDPR, EU-US Data Privacy Framework, and CCPA, depending on the provider.
+- Data may be shared with trusted third parties for operations like email marketing (Brevo), analytics (Google, PostHog), chat functionality (Zoho), hosting (Webflow), AI (OpenAI), payments (Stripe, RevenueCat), and more.
+- Focus Bear ensures that all partners adhere to frameworks such as GDPR, EU-US Data Privacy Framework, and CCPA, depending on the provider.
 
 - AI Use & Special Protections
 
-* Separate AI Privacy Addendum (July 2025): Focus Bear uses AI (e.g., OpenAI) to generate motivational messages and evaluate website content relevance during focus sessions.
-* This data use is minimal—only routine streaks and habit data—and avoids identifying details. Users are explicitly advised not to include personal identifiers in habit descriptions.
+- Separate AI Privacy Addendum (July 2025): Focus Bear uses AI (e.g., OpenAI) to generate motivational messages and evaluate website content relevance during focus sessions.
+- This data use is minimal—only routine streaks and habit data—and avoids identifying details. Users are explicitly advised not to include personal identifiers in habit descriptions.
 
 2. What types of data are considered confidential at Focus Bear?
 
