@@ -1,3 +1,5 @@
+# Agile Principles
+
 🔍 Research & Learn
 
 1. What is Agile, and how does it differ from traditional project management?

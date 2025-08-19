@@ -1,3 +1,5 @@
+# Agile Ceremonies
+
 🔍 Research & Learn
 
 1. What are the main Agile ceremonies, and what is their purpose?

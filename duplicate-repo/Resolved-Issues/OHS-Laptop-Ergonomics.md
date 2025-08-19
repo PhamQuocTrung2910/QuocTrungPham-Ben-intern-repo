@@ -1,3 +1,5 @@
+# OHS Laptop Ergonomics
+
 🔍 Research & Learn
 
 1. What are the risks of using a laptop without an external monitor or keyboard?

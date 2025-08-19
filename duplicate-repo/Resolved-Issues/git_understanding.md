@@ -1,3 +1,5 @@
+# Git Understanding
+
 📌 Merge Conflicts & Conflict Resolution
 
 1. Research what causes merge conflicts in Git.

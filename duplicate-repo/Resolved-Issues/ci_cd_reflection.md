@@ -1,3 +1,5 @@
+# CI/CD Reflection
+
 1. Research what CI/CD is and why it’s used in software development.
 
 - CI (Continuous Integration): Developers frequently merge code changes into a shared repository. Automated builds and tests run to detect issues early.

@@ -1,3 +1,5 @@
+# Company Reflection
+
 1️⃣ Understanding Focus Bear’s Mission & Vision
 
 📌 Explore the Focus Bear website to learn about the company’s mission, vision, and key features.

@@ -1,3 +1,5 @@
+# AI Tools
+
 1. Which AI tools did you try?
 
 - I used ChatGPT to generate code snippets, debug simple problems, and explain new programming concepts.

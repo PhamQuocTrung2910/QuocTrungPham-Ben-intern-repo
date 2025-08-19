@@ -1,3 +1,5 @@
+# Code Smells
+
 1. Research common code smells and how they impact code quality.
 
 - Code smells are indicators of potential problems in a codebase. They are not bugs themselves, but they suggest areas where the code may become difficult to maintain, extend, or debug. Detecting code smells early allows developers to refactor and maintain high-quality, sustainable code.

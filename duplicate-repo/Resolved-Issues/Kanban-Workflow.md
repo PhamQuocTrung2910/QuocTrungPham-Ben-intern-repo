@@ -1,3 +1,5 @@
+# Kanban Workflow
+
 🔍 Research & Learn
 
 1. How does a Kanban board work, and how does it help manage workflow?

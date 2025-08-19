@@ -1,3 +1,5 @@
+# VSCode Productivity
+
 1. Research VS Code shortcuts and list at least 10 shortcuts that you find useful (multiple cursors are a must have).
 
 - Ctrl + P — Quick file open

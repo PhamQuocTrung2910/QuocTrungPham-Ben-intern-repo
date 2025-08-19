@@ -1,3 +1,5 @@
+# Agile Roles
+
 🔍 Research & Learn
 
 1. What are the key roles in an Agile team, and what does each role do?

@@ -1,3 +1,5 @@
+# Data Privacy Reflection
+
 🔍 Research & Learn
 
 1. Review Focus Bear’s privacy policy and note key takeaways. (Hint: The privacy policy is available here.)

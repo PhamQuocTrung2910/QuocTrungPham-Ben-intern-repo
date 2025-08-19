@@ -1,3 +1,5 @@
+# Competitive Landscape
+
 📌 Be completely honest in your evaluation—Focus Bear might not always be better than other tools, and that’s okay! The goal is to understand the competitive landscape and think critically about where Focus Bear stands.
 
 📌 Research other productivity and focus apps such as:

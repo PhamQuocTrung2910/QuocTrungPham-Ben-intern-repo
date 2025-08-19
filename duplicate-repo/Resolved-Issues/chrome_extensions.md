@@ -1,3 +1,5 @@
+# Chrome Extensions
+
 1. Which extensions did you install? Why?
 
 - React Developer Tools: To inspect and debug React components in real time.

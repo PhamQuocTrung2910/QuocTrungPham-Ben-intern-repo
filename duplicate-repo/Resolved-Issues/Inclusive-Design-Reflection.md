@@ -1,3 +1,5 @@
+# Inclusive Design Reflection
+
 🔍 Research & Learn
 
 1. Who are considered vulnerable populations, and what challenges might they face in digital spaces?
