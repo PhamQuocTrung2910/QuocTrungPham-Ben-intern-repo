@@ -104,7 +104,7 @@ I would personally do the following:
 You should use AI when:
 
 - Brainstorming ideas (UI layouts, feature names, marketing copy drafts).
-- Getting unstuck (explaining a programming concept, summarising  documentation).
+- Getting unstuck (explaining a programming concept, summarising documentation).
 - Speeding up repetitive tasks (drafting outlines, creating placeholder text,
   generating test data).
 - Learning new tools or frameworks (getting an overview before deeper research).

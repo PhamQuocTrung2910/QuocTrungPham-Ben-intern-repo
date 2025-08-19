@@ -100,7 +100,7 @@ I have 2FA on some of my more important platforms such as the student portals,
 camera's, and Gmails. I have been slacking on the password part as i use
 relatively similar ones on a lot of my platforms but i've been trying out new
 and more unique passwords and working towards changing all the passwords for my
-more imporrtant platforms.
+more important platforms.
 
 1. How can you make secure behaviour a habit rather than an afterthought?
 
