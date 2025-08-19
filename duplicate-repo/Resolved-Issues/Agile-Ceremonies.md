@@ -29,7 +29,7 @@
     well-defined, and re-prioritize if necessary, it helps the team stay ready
     for future work and prevents last-minute surprises.
 
-2. How do Agile teams collaborate asynchronously and across time zones?
+1. How do Agile teams collaborate asynchronously and across time zones?
 
 - Use project management tools (e.g., Jira, Trello) to track progress visually.
 - Maintain updated documentation in shared spaces like Confluence or Notion.
@@ -47,7 +47,7 @@
   everyone has the same understanding of priorities and goals, even when working
   remotely or asynchronously.
 
-2. Which ceremony do you think is most important for your role, and why?
+1. Which ceremony do you think is most important for your role, and why?
 
 - For a Mobile App Developer Intern, Daily Stand-ups are the most important
   because they keep me updated on what others are doing, help me quickly flag
@@ -62,12 +62,12 @@ I have attended several meetings so far and at Focus Bear there have been many
 interesting topics discussed such as with the topic on user created routines and
 many more i'm looking forward to hearing about and helping out.
 
-2. Participate in a retrospective or review past notes from one.
+1. Participate in a retrospective or review past notes from one.
 
 I've reviewed some of the notes from standups i couldn't attend to keep up to
 date.
 
-3. Document one change you can make to improve your team collaboration.
+1. Document one change you can make to improve your team collaboration.
 
 Since I am still in the onboarding phase, one change I can make to improve
 collaboration is to proactively ask clarifying questions in our team chat when
