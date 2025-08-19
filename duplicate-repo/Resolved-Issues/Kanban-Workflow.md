@@ -56,7 +56,7 @@
 1. Move at least one task through the Kanban process and update its status
    correctly.
 
-- While i have seen some of the KanBan Board duuring the stand up meeeting with
+- While i have seen some of the KanBan Board duuring the stand up meeting with
   Jeremy's screen i'm currently unable to access the Focus Bear KanBan board.
 
 1. Identify one way you can improve task tracking in your role.

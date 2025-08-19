@@ -123,7 +123,7 @@ Improvements:
 
 1. What issues did the linter detect?
 
-Linter Currently Doesnt detect any issues as i've not entered the Version of
+Linter Currently doesn't detect any issues as i've not entered the Version of
 React into its settings as i have not reached the stage where react is relevant.
 
 1. Did formatting the code make it easier to read?
@@ -615,7 +615,7 @@ function handleUserFormSubmission(formData, userId, isEdit) {
 - Reusability: Formatting logic (formatUserData) can be reused elsewhere
   decreasing code repetition.
 - Testability: Each component function (format, submit, track) can be unit
-  tested in isolation preventing flase positive test results.
+  tested in isolation preventing false positive test results.
 - Scalability: New features (e.g., validation middleware) can be inserted
   cleanly without disrupting flow.
 
@@ -736,7 +736,7 @@ References:
 1. Find an existing function that doesn’t properly handle errors or invalid
    inputs.
 
-- As prviously stated in this .md file, i've not done any code extensive task
+- As previously stated in this .md file, i've not done any code extensive task
   therefore i'll be providing a personal example for the purpose of this
   question.
 
@@ -853,7 +853,7 @@ only catch bugs but also drive improvements in overall code quality.
   - Non-numeric inputs are not tested
     - What happens if someone calls sum('2', 3) or sum(null, 5)?
     - Currently, the function will likely coerce or throw an unexpected result.
-      Adding tests for invalid inputs will prevent suh bugs from occuring.
+      Adding tests for invalid inputs will prevent suh bugs from occurring.
   - Edge cases like Infinity or NaN are not tested
     - E.g., sum(Infinity, 1) or sum(NaN, 5) could produce results that might
       break dependent code.

@@ -18,7 +18,7 @@ I learned about merge conflicts and why they occur, especially how concurrent
 changes to the same lines or files can prevent automatic merging. Understanding
 how to resolve conflicts manually was particularly enlightening. When i used Git
 previously it was very uncommon to have merge conflicts as we often had people
-working on a certain part for most of the project to prevent it from occuring,
+working on a certain part for most of the project to prevent it from occurring,
 however in actual companies i understand that one task may have multiple people
 working on it and there might be conflicts due to a variety of reasons such as
 miscommunication.

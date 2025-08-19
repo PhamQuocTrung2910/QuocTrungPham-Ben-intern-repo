@@ -204,5 +204,5 @@ adopt immediately without technical changes.
 
 Document at least one key learning or security measure you will implement.
 
-As stated above i'll start logging out and locking my device everytime i am away
+As stated above i'll start logging out and locking my device every time i am away
 from it to stop attempts of unauthorized access of sensitive files.

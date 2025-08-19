@@ -121,7 +121,7 @@ Mobile App.
    information/action from them? How would you escalate it further if you don't
    get a response and when would you escalate?
 
-As stated previosly in the summary the order should go Email, Discord/Teams,
+As stated previously in the summary the order should go Email, Discord/Teams,
 SMS, Call You should only start escalating ahead once the estimated time for the
 action is over, for example you should only Go SMS only after 24 hous of no
 response from discord.

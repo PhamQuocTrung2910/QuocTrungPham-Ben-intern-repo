@@ -43,7 +43,7 @@ effectively as the 3 above.
 1. What types of information should never be entered into AI tools?
 
 Refering to Data-Privacy-Reflection.md these data are what i would say should
-never to accesable to AI:
+never to accessible to AI:
 
 - Personally Identifiable Information (PII)
 - Full names linked with other personal details
@@ -153,7 +153,7 @@ You shouldn't use AI when:
   - Check the AI tool’s terms of service and data usage policy to see if it
     stores or uses my inputs.
   - Avoid tools that claim ownership of anything you submit unless explicitly
-    approved by Foucs bear.
+    approved by Focus bear.
 
 - Never enter sensitive or confidential information
   - Never paste customer data, source code, financial records, internal
@@ -197,7 +197,7 @@ Whats New What’s New in This Update:
    fact-checking?
 
 The AI Generated output in the case above improved the details of the updates
-and this description would be beter if i was able to know exactly what bug was
+and this description would be better if i was able to know exactly what bug was
 fixed and what exactly the improvements made on th UI/UX are but that would
 require more information that i do not possess.
 

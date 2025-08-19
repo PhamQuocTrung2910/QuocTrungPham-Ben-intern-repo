@@ -100,7 +100,7 @@ what it should look like.
   - My role I am working on finishing my Onboarding Task The days and times I
     work are: Mondays, Tuesdays, Fridays from 12 to 17
   - How I Work Best I do my best work when you give me clear instructions on
-    what needs to be done and when it needs to be donw by. I struggle when there
+    what needs to be done and when it needs to be done by. I struggle when there
     are unclear details in the instruction as i worry about the end product not
     being what is required.
   - Communication Style I prefer messages to be detailed and to the point when
@@ -112,7 +112,7 @@ what it should look like.
   - Collaboration & Teamwork I work best in a team when everyone is
     contributing, talking, and willing to express their own opnions good or bad.
     My biggest pet peeve in teamwork is if everyone is just quiet and no
-    informations is passsed around making it harder to progress. If I seem quiet
+    information is passed around making it harder to progress. If I seem quiet
     in a meeting, it usually means i've got nothing to add to the conversation
     or topic being discussed otherwise i'll be providing what i know and what i
     think.
@@ -121,7 +121,7 @@ what it should look like.
     to support my productivity is to give me a task and a time it needs to be
     completed by then i'll be able to plan ahead when things need to be done.
   - Feedback & Growth I like feedback to be direct with examples of what went
-    wrong and how i can improve as i dont tend to make the same mistake twice.
+    wrong and how i can improve as i don't tend to make the same mistake twice.
     When I make a mistake, the best way to let me know is just to tell me
     directly or just shoot me a text if i'm not in the office i'll quickly make
     time to find out what the mistake was and how i can fix it. I appreciate it
