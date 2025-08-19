@@ -22,7 +22,7 @@ Causes:
 - Merging unrelated histories: When trying to merge two repos or branches
   without a common ancestor, Git can’t automatically combine the histories.
 
-2. Create a merge conflict in your test repo by:
+1. Create a merge conflict in your test repo by:
 
 - Creating a branch and editing a file.
 - Switching back to main, making a conflicting edit in the same file, and
@@ -31,9 +31,9 @@ Causes:
 
 "This is the merge conflict - 1" "This is the merge conflict - 2"
 
-3. Use your Git desktop client to resolve the conflict.
+1. Use your Git desktop client to resolve the conflict.
 
-4. Write about your experience in git_understanding.md:
+1. Write about your experience in git_understanding.md:
 
 - What caused the conflict?
 
@@ -53,9 +53,9 @@ the conflict and what changes are actually needed
 - Git Exercise
 
 1. Modify a file and try the following:
-2. Stage it but don’t commit (git add <file> or equivalent in your client).
-3. Check the status (git status).
-4. Unstage the file (git reset HEAD <file> or equivalent).
+1. Stage it but don’t commit (git add <file> or equivalent in your client).
+1. Check the status (git status).
+1. Unstage the file (git reset HEAD <file> or equivalent).
 5. Commit the file and observe the difference.
 
 Summary:
@@ -68,14 +68,14 @@ Summary:
 - Committing means taking everything currently staged and creating a permanent
   snapshot in the repository’s history with a commit message.
 
-2. Why does Git separate these two steps?
+1. Why does Git separate these two steps?
 
 - Git separates staging and committing so you can:
   - Review and fine-tune exactly which changes go into a commit.
   - Group related changes into one commit and exclude unrelated changes.
   - Avoid committing incomplete or experimental edits accidentally.
 
-3. When would you want to stage changes without committing?
+1. When would you want to stage changes without committing?
 
 - You might stage without committing when:
   - You want to prepare part of your work for a clean commit but are still
@@ -95,7 +95,7 @@ Summary:
 - It makes tracking changes harder since all edits pile into one branch without
   clear feature separation.
 
-2. How do branches help with reviewing code?
+1. How do branches help with reviewing code?
 
 - Branches isolate changes so you can develop features, fixes, or experiments
   without touching main.
@@ -104,7 +104,7 @@ Summary:
 - They allow discussions, suggestions, and testing to happen before code reaches
   the main branch.
 
-3. What happens if two people edit the same file on different branches?
+1. What happens if two people edit the same file on different branches?
 
 - When the branches are later merged, Git will try to combine the changes
   automatically.
@@ -135,7 +135,7 @@ Summary:
   information about who last modified it and when. It helps you trace code
   ownership—great for debugging or understanding code history.
 
-2. When would you use it in a real project (hint: these are all really important
+1. When would you use it in a real project (hint: these are all really important
    in long running projects with multiple developers)?
 
 - git checkout main -- <file> If another developer fixed a bug in main and you
@@ -154,7 +154,7 @@ Summary:
   the affected code lines, so you can ask for context or understand the
   reasoning.
 
-3. What surprised you while testing these commands?
+1. What surprised you while testing these commands?
 
 - How git checkout main -- <file> instantly replaced only that file without
   touching anything else—super precise, almost like a “surgically removing an
@@ -189,7 +189,7 @@ Summary:
 - Then Git automatically checks out commits halfway between them, letting you
   test until it narrows down the exact commit that introduced the problem.
 
-2. When would you use it in a real-world debugging situation?
+1. When would you use it in a real-world debugging situation?
 
 - When a bug or error appears in your project, but you don’t know which commit
   introduced it.
@@ -200,7 +200,7 @@ Summary:
 - Helps save time when the project history is too large to manually inspect
   every commit.
 
-3. How does it compare to manually reviewing commits?
+1. How does it compare to manually reviewing commits?
 
 - Here’s a direct comparison of git bisect vs manually reviewing commits:
   - Speed:
@@ -262,7 +262,7 @@ Summary:
 - Use consistent style
   - Follow your team or project’s commit message conventions for readability.
 
-2. Explore commit histories in an open-source GitHub project (e.g., React,
+1. Explore commit histories in an open-source GitHub project (e.g., React,
    Node.js) and analyze good vs. bad commit messages.
 
 - React Commit History
@@ -320,7 +320,7 @@ Summary:
     context.
   - Lack of action: Fails to convey what the commit accomplishes.
 
-3. How does a clear commit message help in team collaboration?
+1. How does a clear commit message help in team collaboration?
 
 - Quick understanding: Team members can immediately know what a commit does
   without digging into the code
@@ -333,7 +333,7 @@ Summary:
 - Better coordination: Makes merging, branching, and collaboration smoother,
   especially in larger teams.
 
-4. How can poor commit messages cause issues later?
+1. How can poor commit messages cause issues later?
 
 - Confusion: Team members may not understand why changes were made.
 - Slower debugging: It’s harder to trace bugs or regressions if commits are
@@ -348,8 +348,8 @@ Summary:
 Commit Excercise:
 
 1. A vague commit message
-2. An overly detailed commit message.
-3. A well-structured commit message.
+1. An overly detailed commit message.
+1. A well-structured commit message.
 
 📌 Creating & Reviewing Pull Requests
 
@@ -379,7 +379,7 @@ Pull Request Exercise:
 
 "Small change"
 
-2. Review an existing PR in a public open-source repo (e.g., React PRs):
+1. Review an existing PR in a public open-source repo (e.g., React PRs):
 
 - Read through comments and discussions.
 - Observe how changes are requested and approved.
@@ -422,7 +422,7 @@ were deemed beneficial for the project's progression.
       process, highlighting the importance of clear communication and adherence
       to coding standards in open-source contributions.
 
-3. Why are PRs important in a team workflow?
+1. Why are PRs important in a team workflow?
 
 - Code review: PRs let teammates review and suggest improvements before merging,
   ensuring higher code quality.
@@ -434,7 +434,7 @@ were deemed beneficial for the project's progression.
   maintainers.
 - Testing & validation: Often triggers automated tests to catch issues early.
 
-4. What makes a well-structured PR?
+1. What makes a well-structured PR?
 
 - Clear title and description: Explains what the PR does and why.
 - Concise, meaningful commits: Each commit has a purpose and uses good messages.

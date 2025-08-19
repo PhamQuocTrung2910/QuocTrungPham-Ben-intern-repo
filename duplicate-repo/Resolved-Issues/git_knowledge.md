@@ -6,13 +6,13 @@ Yes, I’ve used Git for version control in personal projects and coursework. I�
 used it to track changes in code, collaborate with classmates on group
 assignments, and manage different branches for feature development.
 
-2. Which Git client (if any) did you choose? Why?
+1. Which Git client (if any) did you choose? Why?
 
 I primarily use GitHub Desktop for quick visual commits and repository
 management since it’s more user-friendly for reviewing changes. I've also
 recently been using Git on VSCode for some projects.
 
-3. What was the most interesting thing you learned about Git today?
+1. What was the most interesting thing you learned about Git today?
 
 I learned about merge conflicts and why they occur, especially how concurrent
 changes to the same lines or files can prevent automatic merging. Understanding

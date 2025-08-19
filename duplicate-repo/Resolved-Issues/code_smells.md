@@ -71,7 +71,7 @@
   - Martin, R. C. (2008). Clean Code: A Handbook of Agile Software
     Craftsmanship. Prentice Hall.
 
-2. Find or write code examples that demonstrate the following code smells:
+1. Find or write code examples that demonstrate the following code smells:
 
 - Magic Numbers & Strings: Using hardcoded values without explanation can make
   code unclear and difficult to modify. Replacing them with named constants
@@ -102,7 +102,7 @@
   names can lead to confusion and errors. Using descriptive and consistent
   naming conventions improves code clarity.
 
-3. Refactor the code to eliminate these code smells.
+1. Refactor the code to eliminate these code smells.
 
 Here are the examples of i'll be using to demonstrate code smells:
 
@@ -256,7 +256,7 @@ let userAge = 10;
 let userName = "John Doe";
 ```
 
-4. What code smells did you find in your code?
+1. What code smells did you find in your code?
 
 - Here were the code smells in each of the example i've given:
   - Magic Numbers: The use of 0.1 in the discount calculation without
@@ -273,7 +273,7 @@ let userName = "John Doe";
     confusion.
   - Inconsistent Naming: Variables like x and y lack descriptive names.
 
-5. How did refactoring improve the readability and maintainability of the code?
+1. How did refactoring improve the readability and maintainability of the code?
 
 - Refactoring the code to address these smells has several benefits:
   - Enhanced Clarity: Using named constants and descriptive function names makes
@@ -289,7 +289,7 @@ let userName = "John Doe";
   - Consistent Naming: Using descriptive and consistent naming conventions
     improves code clarity and reduces misunderstandings.
 
-6. How can avoiding code smells make future debugging easier?
+1. How can avoiding code smells make future debugging easier?
 
 - Avoiding code smells can significantly ease future debugging:
   - Fewer Bugs: Clean, modular code is less likely to contain hidden bugs,

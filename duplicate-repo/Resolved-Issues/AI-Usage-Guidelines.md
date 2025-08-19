@@ -12,7 +12,7 @@ sections that are obvious.
 I have tried to use other AI but have been unsuccessful in making them work as
 effectively as the 3 above.
 
-2. What are the benefits and risks of using AI in a professional setting? For
+1. What are the benefits and risks of using AI in a professional setting? For
    the purpose of this question i'll be using my position as a Mobile App
    Developer Intern.
 
@@ -40,7 +40,7 @@ effectively as the 3 above.
   - Security vulnerabilities – AI-generated code could introduce exploitable
     weaknesses.
 
-3. What types of information should never be entered into AI tools?
+1. What types of information should never be entered into AI tools?
 
 Refering to Data-Privacy-Reflection.md these data are what i would say should
 never to accesable to AI:
@@ -69,7 +69,7 @@ never to accesable to AI:
   laws, or compromise security, don’t paste it into an AI tool unless the
   company explicitly approves it and it’s on a secure, internal AI system.
 
-4. How can you fact-check and validate AI-generated content to ensure accuracy?
+1. How can you fact-check and validate AI-generated content to ensure accuracy?
 
 I would personally do the following:
 
@@ -119,7 +119,7 @@ You shouldn't use AI when:
 - Evaluating accuracy-critical work (e.g., security settings, financial
   figures).
 
-2. How can you avoid over-reliance on AI while still benefiting from it?
+1. How can you avoid over-reliance on AI while still benefiting from it?
 
 - Treat AI outputs as drafts, not final answers
   - Always review, fact-check, and refine what AI gives you.
@@ -147,7 +147,7 @@ You shouldn't use AI when:
   - Over time, you’ll need it less for basic tasks and more for creativity or
     efficiency.
 
-3. What steps will you take to ensure data privacy when using AI tools?
+1. What steps will you take to ensure data privacy when using AI tools?
 
 - Know the privacy policy
   - Check the AI tool’s terms of service and data usage policy to see if it
@@ -193,7 +193,7 @@ Whats New What’s New in This Update:
 - Improve UI/UX - Enhanced the user interface and overall user experience for
   easier navigation and a fresher look.
 
-2. Review the AI-generated output critically—did it require editing or
+1. Review the AI-generated output critically—did it require editing or
    fact-checking?
 
 The AI Generated output in the case above improved the details of the updates
@@ -201,7 +201,7 @@ and this description would be beter if i was able to know exactly what bug was
 fixed and what exactly the improvements made on th UI/UX are but that would
 require more information that i do not possess.
 
-3. Document one best practice you will follow when using AI tools at Focus Bear.
+1. Document one best practice you will follow when using AI tools at Focus Bear.
 
 I will make sure that i use AI in moderation to solve the more mundane and
 repetitive task while trying to solve the actual issues myself and learning from

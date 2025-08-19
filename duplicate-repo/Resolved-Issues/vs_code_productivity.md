@@ -14,7 +14,7 @@
 - Ctrl + H — Replace in current file
 - Ctrl + Shift + V — Open Markdown preview
 
-2. Categorise them into Navigation, Editing, Debugging, and Terminal Commands.
+1. Categorise them into Navigation, Editing, Debugging, and Terminal Commands.
 
 - Navigation
   - Ctrl + P — Quick file open
@@ -34,7 +34,7 @@
   - Ctrl + ` — Toggle integrated terminal
   - Ctrl + Shift + C — Open new external terminal
 
-3. Which shortcuts do you think will be the most useful in your daily work?
+1. Which shortcuts do you think will be the most useful in your daily work?
 
 - Ctrl + P (Quick file open): Speeds up switching between files without leaving
   the keyboard.
@@ -52,7 +52,7 @@
 These shortcuts reduce mouse use, speed up workflow, and help maintain focus,
 making coding more efficient and less interruptive.
 
-4. How can keyboard shortcuts improve your productivity?
+1. How can keyboard shortcuts improve your productivity?
 
 Keyboard shortcuts improve productivity by minimizing the time spent switching
 between keyboard and mouse, allowing you to perform tasks faster and more

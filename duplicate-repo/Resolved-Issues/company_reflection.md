@@ -16,7 +16,7 @@ their needs. They designed Focus Bear to provide structured routines, minimize
 distractions, and support habit formation in a way that aligns with their
 cognitive styles.
 
-2. What problem is Focus Bear solving?
+1. What problem is Focus Bear solving?
 
 - Focus Bear tackles several issues:
   - Distraction Management: It blocks irrelevant websites and apps across
@@ -28,7 +28,7 @@ cognitive styles.
   - Punctuality Support: Features like "Late No More" provide escalating
     notifications to ensure users are on time for meetings and appointments.
 
-3. Why do you think this mission is important?
+1. Why do you think this mission is important?
 
 I think this mission is crucial because individuals with ADHD and ASD often face
 systemic challenges in productivity and daily functioning. By providing tailored
@@ -37,7 +37,7 @@ their routines, reduce stress, and improve their quality of life. This approach
 not only enhances individual well-being but also promotes inclusivity and equity
 in productivity tools.
 
-4. How does Focus Bear’s work align with your personal values or interests?
+1. How does Focus Bear’s work align with your personal values or interests?
 
 I also value inclusivity, personalized support, and practical solutions for
 neurodivergent individuals, Focus Bear's mission resonates with these
@@ -45,7 +45,7 @@ principles. The app's emphasis on real-world applicability and user-centered
 design reflects a commitment to creating tools that genuinely assist users in
 their daily lives.
 
-5. Do you personally relate to any of the challenges that Focus Bear aims to
+1. Do you personally relate to any of the challenges that Focus Bear aims to
    solve?
 
 I also experience difficulties with maintaining focus, establishing routines, or

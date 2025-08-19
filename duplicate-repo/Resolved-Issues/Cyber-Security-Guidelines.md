@@ -18,7 +18,7 @@
 - Insider threats: Intentional or accidental actions by employees compromising
   security.
 
-2. What are best practices for keeping your devices and accounts secure?
+1. What are best practices for keeping your devices and accounts secure?
 
 - Use strong, unique passwords for each account and update them regularly.
 - Enable two-factor authentication (2FA) wherever possible.
@@ -32,7 +32,7 @@
 - Log out of accounts and lock devices when not in use.
 - Limit app permissions and only install software from trusted sources.
 
-3. Why is it important to lock your computer when away from your desk?
+1. Why is it important to lock your computer when away from your desk?
 
 - Prevents unauthorized access to my files, emails, and sensitive information.
 - Protects against accidental or intentional misuse of my account by others
@@ -44,7 +44,7 @@
 - Ensures compliance with workplace security policies and legal data protection
   requirements.
 
-4. How should you handle phishing attempts and suspicious links?
+1. How should you handle phishing attempts and suspicious links?
 
 - Do not click on links or download attachments from unknown or unexpected
   emails or messages.
@@ -59,7 +59,7 @@
 - Regularly update passwords and enable two-factor authentication to minimize
   damage if credentials are compromised.
 
-5. What makes a strong password, and why should you use a password manager?
+1. What makes a strong password, and why should you use a password manager?
 
 - A strong password is:
   - Long (at least 12 characters)
@@ -77,7 +77,7 @@
     phishing
   - Helps you update and manage passwords efficiently
 
-6. Why is two-factor authentication (2FA) important, and when should you enable
+1. Why is two-factor authentication (2FA) important, and when should you enable
    it?
 
 - Two-factor authentication (2FA) is important because it adds an extra layer of
@@ -102,21 +102,21 @@ relatively similar ones on a lot of my platforms but i've been trying out new
 and more unique passwords and working towards changing all the passwords for my
 more imporrtant platforms.
 
-2. How can you make secure behaviour a habit rather than an afterthought?
+1. How can you make secure behaviour a habit rather than an afterthought?
 
 Just keeping in mind what could potentially be lost should i not keep stuff
 consistent is most of the time enough for me but another way i can keep track of
 it is to be make a little counter game where i'll uptick it when i implement a
 security measure correctly.
 
-3. What steps will you take to ensure your passwords and accounts are secure?
+1. What steps will you take to ensure your passwords and accounts are secure?
 
 For better passwords i should just use a mix of unique characters such as @ or &
 or ^ to improve the strength of the password cause i've been setting passwords
 with the intention of it being easy to memorize which isn't the best way to
 create passwords.
 
-4. What would you do if you suspected a security breach or suspicious activity
+1. What would you do if you suspected a security breach or suspicious activity
    on your account?
 
 - Changing my password immediately to a strong, unique one.
@@ -137,18 +137,18 @@ create passwords.
 1. Ensure your work accounts have strong passwords and enable 2FA where
    possible.
 
-2. Review your password storage method—if you’re not using a password manager,
+1. Review your password storage method—if you’re not using a password manager,
    consider setting one up.
 
 Luckily for me the browser that i use 'Brave' has an inbuilt password manager.
 
-3. Set up your computer and phone to automatically lock (require a password or
+1. Set up your computer and phone to automatically lock (require a password or
    biometric login) if you are away for more than a few minutes
 
 I have set my laptop screen to automatically lock itself after 5 minutes of
 inactivity.
 
-4. Document one new cyber security habit you will follow at Focus Bear.
+1. Document one new cyber security habit you will follow at Focus Bear.
 
 I'll always make sure that my passwords contains at least 5 Uniques symbols and
 a mix of Upper Case and Lower Case letters for better security.

@@ -61,7 +61,7 @@
   identifying details. Users are explicitly advised not to include personal
   identifiers in habit descriptions.
 
-2. What types of data are considered confidential at Focus Bear?
+1. What types of data are considered confidential at Focus Bear?
 
 - Personal Identification Data: Name, email address, phone number, account
   credentials.
@@ -77,7 +77,7 @@
 - AI-Processed Habit Data: Streak counts, habit names/descriptions (with advice
   not to include personally identifying details).
 
-3. What are best practices for handling confidential data?
+1. What are best practices for handling confidential data?
 
 - Encrypt sensitive files: Encryption transforms data into a format that cannot
   be understood by anyone without the correct password or key. By encrypting
@@ -117,7 +117,7 @@
   passcodes, enabling firewalls, suspending inactive sessions, and employing
   full disk encryption
 
-4. How should you respond to a suspected data breach or accidental disclosure of
+1. How should you respond to a suspected data breach or accidental disclosure of
    confidential information?
 
 When responding to a suspected data breach or accidental disclosure of
@@ -171,7 +171,7 @@ I'll be setting up stronger passwords and also two-factor authentication for
 more sensitive information, also i'll be reviewing permissions for all future
 shared files to ensure no data leaks.
 
-2. How should you store, share, and dispose of sensitive information safely?
+1. How should you store, share, and dispose of sensitive information safely?
 
 To store sensitive information safely, use encrypted devices or secure cloud
 services with strong access controls, ensuring only authorized users can access
@@ -183,7 +183,7 @@ erasure tools and physically destroy paper documents by shredding. Proper
 disposal prevents data recovery by unauthorized parties and reduces the risk of
 breaches, protecting confidentiality throughout the data lifecycle.
 
-3. What are some common mistakes that lead to data privacy issues, and how can
+1. What are some common mistakes that lead to data privacy issues, and how can
    they be avoided?
 
 Common mistakes include weak passwords, sharing sensitive data via unsecured

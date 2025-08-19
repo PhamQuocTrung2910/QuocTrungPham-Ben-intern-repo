@@ -23,7 +23,7 @@
   unnecessary loops, redundant calculations, or memory-intensive operations, but
   don’t overcomplicate for micro-optimizations early.
 
-2. Find an example of messy code online (or write one yourself) and describe why
+1. Find an example of messy code online (or write one yourself) and describe why
    it's difficult to read.
 
 ```python
@@ -40,7 +40,7 @@ print(c([1,2,3,4,5,6]))
   - Inline if statement makes the logic hard to scan.
   - No comments or explanation of the function’s purpose.
 
-3. Rewrite the code in a cleaner, more structured way.
+1. Rewrite the code in a cleaner, more structured way.
 
 ```python
 def sum_even_numbers(numbers):
@@ -89,7 +89,7 @@ Improvements:
 - Tool Integration: Linters, formatters, and IDE features rely on predictable
   code formatting to analyze and correct code automatically.
 
-2. Review the Airbnb javascript style guide.
+1. Review the Airbnb javascript style guide.
 
 - The Airbnb style guide is one of the most popular JavaScript conventions due
   to the following attributes:
@@ -104,7 +104,7 @@ Improvements:
   - Error Prevention: Highlights common pitfalls, like unused variables,
     incorrect comparisons, and unsafe assignments.
 
-3. Install and configure ESLint and Prettier in your development environment &
+1. Install and configure ESLint and Prettier in your development environment &
    the formatter and linter on your codebase and fix any issues.
 
 - ESLint: Analyzes code for syntax errors, stylistic issues, and potential bugs.
@@ -112,7 +112,7 @@ Improvements:
 - Prettier: Automatically formats code, handling indentation, quotes, spacing,
   and line breaks. It reduces debates about “who formats code correctly.”
 
-4. Why is code formatting important?
+1. Why is code formatting important?
 
 - Improves readability: Well-formatted code is easier to scan and debug.
 - Reduces cognitive load: Consistent patterns make understanding code faster.
@@ -121,12 +121,12 @@ Improvements:
 - Prevents errors: Formatting issues like missing brackets, extra spaces, or
   misaligned indentation can hide bugs or mislead the logic.
 
-5. What issues did the linter detect?
+1. What issues did the linter detect?
 
 Linter Currently Doesnt detect any issues as i've not entered the Version of
 React into its settings as i have not reached the stage where react is relevant.
 
-6. Did formatting the code make it easier to read?
+1. Did formatting the code make it easier to read?
 
 - I have seen the following improvements after formatting the code:
   - Improved Readability: Consistently formatted code is easier to read and
@@ -165,7 +165,7 @@ React into its settings as i have not reached the stage where react is relevant.
   - Component: ProfileCard
 - Be consistent: Stick to naming conventions across your project.
 
-2. Find examples of unclear variable names in an existing codebase (or write
+1. Find examples of unclear variable names in an existing codebase (or write
    your own).
 
 ```javascript
@@ -179,7 +179,7 @@ function fn(a) {
 - Issues with the code:
   - Hard to know what x or y represents. fn doesn’t indicate its action.
 
-3. Refactor the code by renaming variables/functions for better clarity.
+1. Refactor the code by renaming variables/functions for better clarity.
 
 ```javascript
 const userName = "John Doe";
@@ -191,7 +191,7 @@ function handleLogin(user) {
 
 Fixed: Now variables and functions clearly indicate purpose and behavior.
 
-4. What makes a good variable or function name?
+1. What makes a good variable or function name?
 
 Poor Naming Convention:
 
@@ -218,7 +218,7 @@ function ProfileCard() {
 ```
 
 Improvement: The name ProfileCard immediately communicates what the component
-represents. 5. What issues can arise from poorly named variables?
+represents. 1. What issues can arise from poorly named variables?
 
 - Poor naming can cause a variety of problems in React Native projects:
   - Confusing JSX/Props: If you pass props with ambiguous names, it’s unclear
@@ -242,7 +242,7 @@ represents. 5. What issues can arise from poorly named variables?
 const [d, setD] = useState(null); // What is d? Data? Date?
 ```
 
-6. How did refactoring improve code readability?
+1. How did refactoring improve code readability?
 
 - Refactoring names makes the code self-documenting, reducing cognitive load:
   - Clear JSX props:
@@ -269,7 +269,7 @@ function fetchUserData(userId) { ... }
 - You immediately understand what each function does without reading its full
   implementation.
 
-7. How Refactoring Improves Maintainability & Collaboration
+1. How Refactoring Improves Maintainability & Collaboration
 
 - Team collaboration: Developers can quickly understand and use your
   components/functions without constant clarification.
@@ -303,7 +303,7 @@ test('handleLoginPress sets isLoggedIn to true', () => { ... })
 - Improve testability and reusability: Small, focused functions are easier to
   unit test and reuse.
 
-2. Find an example of a long, complex function in an existing codebase (or write
+1. Find an example of a long, complex function in an existing codebase (or write
    your own).
 
 - Here is a React Native snippet that violates these principles:
@@ -343,7 +343,7 @@ function submitUserData(user, data, isAdmin, notify) {
     into one function.
   - Difficult to test, maintain, or reuse individual behaviors.
 
-3. Refactor it into multiple smaller functions with clear responsibilities.
+1. Refactor it into multiple smaller functions with clear responsibilities.
 
 ```javascript
 function validateUser(user) {
@@ -389,7 +389,7 @@ function submitUserData(user, data, isAdmin, notify) {
 
 - Here is the code refractored with proper indentation for better readability.
 
-4. Why is breaking down functions beneficial?
+1. Why is breaking down functions beneficial?
 
 - Readability: Each function is concise and clearly titled.
 - Maintainability: Isolated behavior lets you change one part without breaking
@@ -400,7 +400,7 @@ function submitUserData(user, data, isAdmin, notify) {
 - Debugging: Easier to trace where an issue started because each piece is
   isolated.
 
-5. How did refactoring improve the structure of the code?
+1. How did refactoring improve the structure of the code?
 
 - Readability: Each function is concise and clearly titled.
 - Maintainability: Isolated behavior lets you change one part without breaking
@@ -431,7 +431,7 @@ function submitUserData(user, data, isAdmin, notify) {
   can create unnecessary complexity and tight coupling, especially when
   duplications might be incidental.
 
-2. Find a section of code in your test repo with unnecessary repetition.
+1. Find a section of code in your test repo with unnecessary repetition.
 
 - As i've not done any issues that require extensive coding i'm unable to locate
   a code snippet showcasing repetition therefore i'll be making up an example
@@ -452,7 +452,7 @@ function logCheckoutTime(user) {
 - Both functions use similar logic: getting the current timestamp and logging a
   message. That’s DRY violation.
 
-3. Refactor the code to eliminate duplication.
+1. Refactor the code to eliminate duplication.
 
 - Here’s a cleaner version by extracting the shared logic:
 
@@ -470,7 +470,7 @@ logUserEvent(user, "logged in");
 logUserEvent(user, "checked out");
 ```
 
-4. What were the issues with duplicated code?
+1. What were the issues with duplicated code?
 
 - Maintenance overhead: Updating timestamp logic in two places doubles the
   effort and increases risk of inconsistency.
@@ -481,7 +481,7 @@ logUserEvent(user, "checked out");
 - Increased cognitive load: Repetition forces developers to understand and
   maintain similar code in multiple spots.
 
-5. How did refactoring improve maintainability?
+1. How did refactoring improve maintainability?
 
 - Single source of truth: Timestamp formatting logic is centralized in
   formatTimestamp().
@@ -516,7 +516,7 @@ logUserEvent(user, "checked out");
   - Inline Variable / Extract Variable: Simplify complex expressions by
     replacing or extracting into well-named variables.
 
-2. Find an example of overly complicated code in an existing project (or write
+1. Find an example of overly complicated code in an existing project (or write
    your own).
 
 - Here is a JavaScript snippet simulating React Native data handling:
@@ -562,7 +562,7 @@ function handleUserFormSubmission(formData, userId, isEdit) {
     analytics, severely violating single responsibility principles.
   - Hard to read and harder to test when each task is mixed in one function.
 
-3. Refactor it to make it simpler and more readable.
+1. Refactor it to make it simpler and more readable.
 
 - Here is how i would break it down into clear, single-purpose functions:
 
@@ -597,7 +597,7 @@ function handleUserFormSubmission(formData, userId, isEdit) {
 }
 ```
 
-4. What made the original code complex?
+1. What made the original code complex?
 
 - Mixed responsibilities: Due to the code having multiple responsibilities such
   as handling formatting, API communication, and event tracking in one function.
@@ -606,7 +606,7 @@ function handleUserFormSubmission(formData, userId, isEdit) {
 - Testing difficulty: You can’t easily do unit test formatting logic
   independently do to all the responbilities being in the same function.
 
-5. How did refactoring improve it?
+1. How did refactoring improve it?
 
 - Readability: Each function has a clear, focused responsibility making it
   easier for future developers to understand where to continue.
@@ -645,7 +645,7 @@ References for this issue:
   or justified by external factors; otherwise, focus on improving code
   readability.
 
-2. Find an example of poorly commented code and rewrite the comments to be more
+1. Find an example of poorly commented code and rewrite the comments to be more
    useful.
 
 - Original (Poor Comments):
@@ -672,7 +672,7 @@ for (const item of items) {
 Improvement: The code is clearer, and the comment adds valuable context about
 when this logging is useful.
 
-3. When should you add comments?
+1. When should you add comments?
 
 - When the code’s reasoning or intent isn’t obvious (e.g., complex algorithms,
   business logic, or workarounds for bugs).
@@ -681,7 +681,7 @@ when this logging is useful.
   docstrings).
 - For documentation needed by external consumers (e.g., APIs or modules)
 
-4. When should you avoid comments and instead improve the code?
+1. When should you avoid comments and instead improve the code?
 
 - If the comment simply repeats the code’s functionality.
 - When the code structure or naming can be improved to make the intent clear
@@ -733,7 +733,7 @@ References:
   should be surfaced through meaningful messages, logs, or exceptions to aid
   debugging.
 
-2. Find an existing function that doesn’t properly handle errors or invalid
+1. Find an existing function that doesn’t properly handle errors or invalid
    inputs.
 
 - As prviously stated in this .md file, i've not done any code extensive task
@@ -755,7 +755,7 @@ function getInitials(user) {
   includes at least one space. It will break if user is null, name is missing,
   or it's a single-word name.
 
-3. Refactor the function to improve error handling.
+1. Refactor the function to improve error handling.
 
 ```javascript
 function getInitials(user) {
@@ -783,14 +783,14 @@ function getInitials(user) {
   - Input validation ensures user.name is a non-empty string.
   - Edge-case handling addresses single-word names via .slice(0, 2).
 
-4. What was the issue with the original code?
+1. What was the issue with the original code?
 
 - No error checks: Didn’t validate inputs—would throw errors if user or name
   were missing.
 - Assumed format: Expected name to once contain a space.
 - Fragile logic: Broke easily on edge cases, increasing risk of runtime errors.
 
-5. How does handling errors improve reliability?
+1. How does handling errors improve reliability?
 
 - Graceful failure: Instead of crashing, function returns an empty string and
   logs an error.
@@ -822,16 +822,16 @@ collaboration by making code behavior explicit and predictable. Additionally,
 unit tests improve confidence in code quality, making deployments safer and more
 reliable.
 
-2. Choose a testing framework (e.g., Jest for JavaScript, PyTest for Python).
+1. Choose a testing framework (e.g., Jest for JavaScript, PyTest for Python).
 
 I'll Choose Jest as its more relevant to Focus Bear.
 
-3. Write a few unit tests for a function in your test repo.
+1. Write a few unit tests for a function in your test repo.
 
 I have written a couple of test in the file sum.test.js for the simple addition
 function in sum.js.
 
-4. How do unit tests help keep code clean?
+1. How do unit tests help keep code clean?
 
 Unit testing encourages writing small, focused functions that are easier to test
 and understand. If a function is too large or complex, it becomes difficult to
@@ -840,7 +840,7 @@ enforce handling of edge cases, proper input validation, and consistent outputs.
 Over time, this results in code that is more modular, readable, and
 maintainable.
 
-5. What issues did you find while testing?
+1. What issues did you find while testing?
 
 During testing, common issues include functions failing with unexpected inputs
 or edge cases, inconsistent return values, or missing input validation.

@@ -11,7 +11,7 @@
   executed in sequential phases. Agile, by contrast, adapts plans based on
   feedback and changing priorities.
 
-2. What are the core values and principles of Agile? (Hint: Check the Agile
+1. What are the core values and principles of Agile? (Hint: Check the Agile
    Manifesto.)
 
 - According to the Agile Manifesto, Agile values:
@@ -27,7 +27,7 @@
   - Build projects around motivated individuals.
   - Maintain a sustainable pace.
 
-3. What are the differences between Scrum and Kanban, and when is each used?
+1. What are the differences between Scrum and Kanban, and when is each used?
 
 - Scrum works in fixed-length sprints (usually 1–4 weeks), with defined roles
   (Scrum Master, Product Owner, Development Team) and ceremonies like sprint
@@ -38,7 +38,7 @@
   when capacity allows, with no set sprint cycles. It’s better for teams with
   changing priorities or ongoing operational work.
 
-4. Why does Focus Bear lean towards Kanban instead of Scrum?
+1. Why does Focus Bear lean towards Kanban instead of Scrum?
 
 - Focus Bear’s work involves frequent updates, changing priorities, and
   continuous improvements rather than fixed sprint deliverables. Kanban’s
@@ -54,7 +54,7 @@
 - Challenges: Can feel chaotic without discipline, requires strong
   communication, hard to estimate deadlines in highly dynamic projects.
 
-2. How can Agile principles help improve your role and responsibilities?
+1. How can Agile principles help improve your role and responsibilities?
 
 - As an intern, Agile’s focus on transparency and quick feedback helps me learn
   faster, stay aligned with team priorities, and adjust my work based on
@@ -70,7 +70,7 @@ like running a food truck where you keep cooking and serving dishes as orders
 come in, adjusting the menu based on demand, without waiting for a “next
 course.”
 
-2. Identify one Agile principle you think will be most useful in your work.
+1. Identify one Agile principle you think will be most useful in your work.
 
 “Welcome changing requirements, even late in development.” This mindset helps me
 adapt quickly when feedback or priorities shift.

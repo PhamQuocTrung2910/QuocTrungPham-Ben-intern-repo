@@ -30,7 +30,7 @@
   - Customer Support – Brings feedback from users to help guide improvements.
   - Stakeholders – Provide input, funding, and strategic direction.
 
-2. How do these roles collaborate in Kanban vs. Scrum?
+1. How do these roles collaborate in Kanban vs. Scrum?
 
 - Scrum
   - Uses defined sprints (time-boxed cycles).
@@ -56,7 +56,7 @@ app features, fixing bugs, and collaborating with the team to ensure smooth
 development. I contribute by turning user requirements into functional and
 maintainable code while supporting the Agile team's goals.
 
-2. How do your responsibilities overlap or interact with other roles in the
+1. How do your responsibilities overlap or interact with other roles in the
    team?
 
 My work should often overlaps with QA (to test and refine features), UX
@@ -72,7 +72,7 @@ features, ensuring they align with user needs and product goals. I participate
 in planning discussions, provide estimates, and collaborate with QA to deliver
 high-quality features efficiently.
 
-2. Identify one other role you frequently collaborate with and describe how you
+1. Identify one other role you frequently collaborate with and describe how you
    can improve teamwork with them.
 
 A role I'll be frequently collaborating with is QA (Quality Assurance) and I can

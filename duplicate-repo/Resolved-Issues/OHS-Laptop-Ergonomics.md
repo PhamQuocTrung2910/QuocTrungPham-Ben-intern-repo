@@ -15,7 +15,7 @@ typing, slowing multitasking. Long term, constant awkward opening/closing may
 stress the hinge, and using the laptop on your lap can trap heat, affecting
 comfort and device lifespan.
 
-2. What ergonomic equipment can improve posture when working on a laptop? (e.g.,
+1. What ergonomic equipment can improve posture when working on a laptop? (e.g.,
    laptop stands, external keyboards, ergonomic chairs)
 
 Ergonomic gear for laptop use includes laptop stands to raise the screen to eye
@@ -24,7 +24,7 @@ lumbar support, footrests for proper leg positioning, and monitor arms for
 adjustable viewing height reducing strain and promoting healthy posture during
 long work sessions.
 
-3. What adjustments should be made to monitor height, chair position, and desk
+1. What adjustments should be made to monitor height, chair position, and desk
    setup for a healthier workspace?
 
 For a healthier workspace, position the monitor so the top of the screen is at
@@ -41,7 +41,7 @@ repeated stretching or twisting. Maintaining this ergonomic alignment helps
 minimize strain on your neck, back, and wrists, improving comfort, posture, and
 productivity during long periods of computer work.
 
-4. What are some daily habits that reduce the impact of prolonged laptop use?
+1. What are some daily habits that reduce the impact of prolonged laptop use?
    (e.g., movement breaks, posture checks, eye strain reduction techniques)
 
 To reduce the impact of prolonged laptop use, develop small daily habits that
@@ -73,7 +73,7 @@ working, while i dont think amn external keyboard is needed i am willing to try
 it out as i do have an external keyboard at home. I struggle keeping track of
 things on a bigger screen so i'll stick with just the laptop screen.
 
-2. What behavioural changes can you implement to improve posture and reduce
+1. What behavioural changes can you implement to improve posture and reduce
    strain? (e.g., sitting upright, taking regular breaks, adjusting screen
    height)
 
@@ -83,7 +83,7 @@ build this habit. I'm still new to using Focus Bear but i've been trying to set
 up proper schedules and routines mostly to streamline my mornings so i dont have
 to constantly think of what i have to do.
 
-3. How can you remind yourself to maintain good posture and take breaks
+1. How can you remind yourself to maintain good posture and take breaks
    throughout the day? (Hint: Use Focus Bear to schedule movement breaks!)
 
 Funny enough i just noticed the hint as was copying this question but yes i've
@@ -97,16 +97,16 @@ each feature but for now i'll just try to figure it out.
 
 ✅
 
-2. Identify at least one piece of equipment that could improve your posture and
+1. Identify at least one piece of equipment that could improve your posture and
    comfort.
 
 I would love to get a laptop stand, i'll go online later today to get one.
 
-3. Try using posture and movement reminders for a full workday and note any
+1. Try using posture and movement reminders for a full workday and note any
    improvements. (Hint: Focus Bear has built-in reminders for movement breaks!)
 
 ✅
 
-4. Document at least one workspace change or habit adjustment you made.
+1. Document at least one workspace change or habit adjustment you made.
 
 Setting up Focus Bear to be able to regulate workplace productivity.

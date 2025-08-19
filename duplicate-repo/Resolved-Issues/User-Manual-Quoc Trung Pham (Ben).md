@@ -22,7 +22,7 @@
   - To accelerate effective collaboration, especially in diverse or
     neurodivergent teams
 
-2. What categories are helpful to include? (e.g., communication style, work
+1. What categories are helpful to include? (e.g., communication style, work
    habits, feedback preferences)
 
 - Communication Style (Preferred channels, response time, tone, clarity needs)
@@ -44,7 +44,7 @@
 - Stress Triggers and Support Strategies (What causes stress, how teammates can
   help)
 
-3. How can writing a personal user manual improve teamwork and reduce
+1. How can writing a personal user manual improve teamwork and reduce
    misunderstandings?
 
 - Writing a personal user manual improves teamwork and reduces misunderstandings
@@ -70,22 +70,22 @@
 direct communication and detailed instructions would help significantly as i'll
 be able to communicate and understand the task.
 
-2. How do you prefer to communicate? (e.g., async messages, video calls, quick
+1. How do you prefer to communicate? (e.g., async messages, video calls, quick
    check-ins, long discussions)
 
-3. What helps you stay focused and productive? (e.g., quiet workspace, deep work
+1. What helps you stay focused and productive? (e.g., quiet workspace, deep work
    sessions, structured to-do lists, music)
 
 A quiet workplace and a structured to-do list is especially helpful as i'm very
 prone to distractions should i relax for even a momemt.
 
-4. How do you like to give and receive feedback? (e.g., clear & direct, with
+1. How do you like to give and receive feedback? (e.g., clear & direct, with
    positive reinforcement, written vs. verbal feedback)
 
 Clear and Direct, i still prefer a combination of written and verbal as there
 might be points in the written that needs verbal confiemation.
 
-5. What are some quirks or things to know about your work style? (e.g., need
+1. What are some quirks or things to know about your work style? (e.g., need
    time to process ideas, like to brainstorm out loud, prefer written
    instructions)
 
@@ -140,5 +140,5 @@ what it should look like.
     or able to answer any questions especially when i'm close to completing the
     task.
 
-2. Share it with your manager or teammates so they can better understand how to
+1. Share it with your manager or teammates so they can better understand how to
    work with you.

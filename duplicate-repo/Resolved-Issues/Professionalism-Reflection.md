@@ -24,7 +24,7 @@
   - Unprofessional: Withholding information; taking credit for others’ work;
     dismissing ideas; refusing to cooperate.
 
-2. What does respectful communication look like in remote teams? (e.g., tone in
+1. What does respectful communication look like in remote teams? (e.g., tone in
    messages, handling disagreements, responding to feedback)
 
 - Using a friendly, clear, and positive tone in messages to avoid
@@ -42,7 +42,7 @@
 - Using emojis or reactions thoughtfully to add warmth but not overuse them to
   maintain professionalism.
 
-3. How can you give and receive feedback professionally? (e.g., focus on
+1. How can you give and receive feedback professionally? (e.g., focus on
    actions, not people; assume good intent; ask for clarification instead of
    reacting defensively)
 
@@ -60,7 +60,7 @@
   - Reflect on the feedback before responding or taking action.
   - Thank the person for their input to encourage ongoing communication.
 
-4. Review this guide for working with supervisors
+1. Review this guide for working with supervisors
 
 - How to Work with Supervisors at Focus Bear — Summary
 - First Meeting: Come prepared by reading the project brief, bring questions,
@@ -90,7 +90,7 @@ where everyone was communicating and on calls constantly to finish task where we
 spent nights up til late to complete task. It was me and 2 others, we would joke
 around every so often to release tension and set task out clearly.
 
-2. What steps can you take to make sure your communication is clear, respectful,
+1. What steps can you take to make sure your communication is clear, respectful,
    and inclusive?
 
 Catergorizing the information into easy to understand chunks will make it clear,
@@ -99,25 +99,25 @@ in a team environment is the one with the clearest instructions, lik a task with
 a list of sub steps to finish and we can assign different people to do each
 part.
 
-3. How can you help create a positive, fun, and professional work environment?
+1. How can you help create a positive, fun, and professional work environment?
 
 Be kind to everyone but don't enable someone to slack off just because you can
 do something all by yourself, also talk to anyone who is talking to you as it
 takes a bit of courage to go talk to someone these days.
 
-4. How can you prepare effectively for meetings with supervisors and colleagues?
+1. How can you prepare effectively for meetings with supervisors and colleagues?
 
 Before the meeting think about the things that will be discussed during the
 meeting and what you can add to the discussion, this will help you follow the
 conversations people are having in the discussion.
 
-5. What would it look like to be proactive during your internship?
+1. What would it look like to be proactive during your internship?
 
 I assume it would be to try to complete the onboarding as quickly as you can and
 then participate in the improvement of the app, to be specific to my role the
 Mobile App.
 
-6. How might you follow up with colleagues or supervisors if you need
+1. How might you follow up with colleagues or supervisors if you need
    information/action from them? How would you escalate it further if you don't
    get a response and when would you escalate?
 
@@ -126,7 +126,7 @@ SMS, Call You should only start escalating ahead once the estimated time for the
 action is over, for example you should only Go SMS only after 24 hous of no
 response from discord.
 
-7. What are some things you won't do?
+1. What are some things you won't do?
 
 - Wait around for instructions without taking initiative.
 - Show up to meetings unprepared or without questions.

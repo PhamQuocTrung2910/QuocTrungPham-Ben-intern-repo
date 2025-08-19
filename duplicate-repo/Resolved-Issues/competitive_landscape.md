@@ -26,20 +26,20 @@ Freedom Cold Turkey Tiimo Routinery 📌 Then, reflect on the following question
 This integrated approach addresses both the need for structured routines and the
 challenge of minimizing distractions.
 
-2. If you were a user, why would you choose Focus Bear over competitors? As a
+1. If you were a user, why would you choose Focus Bear over competitors? As a
    user, I would choose Focus Bear for its holistic approach to productivity.
    The combination of routine building, distraction blocking, and customizable
    focus sessions provides a comprehensive solution for maintaining focus and
    building healthy habits. Additionally, its user-friendly interface and
    features tailored for individuals with ADHD make it an appealing choice.
 
-3. What’s one feature that other apps have that Focus Bear doesn’t? While Focus
+1. What’s one feature that other apps have that Focus Bear doesn’t? While Focus
    Bear covers many productivity needs well, some competitors like Freedom or
    Cold Turkey offer more advanced or customizable distraction-blocking options,
    such as scheduled recurring blocks or more granular control over which
    apps/sites to block.
 
-4. Based on your research, what’s one improvement you think Focus Bear could
+1. Based on your research, what’s one improvement you think Focus Bear could
    make? Focus Bear could enhance its customization options for distraction
    blocking—offering more detailed scheduling, temporary overrides, or enhanced
    reporting on user focus patterns could help users optimize their routines

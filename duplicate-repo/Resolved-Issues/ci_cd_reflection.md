@@ -14,19 +14,19 @@
   - Consistent deployments.
   - Encourages small, incremental changes (safer and easier to review).
 
-2. Set up a CI workflow that runs Markdown linting and spell checks on PRs in
+1. Set up a CI workflow that runs Markdown linting and spell checks on PRs in
    your repo.
 
-3. Experiment with Git Hooks (e.g., Husky) to enforce linting before commits.
+1. Experiment with Git Hooks (e.g., Husky) to enforce linting before commits.
 
-4. Open a test PR in your repository and review the automated checks.
+1. Open a test PR in your repository and review the automated checks.
 
-5. Push your CI/CD configuration to your repo.
+1. Push your CI/CD configuration to your repo.
 
-6. What is the purpose of CI/CD?
+1. What is the purpose of CI/CD?
 
-7. How does automating style checks improve project quality?
+1. How does automating style checks improve project quality?
 
-8. What are some challenges with enforcing checks in CI/CD?
+1. What are some challenges with enforcing checks in CI/CD?
 
-9. How do CI/CD pipelines differ between small projects and large teams?
+1. How do CI/CD pipelines differ between small projects and large teams?

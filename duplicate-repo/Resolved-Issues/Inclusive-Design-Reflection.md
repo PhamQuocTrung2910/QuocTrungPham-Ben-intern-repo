@@ -27,7 +27,7 @@
 - Addressing these challenges requires inclusive design, digital literacy
   programs, and policies ensuring equitable digital access and safety.
 
-2. What ethical considerations are important when designing or working with
+1. What ethical considerations are important when designing or working with
    neurodivergent individuals? (Hint: Avoid overwhelming UX, respect sensory
    needs, ensure clear communication.)
 
@@ -46,7 +46,7 @@
   - Include neurodivergent voices: Involve neurodivergent individuals in the
     design process to ensure relevance and respect for their needs.
 
-3. How can you make interactions and content more accessible for people with
+1. How can you make interactions and content more accessible for people with
    ADHD or Autism? (e.g., simple language, predictable navigation, reducing
    cognitive load)
 
@@ -63,7 +63,7 @@
   - Use clear labels and instructions for actions and forms.
   - Include quiet, uncluttered layouts to help maintain focus.
 
-4. How can we support neurodivergent team members in a professional setting?
+1. How can we support neurodivergent team members in a professional setting?
    (Hint: Be clear in communication, respect different working styles, and allow
    flexibility.)
 
@@ -99,7 +99,7 @@
   - Foster a respectful environment where asking for clarification is
     encouraged.
 
-2. What are some common UX or communication pitfalls that might make Focus Bear
+1. What are some common UX or communication pitfalls that might make Focus Bear
    less accessible or supportive?
 
 - Overly complex interfaces with cluttered layouts or too many features at once,
@@ -119,7 +119,7 @@
 - No clear feedback or guidance during interactions, leaving users uncertain
   about actions or errors.
 
-3. What is one practical change you can make in your work to better support
+1. What is one practical change you can make in your work to better support
    vulnerable populations?
 
 A practical change I can make right now is to use clear, simple language in all
@@ -140,14 +140,14 @@ blankly for hours and not even notice it passing, his kill list was also
 fascinating to hear about and i think it might be a feature Focus Bear could
 implement.
 
-2. Identify one design or communication improvement that could make Focus Bear
+1. Identify one design or communication improvement that could make Focus Bear
    more accessible.
 
 While Focus Bear has the feature to set task and timers i would like something a
 bit more specialized with more forceful notifications as i struggle to
 voluntarily flick through each activity.
 
-3. Practice writing a clear, patient, and supportive response to a hypothetical
+1. Practice writing a clear, patient, and supportive response to a hypothetical
    user struggling with executive functioning. Lets have this question as the
    example: Can you help me break down organizing my weekly schedule into
    smaller, easier steps? I’m having trouble figuring out where to start?
