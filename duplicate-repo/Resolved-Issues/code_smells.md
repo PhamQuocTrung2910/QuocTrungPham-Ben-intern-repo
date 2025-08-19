@@ -178,7 +178,7 @@ let x = 10;
 let y = "John Doe";
 ```
 
-Here are the code examples properly refractored to eliminate code smells:
+Here are the code examples after restructuring to eliminate code smells:
 
 ```javascript
 // Magic Number
