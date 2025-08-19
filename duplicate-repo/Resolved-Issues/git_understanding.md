@@ -442,7 +442,7 @@ were deemed beneficial for the project's progression.
 - Readable diffs: Changes are focused and organized.
 - Tests included: New features or fixes are covered by tests where applicable.
 
-5. What did you learn from reviewing an open-source PR?
+1. What did you learn from reviewing an open-source PR?
 
 - Collaborative reviews improve code quality and reduce bugs.
 - Clear commit messages and PR descriptions make the review process faster.
