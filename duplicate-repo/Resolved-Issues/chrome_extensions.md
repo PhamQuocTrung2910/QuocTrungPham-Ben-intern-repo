@@ -9,4 +9,7 @@
 
 2. What was the most useful thing you learned?
 
-The most useful thing was using Lighthouse to evaluate web app performance and accessibility. It highlighted areas for improvement, like reducing unused JavaScript and optimizing images, helping me understand how small changes can significantly enhance user experience.
+The most useful thing was using Lighthouse to evaluate web app performance and
+accessibility. It highlighted areas for improvement, like reducing unused
+JavaScript and optimizing images, helping me understand how small changes can
+significantly enhance user experience.

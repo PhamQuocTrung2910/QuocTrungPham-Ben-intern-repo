@@ -13,6 +13,7 @@
     "dotenv": "^16.4.7"
   },
   "devDependencies": {
-    "jest": "^30.0.5"
+    "jest": "^30.0.5",
+    "prettier": "^3.6.2"
   }
 }
