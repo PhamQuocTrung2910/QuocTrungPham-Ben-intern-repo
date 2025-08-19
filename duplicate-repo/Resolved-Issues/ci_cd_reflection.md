@@ -1,6 +1,6 @@
 1. Research what CI/CD is and why it’s used in software development.
 
-- CI (Continuous Integration): Developers frequently merge (integrate) code changes into a shared repository. Automated builds and tests run to detect issues early.
+- CI (Continuous Integration): Developers frequently merge code changes into a shared repository. Automated builds and tests run to detect issues early.
 - CD (Continuous Delivery/Deployment): Extends CI by automatically deploying tested code to staging or production environments.
 
 - Why it’s used:
@@ -12,7 +12,7 @@
 
 2. Set up a CI workflow that runs Markdown linting and spell checks on PRs in your repo.
 
-Set Up in: .github/workflows/ci.yml
+
 
 3. Experiment with Git Hooks (e.g., Husky) to enforce linting before commits.
 
