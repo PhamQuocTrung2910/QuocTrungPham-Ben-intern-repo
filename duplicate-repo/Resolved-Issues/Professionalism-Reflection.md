@@ -123,7 +123,7 @@ Mobile App.
 
 As stated previously in the summary the order should go Email, Discord/Teams,
 SMS, Call You should only start escalating ahead once the estimated time for the
-action is over, for example you should only Go SMS only after 24 hous of no
+action is over, for example you should only Go SMS only after 24 hours of no
 response from discord.
 
 1. What are some things you won't do?

@@ -69,7 +69,7 @@ on a laptop.
 
 As i am currently just using a basic Laptop and Mouse Set Up, i would like to
 get a laptop stand as i do notice tightness in my shoulders and neck when
-working, while i dont think amn external keyboard is needed i am willing to try
+working, while i don't think amn external keyboard is needed i am willing to try
 it out as i do have an external keyboard at home. I struggle keeping track of
 things on a bigger screen so i'll stick with just the laptop screen.
 
@@ -80,7 +80,7 @@ things on a bigger screen so i'll stick with just the laptop screen.
 I've been trying to keep in mind my posture but it has been hard to consistently
 straight at all times i'll be setting up reminders on Focus Bear later on to
 build this habit. I'm still new to using Focus Bear but i've been trying to set
-up proper schedules and routines mostly to streamline my mornings so i dont have
+up proper schedules and routines mostly to streamline my mornings so i don't have
 to constantly think of what i have to do.
 
 1. How can you remind yourself to maintain good posture and take breaks

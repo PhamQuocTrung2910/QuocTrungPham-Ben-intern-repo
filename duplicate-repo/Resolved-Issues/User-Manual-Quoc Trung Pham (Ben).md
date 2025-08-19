@@ -77,13 +77,13 @@ be able to communicate and understand the task.
    sessions, structured to-do lists, music)
 
 A quiet workplace and a structured to-do list is especially helpful as i'm very
-prone to distractions should i relax for even a momemt.
+prone to distractions should i relax for even a moment.
 
 1. How do you like to give and receive feedback? (e.g., clear & direct, with
    positive reinforcement, written vs. verbal feedback)
 
 Clear and Direct, i still prefer a combination of written and verbal as there
-might be points in the written that needs verbal confiemation.
+might be points in the written that needs verbal confirmation.
 
 1. What are some quirks or things to know about your work style? (e.g., need
    time to process ideas, like to brainstorm out loud, prefer written
@@ -110,7 +110,7 @@ what it should look like.
     urgent, call me directly on discord i'll always have my phone on me so i'll
     be able to pick up.
   - Collaboration & Teamwork I work best in a team when everyone is
-    contributing, talking, and willing to express their own opnions good or bad.
+    contributing, talking, and willing to express their own opinions good or bad.
     My biggest pet peeve in teamwork is if everyone is just quiet and no
     information is passed around making it harder to progress. If I seem quiet
     in a meeting, it usually means i've got nothing to add to the conversation

@@ -604,7 +604,7 @@ function handleUserFormSubmission(formData, userId, isEdit) {
 - Low readability: Multiple actions inline makes it harder to follow and
   understand what the code is trying to do.
 - Testing difficulty: You can’t easily do unit test formatting logic
-  independently do to all the responbilities being in the same function.
+  independently do to all the responsibilities being in the same function.
 
 1. How did refactoring improve it?
 

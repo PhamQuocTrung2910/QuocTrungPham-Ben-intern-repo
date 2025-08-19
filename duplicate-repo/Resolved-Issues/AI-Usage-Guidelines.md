@@ -42,7 +42,7 @@ effectively as the 3 above.
 
 1. What types of information should never be entered into AI tools?
 
-Refering to Data-Privacy-Reflection.md these data are what i would say should
+Referring to Data-Privacy-Reflection.md these data are what i would say should
 never to accessible to AI:
 
 - Personally Identifiable Information (PII)
@@ -104,7 +104,7 @@ I would personally do the following:
 You should use AI when:
 
 - Brainstorming ideas (UI layouts, feature names, marketing copy drafts).
-- Getting unstuck (explaining a programming concept, summarising documentation).
+- Getting unstuck (explaining a programming concept, summarising  documentation).
 - Speeding up repetitive tasks (drafting outlines, creating placeholder text,
   generating test data).
 - Learning new tools or frameworks (getting an overview before deeper research).
@@ -187,7 +187,7 @@ You shouldn't use AI when:
 
 Whats New What’s New in This Update:
 
-- Fix Bugs ---------------> - Squashed several bugs to make your app xperience
+- Fix Bugs ---------------> - Squashed several bugs to make your app experience
   smoother and more reliable.
 
 - Improve UI/UX - Enhanced the user interface and overall user experience for

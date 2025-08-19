@@ -63,7 +63,7 @@
   - Debugging: Deeply nested or duplicated code can hide bugs and make it harder
     to trace issues.
   - Collaboration: Poorly structured code reduces team productivity because
-    developers spend more time dciphering code than writing new features.
+    developers spend more time deciphering code than writing new features.
 
 - References:
   - Fowler, M. (1999). Refactoring: Improving the Design of Existing Code.
