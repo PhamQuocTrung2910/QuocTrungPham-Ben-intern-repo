@@ -1,4 +1,3 @@
-
 # Company Reflection
 
 1️⃣ Understanding Focus Bear’s Mission & Vision
@@ -53,4 +52,3 @@ I also experience difficulties with maintaining focus, establishing routines, or
 managing distractions, so I find Focus Bear's features particularly beneficial.
 The app's design acknowledges and addresses these challenges, offering
 structured support to help users navigate and overcome them.
-

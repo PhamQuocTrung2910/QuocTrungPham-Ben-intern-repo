@@ -44,4 +44,3 @@ challenge of minimizing distractions.
    blocking—offering more detailed scheduling, temporary overrides, or enhanced
    reporting on user focus patterns could help users optimize their routines
    even further.
-
