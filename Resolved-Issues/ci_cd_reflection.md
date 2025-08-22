@@ -22,7 +22,7 @@
 
 1. Experiment with Git Hooks (e.g., Husky) to enforce linting before commits.
 
-   -
+   - The Husky script runs properly executing lint and spell check. Refer to .husky/pre-commit
 
 1. Open a test PR in your repository and review the automated checks.
 
