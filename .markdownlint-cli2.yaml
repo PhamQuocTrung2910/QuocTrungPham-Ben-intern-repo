@@ -50,7 +50,7 @@ config:
 
   # MD029 - Ordered list item prefix
   MD029:
-    style: "ordered" # Use 1. 2. 3. not 1. 1. 1.
+    style: "one" # Use 1. 2. 3. not 1. 1. 1.
 
   # MD033 - Inline HTML
   MD033: false # Allow HTML (set to true if you want to prohibit HTML)
