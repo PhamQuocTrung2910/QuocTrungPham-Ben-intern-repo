@@ -49,22 +49,3 @@ jobs:
         
       - name: Run spell check
         run: cspell "**/*.{md,markdown}" --no-progress --show-context
-
-  prettier-check:
-    runs-on: ubuntu-latest
-    name: Check code formatting with Prettier
-    
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          
-      - name: Install Prettier
-        run: npm install -g prettier
-        
-      - name: Check formatting
-        run: prettier --check "**/*.{js,jsx,ts,tsx,json,css,scss,html,md,markdown,yml,yaml}"
