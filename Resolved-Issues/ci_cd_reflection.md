@@ -1,7 +1,6 @@
 # CI/CD Reflection
 
 1. Research what CI/CD is and why it's used in software development.
-
    - CI (Continuous Integration): Developers frequently merge code changes into a
      shared repository. Automated builds and tests run to detect issues early.
    - CD (Continuous Delivery/Deployment): Extends CI by automatically deploying
@@ -16,24 +15,19 @@
 
 1. Set up a CI workflow that runs Markdown linting and spell checks on PRs in
    your repo.
-
    - I have set up the CI workflow in GitHub actions that checks for markdown
      linting and spell checks.
 
 1. Experiment with Git Hooks (e.g., Husky) to enforce linting before commits.
-
    - The Husky script runs properly executing lint and spell check. Refer to .husky/pre-commit
 
 1. Open a test PR in your repository and review the automated checks.
-
    - "This comment is for the purpose of testing the GitHub Actions Workflow PR Review"
 
 1. Push your CI/CD configuration to your repo.
-
    - I've done that, please confirm in the following: .github/workflows/markdown-ci.yml
 
 1. What is the purpose of CI/CD?
-
    - Continuous Integration (CI) and Continuous Delivery/Deployment (CD) form the backbone of modern DevOps, aiming to automate and streamline the software delivery process.
      - Faster time to market: Automating build, test, and deployment steps lets teams ship features, fixes, and updates more frequently—sometimes even hourly.
      - Improved code quality and reliability: Automated tests, run on each commit, enable early bug detection and help maintain a stable codebase.
@@ -46,7 +40,6 @@
      - Data-driven improvement: CI/CD tools provide metrics (e.g., build time, test coverage, defect rates) for ongoing process optimization.
 
 1. How does automating style checks improve project quality?
-
    - Styling tools like linters and formatters enforce consistent and clean code—here’s how they make a difference:
      - Ensures consistency and readability across the codebase: Automated style checks keep formatting uniform, reducing cognitive load for reviewers. While not always detailed in sources, this fits closely with widely accepted DevOps principles.
      - Speeds up development: Automating style checks removes the need for reviewers to flag formatting issues—saving time and avoiding trivial back-and-forth.
@@ -54,7 +47,6 @@
      - Reduces technical debt: Enforcing standards early prevents style violations from piling up and creating costly cleanup tasks later.
 
 1. What are some challenges with enforcing checks in CI/CD?
-
    - Even with automation, enforcing code checks has its obstacles:
      - False positives and flaky tests: Flaky or overly strict test suites can undermine confidence in the pipeline and create noise.
      - Toolchain complexity: Integrating various tools—especially across languages—can become hard to manage and maintain.
@@ -66,7 +58,6 @@
      - Security automation gaps: While many are aware, fewer organizations scan for vulnerabilities on every commit.
 
 1. How do CI/CD pipelines differ between small projects and large teams?
-
    - Small Projects / Smaller Teams:
      - Simplicity and speed-first: Pipelines are lean—likely just build, quick tests, and minimal deployment.
      - Reduced infrastructure needs: Less complex setups with lower cost and maintenance.
