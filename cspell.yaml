@@ -1,0 +1,152 @@
+# cSpell configuration file
+# Save this as cspell.yaml in your repository root
+
+version: "0.2"
+language: "en"
+
+# Custom words that should be considered correct
+words:
+  # Technology terms
+  - GitHub
+  - GitLab
+  - JavaScript
+  - TypeScript
+  - Node.js
+  - React
+  - Vue.js
+  - Angular
+  - npm
+  - yarn
+  - webpack
+  - Vite
+  - ESLint
+  - Prettier
+  - Babel
+  - API
+  - REST
+  - GraphQL
+  - JSON
+  - YAML
+  - XML
+  - HTML
+  - CSS
+  - SCSS
+  - Sass
+  - CLI
+  - GUI
+  - UI
+  - UX
+  - DevOps
+  - CI/CD
+  - Docker
+  - Kubernetes
+  - AWS
+  - Azure
+  - GCP
+  
+  # Development terms
+  - repo
+  - config
+  - configs
+  - env
+  - localhost
+  - middleware
+  - backend
+  - frontend
+  - fullstack
+  - microservice
+  - microservices
+  - serverless
+  - webhook
+  - webhooks
+  - async
+  - await
+  - regex
+  - stdout
+  - stderr
+  - stdin
+  
+  # Common abbreviations
+  - app
+  - apps
+  - auth
+  - db
+  - admin
+  - env
+  - dev
+  - prod
+  - impl
+  - spec
+  - docs
+  - readme
+  - changelog
+  - todo
+  - todos
+  
+  # Markdown/Documentation specific
+  - markdownlint
+  - cspell
+  - linting
+  - linter
+  - linters
+  - spellcheck
+  - spellchecker
+  - autocomplete
+  - autocompletion
+
+# Built-in dictionaries to use
+dictionaries:
+  - en_US
+  - software-terms
+  - node
+  - npm
+  - companies
+  - filetypes
+  - fonts
+
+# Paths to ignore
+ignorePaths:
+  - "node_modules/**"
+  - ".git/**"
+  - "dist/**"
+  - "build/**"
+  - "coverage/**"
+  - "*.log"
+  - "*.lock"
+  - "package-lock.json"
+  - "yarn.lock"
+  - ".DS_Store"
+  - "Thumbs.db"
+
+# File-specific overrides
+overrides:
+  # Markdown files
+  - filename: "**/*.{md,markdown}"
+    dictionaries:
+      - en_US
+      - software-terms
+      - node
+      - npm
+      - companies
+    # Allow words in code blocks and inline code
+    ignoreRegExpList:
+      - "/```[\\s\\S]*?```/g"  # Code blocks
+      - "/`[^`]*`/g"            # Inline code
+      - "/\\bhttps?:\\/\\/[^\\s]+/g"  # URLs
+      - "/\\b[A-Z]{2,}\\b/g"    # All caps (often acronyms)
+
+# Patterns to ignore globally
+ignoreRegExpList:
+  - "/\\bhttps?:\\/\\/[^\\s]+/gi"  # URLs
+  - "/\\b[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\\b/gi"  # UUIDs
+  - "/\\b[a-f0-9]{40}\\b/gi"       # SHA1 hashes
+  - "/\\b[a-f0-9]{64}\\b/gi"       # SHA256 hashes
+  - "/\\b\\w+@\\w+\\.\\w+\\b/gi"   # Email addresses
+
+# Case sensitivity settings
+caseSensitive: false
+allowCompoundWords: true
+
+# Performance settings
+maxNumberOfProblems: 100
+maxDuplicateProblems: 5
