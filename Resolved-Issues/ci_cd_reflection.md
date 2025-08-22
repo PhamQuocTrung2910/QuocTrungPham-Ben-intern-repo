@@ -26,7 +26,7 @@
 
 1. Open a test PR in your repository and review the automated checks.
 
-   -
+   - "This comment is for the purpose of testing the GitHub Actions Workflow PR Review"
 
 1. Push your CI/CD configuration to your repo.
 
