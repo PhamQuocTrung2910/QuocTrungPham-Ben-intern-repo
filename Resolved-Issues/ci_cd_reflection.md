@@ -22,28 +22,28 @@
 
 1. Experiment with Git Hooks (e.g., Husky) to enforce linting before commits.
 
-- 
+-
 
 1. Open a test PR in your repository and review the automated checks.
 
-- 
+-
 
 1. Push your CI/CD configuration to your repo.
 
-- 
+-
 
 1. What is the purpose of CI/CD?
 
-- 
+-
 
 1. How does automating style checks improve project quality?
 
-- 
+-
 
 1. What are some challenges with enforcing checks in CI/CD?
 
-- 
+-
 
 1. How do CI/CD pipelines differ between small projects and large teams?
 
-- 
+-
