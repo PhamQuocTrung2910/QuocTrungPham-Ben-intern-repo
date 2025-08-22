@@ -13,7 +13,6 @@
     "markdownlint-cli2": "^0.18.1",
     "prettier": "^3.6.2"
   },
-
   "name": "quoctrungpham-ben-intern-repo",
   "version": "1.0.0",
   "description": "",
@@ -447,13 +446,19 @@
     "yargs-parser": "^21.1.1",
     "yocto-queue": "^0.1.0"
   },
-
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"]
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
   },
   "repository": {
     "type": "git",
@@ -467,6 +472,4 @@
     "url": "https://github.com/PhamQuocTrung2910/QuocTrungPham-Ben-intern-repo/issues"
   },
   "homepage": "https://github.com/PhamQuocTrung2910/QuocTrungPham-Ben-intern-repo#readme"
-
-  
 }
