@@ -1,29 +1,24 @@
-name: Lint & Spell Check
+name: Markdown Lint & Spell Check
 
 on:
   pull_request:
-    branches: [ main ]
-  push:
-    branches: [ main ]
+    paths:
+      - '**/*.md' # Trigger only for changes in Markdown files
 
 jobs:
-  lint-and-spellcheck:
+  lint_and_spell_check:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Run Markdown Lint
+        uses: avto-dev/markdown-lint@v1 # Or another Markdown linter action
         with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run markdownlint
-        run: npx markdownlint-cli2 "**/*.md" "!node_modules"
+          config_file: '.markdownlint.yml' # Optional: Specify a custom config file
 
       - name: Run Spell Check
-        run: npx cspell --config cspell.json "**/*.md"
+        uses: rojopolis/spellcheck-github-actions@v0.25.0 # Or another spell check action
+        with:
+          source_files: '**/*.md'
+          config_file: '.spellcheck.yml' # Optional: Specify a custom config file
