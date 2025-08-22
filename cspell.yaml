@@ -43,7 +43,7 @@ words:
   - AWS
   - Azure
   - GCP
-  
+
   # Development terms
   - repo
   - config
@@ -65,7 +65,7 @@ words:
   - stdout
   - stderr
   - stdin
-  
+
   # Common abbreviations
   - app
   - apps
@@ -82,7 +82,7 @@ words:
   - changelog
   - todo
   - todos
-  
+
   # Markdown/Documentation specific
   - markdownlint
   - cspell
@@ -130,18 +130,18 @@ overrides:
       - companies
     # Allow words in code blocks and inline code
     ignoreRegExpList:
-      - "/```[\\s\\S]*?```/g"  # Code blocks
-      - "/`[^`]*`/g"            # Inline code
-      - "/\\bhttps?:\\/\\/[^\\s]+/g"  # URLs
-      - "/\\b[A-Z]{2,}\\b/g"    # All caps (often acronyms)
+      - "/```[\\s\\S]*?```/g" # Code blocks
+      - "/`[^`]*`/g" # Inline code
+      - "/\\bhttps?:\\/\\/[^\\s]+/g" # URLs
+      - "/\\b[A-Z]{2,}\\b/g" # All caps (often acronyms)
 
 # Patterns to ignore globally
 ignoreRegExpList:
-  - "/\\bhttps?:\\/\\/[^\\s]+/gi"  # URLs
-  - "/\\b[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\\b/gi"  # UUIDs
-  - "/\\b[a-f0-9]{40}\\b/gi"       # SHA1 hashes
-  - "/\\b[a-f0-9]{64}\\b/gi"       # SHA256 hashes
-  - "/\\b\\w+@\\w+\\.\\w+\\b/gi"   # Email addresses
+  - "/\\bhttps?:\\/\\/[^\\s]+/gi" # URLs
+  - "/\\b[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\\b/gi" # UUIDs
+  - "/\\b[a-f0-9]{40}\\b/gi" # SHA1 hashes
+  - "/\\b[a-f0-9]{64}\\b/gi" # SHA256 hashes
+  - "/\\b\\w+@\\w+\\.\\w+\\b/gi" # Email addresses
 
 # Case sensitivity settings
 caseSensitive: false
