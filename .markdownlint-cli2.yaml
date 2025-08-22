@@ -1,0 +1,76 @@
+# Markdownlint configuration file
+# Save this as .markdownlint-cli2.yaml in your repository root
+
+config:
+  # MD001 - Heading levels should only increment by one level at a time
+  MD001: true
+  
+  # MD003 - Heading style (consistent)
+  MD003:
+    style: "atx"  # Use # headings, not underlined headings
+  
+  # MD004 - Unordered list style
+  MD004:
+    style: "dash"  # Use - for bullet points
+  
+  # MD007 - Unordered list indentation
+  MD007:
+    indent: 2
+  
+  # MD009 - Trailing spaces
+  MD009:
+    br_spaces: 2  # Allow 2 trailing spaces for line breaks
+  
+  # MD010 - Hard tabs
+  MD010: true  # No hard tabs
+  
+  # MD012 - Multiple consecutive blank lines
+  MD012: false  # Allow multiple blank lines (set to true if you want to enforce single blank lines)
+  
+  # MD013 - Line length
+  MD013:
+    line_length: 100  # Max line length
+    code_blocks: false  # Don't check code blocks
+    tables: false       # Don't check tables
+    headings: false     # Don't check headings
+  
+  # MD022 - Headings should be surrounded by blank lines
+  MD022: true
+  
+  # MD024 - Multiple headings with the same content
+  MD024:
+    allow_different_nesting: true  # Allow same heading text at different levels
+  
+  # MD025 - Multiple top level headings in the same document
+  MD025: true
+  
+  # MD026 - Trailing punctuation in heading
+  MD026:
+    punctuation: ".,;:!?"  # Don't allow these at end of headings
+  
+  # MD029 - Ordered list item prefix
+  MD029:
+    style: "ordered"  # Use 1. 2. 3. not 1. 1. 1.
+  
+  # MD033 - Inline HTML
+  MD033: false  # Allow HTML (set to true if you want to prohibit HTML)
+  
+  # MD034 - Bare URL used
+  MD034: true  # Don't allow bare URLs, use [text](url) format
+  
+  # MD036 - Emphasis used instead of a heading
+  MD036: true
+  
+  # MD041 - First line in file should be a top level heading
+  MD041: false  # Don't require H1 as first line (set to true if you want this)
+  
+  # MD046 - Code block style
+  MD046:
+    style: "fenced"  # Use ``` not indented code blocks
+
+# Files to ignore
+ignores:
+  - "node_modules/**"
+  - ".git/**"
+  - "CHANGELOG.md"  # Often has duplicate headings
+  - "**/CHANGELOG.md"
