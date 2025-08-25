@@ -45,6 +45,12 @@ Causes:
   - Merge Conflicts are easy to resolve if you are able to understand what's
     causing the conflict and what changes are actually needed
 
+1. Screenshots:
+   ![A screenshot or snippet showing the merge conflict in your Git client or editor](image11.png)
+   ![A screenshot of your conflict resolution (just before)](image16.png)
+   ![A screenshot of your conflict resolution (after resolving)](image17.png)
+   ![The relevant section of your Git commit history from the exercise](image18.png)
+
 📌 Staging vs Committing
 
 - Git Exercise

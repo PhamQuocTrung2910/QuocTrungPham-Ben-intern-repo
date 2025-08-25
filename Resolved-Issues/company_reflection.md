@@ -48,7 +48,4 @@ their daily lives.
 1. Do you personally relate to any of the challenges that Focus Bear aims to
    solve?
 
-I also experience difficulties with maintaining focus, establishing routines, or
-managing distractions, so I find Focus Bear's features particularly beneficial.
-The app's design acknowledges and addresses these challenges, offering
-structured support to help users navigate and overcome them.
+Yes, I do. For example, during university, I often struggled with maintaining focus while studying at home. I would sit down with the intention of working on an assignment, but after just a few minutes I’d find myself distracted by social media or YouTube. This often meant I stayed up late to finish work, which left me drained the next day. If I had been using Focus Bear at that time, features like website blocking and structured break reminders could have kept me on track and prevented that cycle of distraction and burnout. Similarly, I sometimes struggled to stick to a consistent morning routine before classes. The guided routine feature would have helped me start the day in a structured way, improving both my focus and punctuality.
