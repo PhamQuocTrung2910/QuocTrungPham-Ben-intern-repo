@@ -22,3 +22,11 @@
     structure.
 
 PS: This Issue was mainly done using AI
+
+I used ChatGPT while working on my university Data Structures assignment (COS30008). Specifically, I was implementing a Fibonacci iterator in C++ and ran into a logic bug where my iterator wasn’t advancing correctly.
+
+![Prompt including faulty code logic](image22.png)
+![ChatGPT response to fix it with the reasoning](image23.png)
+
+I've used Claude to build the CI Workflow for this repository refer to the .yaml documents for specifications
+![Claude Prompt to generate CI Workflow](image24.png)
