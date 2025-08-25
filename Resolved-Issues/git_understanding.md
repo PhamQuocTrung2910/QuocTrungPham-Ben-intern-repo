@@ -217,6 +217,16 @@ Summary:
   - Commit 3 (bad): Added division function (irrelevant to the bug).
   - The bug I wanted to find was: multiplication returning the wrong result.
 
+
+1. Screenshots:
+
+   ![A Screenshot of the python code with the bug](image29.png)
+   ![A Screenshot of the terminal commands](image30.png)
+   ![A Screenshot of the terminal commands](image31.png)
+   ![A Screenshot of the terminal commands](image32.png)
+
+- All the terminal commands to set up the python files to the bisect commands
+
 📌 Writing Meaningful Commit Messages
 
 1. Research best practices for writing commit messages.
