@@ -169,7 +169,7 @@ React into its settings as i have not reached the stage where react is relevant.
    your own).
 
 ```javascript
-const x = "John Doe";
+const x = 'John Doe';
 const y = true;
 function fn(a) {
   console.log(a);
@@ -182,7 +182,7 @@ function fn(a) {
 1. Refactor the code by renaming variables/functions for better clarity.
 
 ```javascript
-const userName = "John Doe";
+const userName = 'John Doe';
 const isLoggedIn = true;
 function handleLogin(user) {
   console.log(user);
@@ -314,18 +314,18 @@ function submitUserData(user, data, isAdmin, notify) {
 
   // Validate user
   if (!user || !user.id) {
-    console.error("Invalid user");
+    console.error('Invalid user');
     return;
   }
 
   // Process data
-  Object.keys(data).forEach((key) => {
+  Object.keys(data).forEach(key => {
     processed[key] = data[key].trim();
   });
 
   // Admin extra action
   if (isAdmin) {
-    processed.adminNote = "Processed by admin";
+    processed.adminNote = 'Processed by admin';
   }
 
   // Optional notification
@@ -348,21 +348,19 @@ function submitUserData(user, data, isAdmin, notify) {
 ```javascript
 function validateUser(user) {
   if (!user || !user.id) {
-    console.error("Invalid user");
+    console.error('Invalid user');
     return false;
   }
   return true;
 }
 
 function processData(data) {
-  return Object.fromEntries(
-    Object.entries(data).map(([k, v]) => [k, v.trim()]),
-  );
+  return Object.fromEntries(Object.entries(data).map(([k, v]) => [k, v.trim()]));
 }
 
 function addAdminNote(processed, isAdmin) {
   if (isAdmin) {
-    processed.adminNote = "Processed by admin";
+    processed.adminNote = 'Processed by admin';
   }
   return processed;
 }
@@ -467,8 +465,8 @@ function logUserEvent(user, event) {
 }
 
 // Usage:
-logUserEvent(user, "logged in");
-logUserEvent(user, "checked out");
+logUserEvent(user, 'logged in');
+logUserEvent(user, 'checked out');
 ```
 
 1. What were the issues with duplicated code?
@@ -533,7 +531,7 @@ function handleUserFormSubmission(formData, userId, isEdit) {
     api.updateUser(userId, { name, email });
   }
 
-  analytics.track("UserFormSubmitted", {
+  analytics.track('UserFormSubmitted', {
     userId,
     isNew: !isEdit,
     timestamp: new Date().toISOString(),
@@ -550,7 +548,7 @@ function handleUserFormSubmission(formData, userId, isEdit) {
     api.updateUser(userId, { name, email });
   }
 
-  analytics.track("UserFormSubmitted", {
+  analytics.track('UserFormSubmitted', {
     userId,
     isNew: !isEdit,
     timestamp: new Date().toISOString(),
@@ -584,7 +582,7 @@ function submitUserData(userData, userId, isEdit) {
 }
 
 function trackFormSubmission(userId, isNew) {
-  analytics.track("UserFormSubmitted", {
+  analytics.track('UserFormSubmitted', {
     userId,
     isNew,
     timestamp: new Date().toISOString(),
@@ -745,10 +743,8 @@ References:
 
 ```javascript
 function getInitials(user) {
-  const names = user.name.split(" ");
-  return (
-    names[0][0].toUpperCase() + (names[1] ? names[1][0].toUpperCase() : "")
-  );
+  const names = user.name.split(' ');
+  return names[0][0].toUpperCase() + (names[1] ? names[1][0].toUpperCase() : '');
 }
 ```
 
@@ -760,20 +756,20 @@ function getInitials(user) {
 
 ```javascript
 function getInitials(user) {
-  if (!user || typeof user.name !== "string") {
-    console.error("Invalid user or name property");
-    return "";
+  if (!user || typeof user.name !== 'string') {
+    console.error('Invalid user or name property');
+    return '';
   }
 
-  const parts = user.name.trim().split(" ").filter(Boolean);
+  const parts = user.name.trim().split(' ').filter(Boolean);
   if (parts.length === 0) {
-    return "";
+    return '';
   }
 
   const initials = parts
     .slice(0, 2)
-    .map((part) => part[0].toUpperCase())
-    .join("");
+    .map(part => part[0].toUpperCase())
+    .join('');
 
   return initials;
 }
