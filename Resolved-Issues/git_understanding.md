@@ -237,6 +237,9 @@ Summary:
 - Confusion, slower debugging, inefficient reviews, poor project history, merge
   conflicts.
 
+1. Commit Messages
+
+
 📌 Creating & Reviewing Pull Requests
 
 1. Research what a Pull Request (PR) is and why it’s used.
