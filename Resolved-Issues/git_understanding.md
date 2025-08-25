@@ -29,7 +29,7 @@ Causes:
   committing it.
 - Merging the branch back into main.
 
-`"This is the merge conflict - 1"` and `"This is the merge conflict - 3"`
+`"This is the merge conflict - 1"` and `"This is the merge conflict - 2"`
 
 1. Use your Git desktop client to resolve the conflict.
 
