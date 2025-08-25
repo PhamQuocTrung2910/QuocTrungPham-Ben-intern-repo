@@ -110,3 +110,9 @@ I would love to get a laptop stand, i'll go online later today to get one.
 1. Document at least one workspace change or habit adjustment you made.
 
 Setting up Focus Bear to be able to regulate workplace productivity.
+
+1. Screenshots:
+
+![a screenshot of my Physical Set UP](image6.png)
+
+![a screenshot of my Focus Bear Routines](image5.png)

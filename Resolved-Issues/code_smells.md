@@ -155,7 +155,7 @@ class UserManager {
 // Deeply Nested Conditionals
 function checkAccess(user) {
   if (user) {
-    if (user.role === "admin") {
+    if (user.role === 'admin') {
       if (user.active) {
         return true;
       }
@@ -175,7 +175,7 @@ function checkAccess(user) {
 ```javascript
 // Inconsistent Naming
 let x = 10;
-let y = "John Doe";
+let y = 'John Doe';
 ```
 
 Here are the code examples after restructuring to eliminate code smells:
@@ -241,7 +241,7 @@ class ReportGenerator {
 ```javascript
 // Deeply Nested Conditionals
 function checkAccess(user) {
-  return user?.role === "admin" && user.active;
+  return user?.role === 'admin' && user.active;
 }
 ```
 
@@ -253,7 +253,7 @@ function checkAccess(user) {
 ```javascript
 // Inconsistent Naming
 let userAge = 10;
-let userName = "John Doe";
+let userName = 'John Doe';
 ```
 
 1. What code smells did you find in your code?

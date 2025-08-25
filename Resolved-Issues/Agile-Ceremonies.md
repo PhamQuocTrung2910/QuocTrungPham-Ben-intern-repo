@@ -9,6 +9,13 @@
     - Any blockers they are facing
   - Purpose: Keep everyone aligned, identify issues early, and promote
     accountability.
+- So far as of 25/08/2025 I have attended a total of 6 Standup Meetings for
+the Mobile App development Team and will be attending my 7th today.
+- A lot were discussed however the main things were everyone's weekly update of
+what they have been doing, for interns that was mostly doing the onboarding tsk.
+FOr Developers such as Bao, Ken and Mia they have been working on new features
+such as an AI Prompt to Routine feature and also an emoji picker feature for routines
+and breaks, Ken had been working on test for the Mobile App.
 
 - Sprint Planning (Scrum) vs. Continuous Prioritization (Kanban)
   - Scrum is a meeting at the start of a sprint to decide what backlog items
@@ -18,9 +25,7 @@
     work is pulled into the workflow as capacity allows.
 
 - Retrospectives
-  - End-of-sprint (or periodic) meetings to reflect on what went well, what
-    could be improved, and concrete actions for improvement. Encourages
-    continuous learning and process refinement.
+  - End-of-sprint (or periodic) meetings to reflect on what went well, what could be improved, and create concrete actions for improvement. Encourages continuous learning and process refinement.
 
 - Backlog Refinement
   - Regular sessions to review and clarify backlog items, ensure they are
@@ -57,9 +62,13 @@ interesting topics discussed such as with the topic on user created routines and
 many more i'm looking forward to hearing about and helping out.
 
 1. Participate in a retrospective or review past notes from one.
-
-I've reviewed some of the notes from standups i couldn't attend to keep up to
-date.
+22/08/2025 - 14:15 Focus Bear scrum ceremonies mobile team
+The Most recent scrum meeting discussed the issues that have been resolved or
+are still ongoing such as updating the app to React Native version 1.9 which
+seems to have recently been completed and there had been discussions on the
+issues on the backend suffering from endpoint failures which requires urgent
+fixes. Some of the new features are now in the process of review before they
+go live concluding the end of sprint 5 and the start of sprint 6.
 
 1. Document one change you can make to improve your team collaboration.
 
@@ -68,3 +77,6 @@ collaboration is to proactively ask clarifying questions in our team chat when
 I’m unsure about a task or process, rather than waiting until the next meeting.
 This ensures I stay aligned with the team’s expectations, helps me learn faster,
 and prevents delays in my work that could affect others.
+
+1. Screenshot:
+![A Screenshot of my most recent meeting](image7.png)
