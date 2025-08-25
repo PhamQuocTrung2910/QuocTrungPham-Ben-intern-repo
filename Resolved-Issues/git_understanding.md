@@ -203,6 +203,14 @@ Summary:
 - Git bisect is faster, more accurate, scalable, systematic, and reduces human
   error compared to manually checking commits.
 
+1. Scenario Setup
+
+- I created a small test repository with three commits in a file called calculator.py:
+  - Commit 1 (good): Added basic addition and subtraction functions.
+  - Commit 2 (bad): Introduced a multiplication function but mistakenly returned a + b instead of a * b.
+  - Commit 3 (bad): Added division function (irrelevant to the bug).
+  - The bug I wanted to find was: multiplication returning the wrong result.
+
 📌 Writing Meaningful Commit Messages
 
 1. Research best practices for writing commit messages.
@@ -231,6 +239,16 @@ Summary:
 - Confusion, slower debugging, inefficient reviews, poor project history, merge
   conflicts.
 
+<<<<<<< Updated upstream
+=======
+1. Commit Messages
+- A vague commit message
+- An overly detailed commit message.
+- A well-structured commit message.
+
+![Git Commit Messages - Vague, Long, and Well-Structured](image28.png)
+
+>>>>>>> Stashed changes
 📌 Creating & Reviewing Pull Requests
 
 1. Research what a Pull Request (PR) is and why it’s used.
