@@ -179,6 +179,8 @@ Summary:
   so much faster. This looks like one I should definitely be using more and I
   probably will whenever an error has occurred.
 
+1. Git Command Execution
+
 📌 Debugging with git bisect
 
 1. Research git bisect and how it helps in debugging.
