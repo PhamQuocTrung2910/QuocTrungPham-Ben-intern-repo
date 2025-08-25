@@ -239,8 +239,6 @@ Summary:
 - Confusion, slower debugging, inefficient reviews, poor project history, merge
   conflicts.
 
-<<<<<<< Updated upstream
-=======
 1. Commit Messages
 - A vague commit message
 - An overly detailed commit message.
@@ -248,7 +246,6 @@ Summary:
 
 ![Git Commit Messages - Vague, Long, and Well-Structured](image28.png)
 
->>>>>>> Stashed changes
 📌 Creating & Reviewing Pull Requests
 
 1. Research what a Pull Request (PR) is and why it’s used.
