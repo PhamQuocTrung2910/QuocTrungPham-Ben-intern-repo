@@ -17,3 +17,6 @@ like gs for git status and gp for git push when i'm more comfortable with Git.
 The most useful command was git status, because it quickly shows the state of my
 working directory, including changes staged for commit, unstaged changes, and
 untracked files. This helps me stay organized and avoid mistakes.
+
+1. Screenshot:
+![Running the Git Status command on Git Bash terminal](image25.png)
