@@ -238,7 +238,8 @@ Summary:
   conflicts.
 
 1. Commit Messages
-
+- A vague commit message
+- An overly detailed commit message.
 
 📌 Creating & Reviewing Pull Requests
 
