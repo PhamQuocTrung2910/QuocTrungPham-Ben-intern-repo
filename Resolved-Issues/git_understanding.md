@@ -179,6 +179,8 @@ Summary:
   so much faster. This looks like one I should definitely be using more and I
   probably will whenever an error has occurred.
 
+1. Git Command Execution
+
 📌 Debugging with git bisect
 
 1. Research git bisect and how it helps in debugging.
@@ -208,6 +210,24 @@ Summary:
 
 - Git bisect is faster, more accurate, scalable, systematic, and reduces human
   error compared to manually checking commits.
+
+1. Scenario Setup
+
+- I created a small test repository with three commits in a file called calculator.py:
+  - Commit 1 (good): Added basic addition and subtraction functions.
+  - Commit 2 (bad): Introduced a multiplication function but mistakenly returned a + b instead of a * b.
+  - Commit 3 (bad): Added division function (irrelevant to the bug).
+  - The bug I wanted to find was: multiplication returning the wrong result.
+
+
+1. Screenshots:
+
+   ![A Screenshot of the python code with the bug](image29.png)
+   ![A Screenshot of the terminal commands](image30.png)
+   ![A Screenshot of the terminal commands](image31.png)
+   ![A Screenshot of the terminal commands](image32.png)
+
+- All the terminal commands to set up the python files to the bisect commands
 
 📌 Writing Meaningful Commit Messages
 
@@ -241,6 +261,8 @@ Summary:
 - A vague commit message
 - An overly detailed commit message.
 - A well-structured commit message.
+
+![Git Commit Messages - Vague, Long, and Well-Structured](image28.png)
 
 📌 Creating & Reviewing Pull Requests
 
