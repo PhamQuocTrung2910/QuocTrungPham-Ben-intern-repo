@@ -83,6 +83,7 @@ words:
   - changelog
   - todo
   - todos
+  - testrepo
 
   # Markdown/Documentation specific
   - markdownlint
