@@ -182,12 +182,18 @@ Summary:
 1. Git Command Execution Screenshots
 
 - `git checkout main -- <file>`
-![A screenshot before a git checkout](GitCheckoutBefore.png)
-![A screenshot after a git checkout](GitCheckoutAfter.png)
+  ![A screenshot before a git checkout](GitCheckoutBefore.png)
+  ![A screenshot after a git checkout](GitCheckoutAfter.png)
 
 - `git cherry-pick`
-![A screenshot before a git checkout](GitCheckoutBefore.png)
+  ![A screenshot of a git cherry pick](GitCherryPick.png)
+  ![A screenshot before a git checkout](GitCherryPickCommit.png)
 
+- `git log`
+  ![A screenshot of a shortened git log](GitLog.png)
+
+- `git blame`
+  ![A screenshot of a git blame showing the last modification of each line in this md file](GitBlame.png)
 
 📌 Debugging with git bisect
 
@@ -223,10 +229,9 @@ Summary:
 
 - I created a small test repository with three commits in a file called calculator.py:
   - Commit 1 (good): Added basic addition and subtraction functions.
-  - Commit 2 (bad): Introduced a multiplication function but mistakenly returned a + b instead of a * b.
+  - Commit 2 (bad): Introduced a multiplication function but mistakenly returned a + b instead of a \* b.
   - Commit 3 (bad): Added division function (irrelevant to the bug).
   - The bug I wanted to find was: multiplication returning the wrong result.
-
 
 1. Screenshots:
 
@@ -266,6 +271,7 @@ Summary:
   conflicts.
 
 1. Commit Messages
+
 - A vague commit message
 - An overly detailed commit message.
 - A well-structured commit message.

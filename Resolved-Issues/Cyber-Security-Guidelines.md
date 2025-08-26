@@ -154,8 +154,8 @@ I'll always make sure that my passwords contains at least 5 Uniques symbols and
 a mix of Upper Case and Lower Case letters for better security.
 
 1. Screenshots:
-![Showing that 2FA is enabled](2FactorAuth.png)
-I have 2 Factor Authentication on my Swinburne Student Account.
+   ![Showing that 2FA is enabled](2FactorAuth.png)
+   I have 2 Factor Authentication on my Swinburne Student Account.
 
 ![A screenshot of my device lock settings](MobileDeviceLockSettings.png)
 A screenshot from my mobile device.
