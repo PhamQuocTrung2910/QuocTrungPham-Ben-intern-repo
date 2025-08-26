@@ -79,4 +79,4 @@ This ensures I stay aligned with the team’s expectations, helps me learn faste
 and prevents delays in my work that could affect others.
 
 1. Screenshot:
-   ![A Screenshot of my most recent meeting](image7.png)
+   ![A Screenshot of my most recent meeting](ScrumMeeting.png)
