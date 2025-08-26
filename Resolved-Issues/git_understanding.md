@@ -46,10 +46,10 @@ Causes:
     causing the conflict and what changes are actually needed
 
 1. Screenshots:
-   ![A screenshot or snippet showing the merge conflict in your Git client or editor](image11.png)
-   ![A screenshot of your conflict resolution (just before)](image16.png)
-   ![A screenshot of your conflict resolution (after resolving)](image17.png)
-   ![The relevant section of your Git commit history from the exercise](image18.png)
+   ![A screenshot or snippet showing the merge conflict in your Git client or editor](MergeConflict.png)
+   ![A screenshot of your conflict resolution (just before)](MergeConflictEditor.png)
+   ![A screenshot of your conflict resolution (after resolving)](MergeConflictResolved.png)
+   ![The relevant section of your Git commit history from the exercise](MergeConflictCommit.png)
 
 📌 Staging vs Committing
 
@@ -179,7 +179,15 @@ Summary:
   so much faster. This looks like one I should definitely be using more and I
   probably will whenever an error has occurred.
 
-1. Git Command Execution
+1. Git Command Execution Screenshots
+
+- `git checkout main -- <file>`
+![A screenshot before a git checkout](GitCheckoutBefore.png)
+![A screenshot after a git checkout](GitCheckoutAfter.png)
+
+- `git cherry-pick`
+![A screenshot before a git checkout](GitCheckoutBefore.png)
+
 
 📌 Debugging with git bisect
 
@@ -222,10 +230,10 @@ Summary:
 
 1. Screenshots:
 
-   ![A Screenshot of the python code with the bug](image29.png)
-   ![A Screenshot of the terminal commands](image30.png)
-   ![A Screenshot of the terminal commands](image31.png)
-   ![A Screenshot of the terminal commands](image32.png)
+   ![A Screenshot of the python code with the bug](GitBisect1.png)
+   ![A Screenshot of the terminal commands](GitBisect2.png)
+   ![A Screenshot of the terminal commands](GitBisect3.png)
+   ![A Screenshot of the terminal commands](GitBisect4.png)
 
 - All the terminal commands to set up the python files to the bisect commands
 
