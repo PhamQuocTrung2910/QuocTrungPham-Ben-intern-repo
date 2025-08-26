@@ -214,5 +214,5 @@ For me, using AI in moderation means applying it only when it adds value, not as
 - My rule of thumb: if the task is about expressing ideas clearly, I let AI assist. If the task is about generating ideas or making choices, I rely on my own reasoning first, then use AI only to refine.
 
 1. Screenshots:
-   ![a screenshot the actual AI interaction (the original and improved version)](image4.png)
+   ![a screenshot the actual AI interaction (the original and improved version)](AI-Interaction.png)
    I have begun using similar AI-supported workflows in other parts of my internship. For example, when drafting technical documentation, I use AI to improve clarity and tone so it’s more accessible for non-technical team members. In future work at Focus Bear, I can apply this workflow to polish stakeholder reports, generate user-friendly feature explanations, and create concise summaries of technical discussions. This ensures my communication is professional and efficient, without spending excessive time on wording.
