@@ -7,6 +7,7 @@ language: "en"
 # Custom words that should be considered correct
 words:
   # Technology terms
+  - testrepo
   - GitHub
   - GitLab
   - JavaScript
