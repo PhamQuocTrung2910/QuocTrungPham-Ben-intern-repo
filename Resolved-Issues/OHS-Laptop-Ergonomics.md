@@ -113,6 +113,6 @@ Setting up Focus Bear to be able to regulate workplace productivity.
 
 1. Screenshots:
 
-![a screenshot of my Physical Set UP](image6.png)
+![a screenshot of my Physical Set UP](PhysicalSetUp.png)
 
-![a screenshot of my Focus Bear Routines](image5.png)
+![a screenshot of my Focus Bear Routines](FocusBearRoutines.png)

@@ -12,7 +12,7 @@
 - Overall, I found the flow smooth but I think adding more tooltips for first-time users would help.
 
 📸 Screenshots:
-![My Personal Focus Bear Routines](image5.jpg)
-![Focus Bear Settings](image19.png)
-![Focus Bear Habit Creator](image20.png)
-![Focus Bear Focus Mode](image21.png)
+![My Personal Focus Bear Routines](FocusBearRoutines.png)
+![Focus Bear Settings](FocusBearSettings.png)
+![Focus Bear Habit Creator](FocusBearRoutingCreator.png)
+![Focus Bear Focus Mode](FocusBearFocusMode.png)

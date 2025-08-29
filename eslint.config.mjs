@@ -3,26 +3,60 @@ import globals from 'globals';
 import pluginReact from 'eslint-plugin-react';
 import markdown from '@eslint/markdown';
 import css from '@eslint/css';
-import { defineConfig } from 'eslint/config';
 
-export default defineConfig([
+export default [
+  // Base JavaScript configuration
+  js.configs.recommended,
+
+  // React/JSX configuration
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
-    plugins: { js },
-    extends: ['js/recommended'],
-    languageOptions: { globals: globals.browser },
+    languageOptions: {
+      globals: globals.browser,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true, // Enable JSX parsing
+        },
+      },
+    },
+    plugins: {
+      react: pluginReact,
+    },
+    rules: {
+      ...pluginReact.configs.recommended.rules,
+      'react/react-in-jsx-scope': 'off', // Not needed in React 17+
+      'react/prop-types': 'off', // Optional: disable if not using PropTypes
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
   },
-  pluginReact.configs.flat.recommended,
+
+  // Markdown configuration
   {
     files: ['**/*.md'],
-    plugins: { markdown },
+    plugins: {
+      markdown
+    },
     language: 'markdown/gfm',
-    extends: ['markdown/recommended'],
+    rules: {
+      ...markdown.configs.recommended.rules,
+    },
   },
+
+  // CSS configuration
   {
     files: ['**/*.css'],
-    plugins: { css },
+    plugins: {
+      css
+    },
     language: 'css/css',
-    extends: ['css/recommended'],
+    rules: {
+      ...css.configs.recommended.rules,
+    },
   },
-]);
+];

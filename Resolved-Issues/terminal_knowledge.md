@@ -19,4 +19,4 @@ working directory, including changes staged for commit, unstaged changes, and
 untracked files. This helps me stay organized and avoid mistakes.
 
 1. Screenshot:
-   ![Running the Git Status command on Git Bash terminal](image25.png)
+   ![Running the Git Status command on Git Bash terminal](Git-Status.png)
