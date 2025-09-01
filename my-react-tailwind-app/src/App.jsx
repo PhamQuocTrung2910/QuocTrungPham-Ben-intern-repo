@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld.jsx';
+import Counter from './components/Counter.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <HelloWorld />
+      <Counter />
       <div>
         <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -18,6 +20,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
       <h1 className="text-blue-500">Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount(count => count + 1)}>
