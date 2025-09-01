@@ -207,12 +207,23 @@ I will make sure that i use AI in moderation to solve the more mundane and
 repetitive task while trying to solve the actual issues myself and learning from
 them.
 
-For me, using AI in moderation means applying it only when it adds value, not as a shortcut to avoid thinking critically. Specifically:
+For me, using AI in moderation means applying it only when it adds value, not as
+a shortcut to avoid thinking critically. Specifically:
 
 - I use AI for structuring, rewording, and polishing content.
-- I avoid using it when original analysis, decision-making, or personal reflection is required, since those need to come from my own judgment and experience.
-- My rule of thumb: if the task is about expressing ideas clearly, I let AI assist. If the task is about generating ideas or making choices, I rely on my own reasoning first, then use AI only to refine.
+- I avoid using it when original analysis, decision-making, or personal
+  reflection is required, since those need to come from my own judgment and
+  experience.
+- My rule of thumb: if the task is about expressing ideas clearly, I let AI
+  assist. If the task is about generating ideas or making choices, I rely on my
+  own reasoning first, then use AI only to refine.
 
 1. Screenshots:
    ![a screenshot the actual AI interaction (the original and improved version)](AI-Interaction.png)
-   I have begun using similar AI-supported workflows in other parts of my internship. For example, when drafting technical documentation, I use AI to improve clarity and tone so it’s more accessible for non-technical team members. In future work at Focus Bear, I can apply this workflow to polish stakeholder reports, generate user-friendly feature explanations, and create concise summaries of technical discussions. This ensures my communication is professional and efficient, without spending excessive time on wording.
+   I have begun using similar AI-supported workflows in other parts of my
+   internship. For example, when drafting technical documentation, I use AI to
+   improve clarity and tone so it’s more accessible for non-technical team
+   members. In future work at Focus Bear, I can apply this workflow to polish
+   stakeholder reports, generate user-friendly feature explanations, and create
+   concise summaries of technical discussions. This ensures my communication is
+   professional and efficient, without spending excessive time on wording.

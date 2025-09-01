@@ -14,6 +14,5 @@ accessibility. It highlighted areas for improvement, like reducing unused
 JavaScript and optimizing images, helping me understand how small changes can
 significantly enhance user experience.
 
-1. Screenshots:
-   ![Chrome Extensions](Chrome-Extension.png)
+1. Screenshots: ![Chrome Extensions](Chrome-Extension.png)
    ![Chrome_Extensions.md showing GitHub access](Git-Status-MD.png)

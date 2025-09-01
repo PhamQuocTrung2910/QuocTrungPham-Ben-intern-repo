@@ -48,4 +48,13 @@ their daily lives.
 1. Do you personally relate to any of the challenges that Focus Bear aims to
    solve?
 
-Yes, I do. For example, during university, I often struggled with maintaining focus while studying at home. I would sit down with the intention of working on an assignment, but after just a few minutes I’d find myself distracted by social media or YouTube. This often meant I stayed up late to finish work, which left me drained the next day. If I had been using Focus Bear at that time, features like website blocking and structured break reminders could have kept me on track and prevented that cycle of distraction and burnout. Similarly, I sometimes struggled to stick to a consistent morning routine before classes. The guided routine feature would have helped me start the day in a structured way, improving both my focus and punctuality.
+Yes, I do. For example, during university, I often struggled with maintaining
+focus while studying at home. I would sit down with the intention of working on
+an assignment, but after just a few minutes I’d find myself distracted by social
+media or YouTube. This often meant I stayed up late to finish work, which left
+me drained the next day. If I had been using Focus Bear at that time, features
+like website blocking and structured break reminders could have kept me on track
+and prevented that cycle of distraction and burnout. Similarly, I sometimes
+struggled to stick to a consistent morning routine before classes. The guided
+routine feature would have helped me start the day in a structured way,
+improving both my focus and punctuality.

@@ -82,6 +82,15 @@ clarifications during testing.
 
 1. Experience with QA
 
-During a group project at university, I worked closely with a QA teammate while developing a login feature for our web app. After I implemented the login flow, QA tested it and found that the system allowed users to submit an empty password field, which wasn’t caught by my validation. Instead of just reporting the bug, the QA teammate explained how they tested it and why it was an issue for security. I updated the code by adding stricter client-side and server-side checks, then sent it back to QA for retesting. They confirmed the fix worked, and we closed the issue.
+During a group project at university, I worked closely with a QA teammate while
+developing a login feature for our web app. After I implemented the login flow,
+QA tested it and found that the system allowed users to submit an empty password
+field, which wasn’t caught by my validation. Instead of just reporting the bug,
+the QA teammate explained how they tested it and why it was an issue for
+security. I updated the code by adding stricter client-side and server-side
+checks, then sent it back to QA for retesting. They confirmed the fix worked,
+and we closed the issue.
 
-This experience taught me the value of QA’s perspective, they often think about edge cases I don’t immediately consider as a developer. It also showed me that quick, respectful collaboration helps the team ship more reliable features.
+This experience taught me the value of QA’s perspective, they often think about
+edge cases I don’t immediately consider as a developer. It also showed me that
+quick, respectful collaboration helps the team ship more reliable features.

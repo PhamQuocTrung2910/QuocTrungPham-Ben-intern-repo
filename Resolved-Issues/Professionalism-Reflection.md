@@ -85,36 +85,68 @@
 1. Have you ever experienced or witnessed great teamwork and professionalism?
    What made it effective?
 
-I experienced great teamwork during my final year project with two other teammates. One challenge we faced was falling behind schedule because a feature integration caused repeated errors. Instead of panicking, I suggested we split the tasks more strategically: one person focused on debugging, another documented test cases, and I worked on refactoring a core function that was causing delays. We stayed on late-night calls to collaborate, shared progress transparently, and joked around to ease stress. This mix of clear communication, role clarity, and maintaining morale helped us deliver the project on time and strengthened trust within the team.
+I experienced great teamwork during my final year project with two other
+teammates. One challenge we faced was falling behind schedule because a feature
+integration caused repeated errors. Instead of panicking, I suggested we split
+the tasks more strategically: one person focused on debugging, another
+documented test cases, and I worked on refactoring a core function that was
+causing delays. We stayed on late-night calls to collaborate, shared progress
+transparently, and joked around to ease stress. This mix of clear communication,
+role clarity, and maintaining morale helped us deliver the project on time and
+strengthened trust within the team.
 
 1. What steps can you take to make sure your communication is clear, respectful,
    and inclusive?
 
-I will break information into smaller, easy-to-understand chunks, using bullet points or numbered lists so that tasks are less overwhelming. For example, if assigning mobile app bug fixes, I’d write: “1. Check crash logs, 2. Replicate error, 3. Submit fix.” This ensures clarity and inclusivity because everyone knows what to do and when. From past experience, the easiest tasks were always the ones with clear, structured instructions.
+I will break information into smaller, easy-to-understand chunks, using bullet
+points or numbered lists so that tasks are less overwhelming. For example, if
+assigning mobile app bug fixes, I’d write: “1. Check crash logs, 2. Replicate
+error, 3. Submit fix.” This ensures clarity and inclusivity because everyone
+knows what to do and when. From past experience, the easiest tasks were always
+the ones with clear, structured instructions.
 
 1. How can you help create a positive, fun, and professional work environment?
 
-I can foster positivity by showing kindness, acknowledging teammates’ contributions, and being approachable. At the same time, I’ll balance this with accountability—for example, if someone struggles to complete their part, I’ll offer help but also encourage them to stay engaged rather than silently taking over. Even small gestures like responding warmly in chats or checking in when someone seems quiet can make the environment both fun and professional.
+I can foster positivity by showing kindness, acknowledging teammates’
+contributions, and being approachable. At the same time, I’ll balance this with
+accountability—for example, if someone struggles to complete their part, I’ll
+offer help but also encourage them to stay engaged rather than silently taking
+over. Even small gestures like responding warmly in chats or checking in when
+someone seems quiet can make the environment both fun and professional.
 
 1. How can you prepare effectively for meetings with supervisors and colleagues?
 
-Before meetings, I’ll prepare by reviewing the agenda and noting where I can contribute. For example, if the discussion is about the mobile app, I’ll list current bugs I’ve identified, progress updates, and one or two improvement ideas. Having this preparation allows me to follow the conversation more actively and ask relevant questions, rather than just listening passively.
+Before meetings, I’ll prepare by reviewing the agenda and noting where I can
+contribute. For example, if the discussion is about the mobile app, I’ll list
+current bugs I’ve identified, progress updates, and one or two improvement
+ideas. Having this preparation allows me to follow the conversation more
+actively and ask relevant questions, rather than just listening passively.
 
 1. What would it look like to be proactive during your internship?
 
-Being proactive means going beyond just onboarding. For my mobile app role, this could mean identifying areas where the UI/UX can be streamlined, suggesting improvements such as “adding a quick-login option” or “optimizing API calls for faster loading,” and bringing these ideas to team meetings. It also means testing features thoroughly, documenting issues, and offering potential solutions rather than waiting for instructions.
+Being proactive means going beyond just onboarding. For my mobile app role, this
+could mean identifying areas where the UI/UX can be streamlined, suggesting
+improvements such as “adding a quick-login option” or “optimizing API calls for
+faster loading,” and bringing these ideas to team meetings. It also means
+testing features thoroughly, documenting issues, and offering potential
+solutions rather than waiting for instructions.
 
 1. How might you follow up with colleagues or supervisors if you need
    information/action from them? How would you escalate it further if you don't
    get a response and when would you escalate?
 
-If I needed a code review urgently before a release, I would first send a direct message on Discord. If there’s no reply after 24 hours, I would escalate by sending an SMS. If I still don’t hear back within another 2 hours, I would escalate further by making a call. This way, I respect communication hierarchies and timelines but ensure important tasks don’t get blocked.
+If I needed a code review urgently before a release, I would first send a direct
+message on Discord. If there’s no reply after 24 hours, I would escalate by
+sending an SMS. If I still don’t hear back within another 2 hours, I would
+escalate further by making a call. This way, I respect communication hierarchies
+and timelines but ensure important tasks don’t get blocked.
 
 1. What are some things you won't do?
 
 - Wait around for instructions without taking initiative.
 - Show up to meetings unprepared or without questions.
-- Ask questions that could be answered quickly by a simple Google search or ChatGPT.
+- Ask questions that could be answered quickly by a simple Google search or
+  ChatGPT.
 - Ghost my project by failing to provide updates or communicate progress.
 - Ignore feedback or fail to act on it, especially if it’s repeated.
 - Rely only on one communication method and not escalate urgent issues properly.

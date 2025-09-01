@@ -355,7 +355,9 @@ function validateUser(user) {
 }
 
 function processData(data) {
-  return Object.fromEntries(Object.entries(data).map(([k, v]) => [k, v.trim()]));
+  return Object.fromEntries(
+    Object.entries(data).map(([k, v]) => [k, v.trim()])
+  );
 }
 
 function addAdminNote(processed, isAdmin) {
@@ -744,7 +746,9 @@ References:
 ```javascript
 function getInitials(user) {
   const names = user.name.split(' ');
-  return names[0][0].toUpperCase() + (names[1] ? names[1][0].toUpperCase() : '');
+  return (
+    names[0][0].toUpperCase() + (names[1] ? names[1][0].toUpperCase() : '')
+  );
 }
 ```
 

@@ -119,45 +119,41 @@ Summary:
 
 1. What does each command do?
 
-- `git checkout main -- <file>`
-  This command allows you to restore a specific file from the main branch into
-  your current working directory—without impacting other changes around it. It’s
-  handy if you need to revert or inspect just one file from another branch.
+- `git checkout main -- <file>` This command allows you to restore a specific
+  file from the main branch into your current working directory—without
+  impacting other changes around it. It’s handy if you need to revert or inspect
+  just one file from another branch.
 
-- `git cherry-pick <commit>`
-  This command applies the changes from a specific commit on another branch to
-  your current branch. It’s especially useful when you want to integrate a bug
-  fix or small improvement without merging the entire branch.
+- `git cherry-pick <commit>` This command applies the changes from a specific
+  commit on another branch to your current branch. It’s especially useful when
+  you want to integrate a bug fix or small improvement without merging the
+  entire branch.
 
-- `git log`
-  This command shows the commit history of your repository—displaying each
-  commit’s hash, author, date, and message. It’s a powerful way to review how
-  the project has evolved and understand the context behind changes.
+- `git log` This command shows the commit history of your repository—displaying
+  each commit’s hash, author, date, and message. It’s a powerful way to review
+  how the project has evolved and understand the context behind changes.
 
-- `git blame <file>`
-  The `git blame` command annotates each line in a file with information about
-  who last modified it and when. It helps you trace code ownership—great for
-  debugging or understanding code history.
+- `git blame <file>` The `git blame` command annotates each line in a file with
+  information about who last modified it and when. It helps you trace code
+  ownership—great for debugging or understanding code history.
 
 1. When would you use it in a real project?
 
-- `git checkout main -- <file>`
-  If another developer fixed a bug in main and you just need that single file’s
-  update without pulling everything else. For example, restoring a config file
-  that you accidentally broke while working on a feature branch.
+- `git checkout main -- <file>` If another developer fixed a bug in main and you
+  just need that single file’s update without pulling everything else. For
+  example, restoring a config file that you accidentally broke while working on
+  a feature branch.
 
-- `git cherry-pick <commit>`
-  When a critical hotfix was committed to another branch and you need it applied
-  to yours immediately, without merging unrelated changes. Common in production
-  bug fixes.
+- `git cherry-pick <commit>` When a critical hotfix was committed to another
+  branch and you need it applied to yours immediately, without merging unrelated
+  changes. Common in production bug fixes.
 
-- `git log`
-  During code reviews or troubleshooting to understand when and why a feature
-  was added, or to see what’s changed before a release.
+- `git log` During code reviews or troubleshooting to understand when and why a
+  feature was added, or to see what’s changed before a release.
 
-- `git blame <file>`
-  When debugging a problem and you need to see who last touched the affected
-  code lines, so you can ask for context or understand the reasoning.
+- `git blame <file>` When debugging a problem and you need to see who last
+  touched the affected code lines, so you can ask for context or understand the
+  reasoning.
 
 1. What surprised you while testing these commands?
 
@@ -185,12 +181,10 @@ Summary:
   ![A screenshot before a git checkout](GitCheckoutBefore.png)
   ![A screenshot after a git checkout](GitCheckoutAfter.png)
 
-- `git cherry-pick`
-  ![A screenshot of a git cherry pick](GitCherryPick.png)
+- `git cherry-pick` ![A screenshot of a git cherry pick](GitCherryPick.png)
   ![A screenshot before a git checkout](GitCherryPickCommit.png)
 
-- `git log`
-  ![A screenshot of a shortened git log](GitLog.png)
+- `git log` ![A screenshot of a shortened git log](GitLog.png)
 
 - `git blame`
   ![A screenshot of a git blame showing the last modification of each line in this md file](GitBlame.png)
@@ -227,9 +221,11 @@ Summary:
 
 1. Scenario Setup
 
-- I created a small test repository with three commits in a file called calculator.py:
+- I created a small test repository with three commits in a file called
+  calculator.py:
   - Commit 1 (good): Added basic addition and subtraction functions.
-  - Commit 2 (bad): Introduced a multiplication function but mistakenly returned a + b instead of a \* b.
+  - Commit 2 (bad): Introduced a multiplication function but mistakenly returned
+    a + b instead of a \* b.
   - Commit 3 (bad): Added division function (irrelevant to the bug).
   - The bug I wanted to find was: multiplication returning the wrong result.
 

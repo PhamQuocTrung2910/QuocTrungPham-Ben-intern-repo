@@ -1,8 +1,8 @@
 # CI/CD Reflection
 
 1. Research what CI/CD is and why it's used in software development.
-   - CI (Continuous Integration): Developers frequently merge code changes into a
-     shared repository. Automated builds and tests run to detect issues early.
+   - CI (Continuous Integration): Developers frequently merge code changes into
+     a shared repository. Automated builds and tests run to detect issues early.
    - CD (Continuous Delivery/Deployment): Extends CI by automatically deploying
      tested code to staging or production environments.
 
@@ -23,8 +23,8 @@
      .husky/pre-commit
 
 1. Open a test PR in your repository and review the automated checks.
-   - "This comment is for the purpose of testing the GitHub Actions Workflow
-     PR Review"
+   - "This comment is for the purpose of testing the GitHub Actions Workflow PR
+     Review"
 
 1. Push your CI/CD configuration to your repo.
    - I've done that, please confirm in the following:
@@ -47,12 +47,12 @@
        changes are easier to isolate, revert, or fix if problems occur.
      - Efficient use of resources: Infrastructure-as-code and automation
        minimize manual labor and optimize resource scaling.
-     - Better collaboration and visibility: CI/CD fosters cross-team
-       visibility, involving stakeholders from development, QA, operations, and
-       even marketing.
+     - Better collaboration and visibility: CI/CD fosters cross-team visibility,
+       involving stakeholders from development, QA, operations, and even
+       marketing.
      - Support for non-functional testing and compliance: Integration of
-       performance, security, or accessibility checks helps uphold standards
-       and regulatory requirements.
+       performance, security, or accessibility checks helps uphold standards and
+       regulatory requirements.
      - Data-driven improvement: CI/CD tools provide metrics (e.g., build time,
        test coverage, defect rates) for ongoing process optimization.
 
@@ -66,8 +66,8 @@
      - Speeds up development: Automating style checks removes the need for
        reviewers to flag formatting issues—saving time and avoiding trivial
        back-and-forth.
-     - Supports maintainability and onboarding: Consistent style makes it
-       easier for new contributors to understand and contribute to the code.
+     - Supports maintainability and onboarding: Consistent style makes it easier
+       for new contributors to understand and contribute to the code.
      - Reduces technical debt: Enforcing standards early prevents style
        violations from piling up and creating costly cleanup tasks later.
 
@@ -77,8 +77,8 @@
        undermine confidence in the pipeline and create noise.
      - Toolchain complexity: Integrating various tools—especially across
        languages—can become hard to manage and maintain.
-     - Performance bottlenecks: Comprehensive testing pipelines may become
-       slow, frustrating developers and discouraging frequent commits.
+     - Performance bottlenecks: Comprehensive testing pipelines may become slow,
+       frustrating developers and discouraging frequent commits.
      - Developer friction: Discrepancies between CI configuration and local
        setups (e.g., formatting, dependencies) can lead to wasted time
        diagnosing failures.
@@ -87,9 +87,9 @@
      - Cultural and resource resistance—especially in SMEs: Adoption can be
        hindered by limited infrastructure, lack of security-aware culture, or
        resistance to change. A study shows:
-       - 68% of SMEs have implemented DevSecOps, but face hurdles like
-         technical complexity (41%), resource constraints (35%), and cultural
-         resistance (38%).
+       - 68% of SMEs have implemented DevSecOps, but face hurdles like technical
+         complexity (41%), resource constraints (35%), and cultural resistance
+         (38%).
      - Security automation gaps: While many are aware, fewer organizations scan
        for vulnerabilities on every commit.
 
@@ -103,8 +103,8 @@
        gating due to limited resources.
 
    - Large Teams / Enterprises:
-     - Robust, multistage pipelines: Cover build, unit/integration testing,
-       code linting, security scanning (SAST/SCA), performance testing, and
+     - Robust, multistage pipelines: Cover build, unit/integration testing, code
+       linting, security scanning (SAST/SCA), performance testing, and
        deployment approvals.
      - Environments and gating: Separation of dev, staging, production, with
        manual or automated approvals between stages.
