@@ -31,3 +31,22 @@ Screenshots:
 - What happens if we modify state directly instead of using setState?
 
 - If we modify state directly instead of using setState, React will not recognize that the state has changed, so it won’t trigger a re-render of the component. This means that even though the value in memory is updated, the UI will not reflect the change, leading to inconsistencies between the data and what the user sees. React enforces the use of setState (or the updater function from useState) because it ensures state updates are tracked, re-renders are scheduled properly, and the virtual DOM can efficiently update the UI. Directly mutating state can break React’s update cycle and cause unpredictable behavior in the application.
+
+📌 Working with Lists & User Input
+
+- I completed the task by creating a simple form component that includes an input field and a button. The input field allows users to type text, and when the button is clicked, the entered text is added to a list that is managed using React’s useState hook. The list is then displayed dynamically by iterating over the state array with the .map() method, ensuring that each new entry is rendered immediately in the UI. After testing the functionality to confirm that items are added and displayed correctly, I pushed the form component to GitHub for version control and integration into the project.
+
+![Empty Simple Form](SimpleFormInitial.png)
+![Filled Simple Form](SimpleFormFilled.png)
+
+- What are some common issues when working with lists in React?
+
+- Some common issues when working with lists in React include forgetting to provide a unique key prop when rendering list items with .map(), which can cause inefficient re-rendering or unexpected UI behavior. Another issue is using the array index as the key, which can lead to problems if the list changes dynamically, since React may not correctly track which items were added, removed, or updated. Developers may also run into state mutation issues if they modify the array directly instead of creating a new copy before updating state, which prevents React from recognizing changes. Additionally, handling empty input values or duplicate entries can cause unintended results if proper validation isn’t implemented. Finally, performance issues can arise when rendering very large lists without optimizations like virtualization.
+
+📌 Navigation with React Router
+
+- I installed React Router and set up a basic routing system to enable navigation within the app. I created two separate pages, Home.jsx and Profile.jsx, each serving as a distinct component with its own content. Using React Router’s Routes and Route components, I defined paths for / to render the Home page and /profile to render the Profile page. For navigation, I added links using the Link component so users can easily switch between Home and Profile, and also tested navigation using useNavigate for programmatic routing. After confirming that the routes worked correctly and navigation functioned as expected, I pushed the completed routing setup to GitHub.
+
+- What are the advantages of client-side routing?
+
+- Client-side routing offers several advantages over traditional server-side routing. Since navigation happens within the browser without requiring a full page reload, it provides a faster and smoother user experience, making applications feel more like native apps. It also reduces unnecessary network requests because only the necessary data is fetched, not an entire new HTML page. With client-side routing, developers can build single-page applications (SPAs) where state and layout persist across pages, avoiding re-rendering of shared components like headers or sidebars. Additionally, it allows for more flexible and dynamic navigation, such as programmatic redirects and protected routes, while enabling better separation of concerns between frontend and backend.

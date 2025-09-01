@@ -4,6 +4,10 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld.jsx';
 import Counter from './components/Counter.jsx';
+import SimpleForm from './components/SimpleForm.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home.jsx';
+import Profile from './components/Profile.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,7 +15,14 @@ function App() {
   return (
     <>
       <HelloWorld />
+      <SimpleForm />
       <Counter />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </BrowserRouter>
       <div>
         <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
