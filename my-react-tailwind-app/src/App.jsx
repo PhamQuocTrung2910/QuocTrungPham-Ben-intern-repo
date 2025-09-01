@@ -9,12 +9,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home.jsx';
 import Profile from './components/Profile.jsx';
 import LifecycleDemo from './components/LifecycleDemo.jsx';
+import PerformanceDemo from './components/PerformanceDemo.jsx';
+import CallbackDemo from './components/CallbackDemo.jsx';
+import AxiosDemo from './components/AxiosDemo.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <AxiosDemo />
+      <CallbackDemo />
+      <PerformanceDemo />
       <LifecycleDemo />
       <HelloWorld />
       <SimpleForm />

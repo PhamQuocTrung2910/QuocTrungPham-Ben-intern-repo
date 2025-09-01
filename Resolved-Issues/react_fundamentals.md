@@ -106,3 +106,79 @@ Important Terminology:
 - Creating memory leaks by not including cleanup functions (e.g., intervals, subscriptions).
 - Causing infinite loops if the effect updates a state that is also listed in its dependency array incorrectly.
 - Re-rendering large components unnecessarily, which can make the UI sluggish.
+
+📌 Optimizing Performance with useMemo
+
+- Research how useMemo works and why it’s useful.
+  - What it is:
+    - React Hook for memoizing (caching) computed values.
+    - Syntax: const value = useMemo(() => compute(a, b), [a, b]).
+
+  - How it works:
+    - Runs the function on the first render.
+    - On re-render, recomputes only if dependencies change.
+    - Otherwise, returns the cached value.
+
+  - Why it’s useful:
+    - Optimizes expensive calculations (e.g., filtering, sorting, heavy math).
+    - Prevents unnecessary child re-renders by stabilizing object/array references.
+    - Works together with useCallback (for functions).
+
+  - When to use:
+    - Only for costly computations or when prop references matter.
+    - Avoid overuse — caching itself has overhead.
+
+  - Key difference:
+    - useMemo memoizes values.
+    - React.memo memoizes components.
+
+  - In short: useMemo boosts React performance by caching results of expensive operations and keeping stable references, but it should be used selectively for best results.
+
+  - I developed a performance demo showcasing the benefits of React’s useMemo hook. The component generates a large list of numbers and runs multiple expensive calculations, such as filtering, sum, average, max, min, and prime count. Thanks to useMemo, these computations are only re-executed when the list size or filter changes, avoiding unnecessary recalculations on re-renders. The interface includes live performance logs to highlight when expensive operations occur, along with clear visual feedback in the number grid (colored by even, odd, and prime status). This project demonstrates how useMemo can significantly improve rendering efficiency in React applications by caching results intelligently.
+
+  ![Performance using useMemo](PerformanceDemo.png)
+
+- How does useMemo improve performance?
+  - useMemo caches the result of an expensive calculation.
+  - On re-renders, React skips recomputing unless dependencies change.
+  - This reduces unnecessary CPU work (e.g., sorting, filtering, math).
+  - It also stabilizes object/array references, preventing unnecessary child component re-renders.
+
+- When should you avoid using useMemo?
+  - If the calculation is cheap/lightweight, useMemo adds unnecessary overhead.
+  - If your component doesn’t re-render frequently, memoization provides little benefit.
+  - Overuse can make code harder to read and debug.
+  - Rule of thumb: use it only for expensive computations or stable references for props.
+
+- What happens if you remove useMemo from your implementation?
+- The expensive calculation runs on every render, even if inputs didn’t change.
+- This can cause performance degradation, especially with large lists or heavy math.
+- Child components relying on stable references may re-render unnecessarily.
+- In my demo: clicking “Re-render” would repeatedly trigger expensive calculations, making the UI slower and logs show longer processing times.
+
+📌 Preventing Unnecessary Renders with useCallback
+
+- In React, useCallback is a hook that memoizes a function, returning the same function reference across renders unless its dependencies change. This prevents unnecessary re-renders of memoized child components (React.memo) that would otherwise receive a “new” function on every render, even if its logic is unchanged. It is also useful when functions are dependencies in hooks like useEffect or useMemo, avoiding repeated executions caused by changing references. However, useCallback should not be overused, as it introduces memory and complexity overhead. It is best applied when passing functions to children or managing expensive side effects.
+
+- I successfully completed the CallbackDemo component, which demonstrates optimized rendering in React using useCallback and React.memo. In this component, I created a task list where each task can be toggled or deleted, passing the handler functions as props to the child TaskItem components. By wrapping these functions with useCallback, I ensured that child components do not re-render unnecessarily when the parent component updates unrelated state, improving performance. I also included a TaskStats child component to show aggregated statistics, which is memoized to prevent unnecessary re-renders. Console logs and React DevTools highlighting were used to verify that re-renders occur only when expected. After thoroughly testing all interactions—including adding tasks, toggling, deleting, and forcing parent re-renders, I committed the fully functional component to GitHub, ensuring it is version-controlled and ready for integration into the project.
+
+![CallBackDemo Interface](CallBackDemo-Interface.png)
+![CallBackDemo Console Logs](CallBackDemo-ConsoleLogs.png)
+
+- What problem does useCallback solve?
+
+- useCallback solves the problem of unnecessary re-renders in React components caused by changing function references. In React, functions defined inside a component are recreated on every render. If these functions are passed as props to child components, even if the logic hasn’t changed, React sees the prop as “new” and triggers a re-render of the child. useCallback memoizes the function reference, so it stays the same between renders unless its dependencies change, preventing unnecessary child re-renders and improving performance.
+
+- How does useCallback work differently from useMemo?
+
+- While both useCallback and useMemo are React hooks used for memoization, they serve slightly different purposes:
+  - useCallback is specifically for functions. When you define a function inside a React component, it gets recreated on every render. If that function is passed to a child component as a prop, the child may unnecessarily re-render because React sees the function reference as “new.” useCallback prevents this by returning the same function reference across renders, unless the specified dependencies change. This is particularly useful with React.memo or when passing callbacks to optimized child components.
+  - useMemo, on the other hand, is for values or computations. If you have an expensive calculation (e.g., filtering a large array, calculating a factorial), placing it directly in the component body would run it on every render. useMemo stores the result of the computation and only recalculates it when its dependencies change.
+- In short, useCallback is about preserving functions, while useMemo is about preserving computed values. Conceptually, useCallback(fn, deps) is equivalent to useMemo(() => fn, deps), but useCallback makes the intent of memoizing a function explicit, which improves code readability.
+
+- When would useCallback not be useful?
+  - Cheap functions: If the function does very little, creating a new reference on each render has negligible performance cost. Using useCallback adds extra overhead for storing the memoized reference.
+  - Shallow component trees: In small or simple components where child re-renders are inexpensive, memoizing functions is overkill and adds unnecessary complexity.
+  - Frequently changing dependencies: If the function depends on state or props that change often, useCallback will recreate the function each time anyway. In such cases, the hook provides no performance benefit and just increases cognitive overhead.
+  - Non-memoized children: If the child component receiving the function is not wrapped with React.memo (or otherwise does not rely on reference equality), memoizing the function has no effect on re-rendering.
+- Key takeaway: useCallback is most effective in performance-sensitive situations, especially with large component trees or memoized child components. Otherwise, it may complicate code without noticeable benefits.
