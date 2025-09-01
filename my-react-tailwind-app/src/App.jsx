@@ -8,12 +8,14 @@ import SimpleForm from './components/SimpleForm.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home.jsx';
 import Profile from './components/Profile.jsx';
+import LifecycleDemo from './components/LifecycleDemo.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <LifecycleDemo />
       <HelloWorld />
       <SimpleForm />
       <Counter />
