@@ -40,7 +40,7 @@ export default [
   {
     files: ['**/*.md'],
     plugins: {
-      markdown
+      markdown,
     },
     language: 'markdown/gfm',
     rules: {
@@ -52,7 +52,7 @@ export default [
   {
     files: ['**/*.css'],
     plugins: {
-      css
+      css,
     },
     language: 'css/css',
     rules: {
