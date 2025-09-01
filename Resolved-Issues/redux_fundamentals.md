@@ -2,6 +2,6 @@
 
 📌 Introduction to Redux Toolkit (State Management)
 
-- Installed Redux Toolkit
+- Testing CSpell Workflow
 
 - When should you use Redux instead of useState?
