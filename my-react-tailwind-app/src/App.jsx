@@ -13,13 +13,50 @@ import PerformanceDemo from './components/PerformanceDemo.jsx';
 import CallbackDemo from './components/CallbackDemo.jsx';
 import AxiosDemo from './components/AxiosDemo.jsx';
 import { Counter } from './components/Counter.jsx';
+import { CounterDisplay } from './components/CounterDisplay.jsx';
+import { CounterSummary } from './components/CounterSummary.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Counter />
+      <div
+        style={{
+          border: '3px solid #10B981',
+          padding: '30px',
+          margin: '20px auto',
+          borderRadius: '16px',
+          backgroundColor: '#F0FDF4',
+          maxWidth: '600px',
+          boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+        }}
+      >
+        <h1
+          style={{
+            textAlign: 'center',
+            color: '#065F46',
+            margin: '0 0 30px 0',
+            fontSize: '32px',
+            fontWeight: '800',
+            textShadow: '0 2px 4px rgba(0,0,0,0.1)',
+          }}
+        >
+          🔄 Redux State Management Demo
+        </h1>
+
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '20px',
+          }}
+        >
+          <Counter />
+          <CounterDisplay />
+          <CounterSummary />
+        </div>
+      </div>
       <AxiosDemo />
       <CallbackDemo />
       <PerformanceDemo />
