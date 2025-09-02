@@ -57,6 +57,7 @@ export function Counter() {
     borderRadius: '6px',
     width: '120px',
     textAlign: 'center',
+    backgroundColor: '#000000',
   };
 
   return (
