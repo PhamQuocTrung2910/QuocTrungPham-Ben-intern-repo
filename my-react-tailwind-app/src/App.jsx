@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld.jsx';
-import Counter from './components/Counter.jsx';
+import CounterDemo from './components/CounterDemo.jsx';
 import SimpleForm from './components/SimpleForm.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home.jsx';
@@ -12,19 +12,21 @@ import LifecycleDemo from './components/LifecycleDemo.jsx';
 import PerformanceDemo from './components/PerformanceDemo.jsx';
 import CallbackDemo from './components/CallbackDemo.jsx';
 import AxiosDemo from './components/AxiosDemo.jsx';
+import { Counter } from './components/Counter.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Counter />
       <AxiosDemo />
       <CallbackDemo />
       <PerformanceDemo />
       <LifecycleDemo />
       <HelloWorld />
       <SimpleForm />
-      <Counter />
+      <CounterDemo />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

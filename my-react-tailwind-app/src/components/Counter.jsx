@@ -1,28 +1,69 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement, incrementByAmount, reset } from './counterSlice';
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+export function Counter() {
+  const count = useSelector(state => state.counter.value);
+  const dispatch = useDispatch();
+  const [incrementAmount, setIncrementAmount] = useState('2');
 
-  const increment = () => {
-    setCount(count + 1);
-  };
+  const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <div className="flex flex-col items-center justify-center p-8 bg-white rounded-lg shadow-md border border-gray-200 max-w-sm mx-auto">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">Counter</h2>
-
-      <div className="text-6xl font-bold text-blue-600 mb-6 font-mono">
-        {count}
+    <div
+      style={{
+        textAlign: 'center',
+        padding: '20px',
+        border: '1px solid #ccc',
+        margin: '20px',
+      }}
+    >
+      <h2>Redux Counter</h2>
+      <div style={{ fontSize: '48px', margin: '20px 0' }}>
+        <span>{count}</span>
       </div>
 
-      <button
-        onClick={increment}
-        className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
-      >
-        Increment
-      </button>
+      <div style={{ marginBottom: '20px' }}>
+        <button
+          onClick={() => dispatch(increment())}
+          style={{ margin: '0 5px', padding: '10px 20px' }}
+        >
+          +
+        </button>
+        <button
+          onClick={() => dispatch(decrement())}
+          style={{ margin: '0 5px', padding: '10px 20px' }}
+        >
+          -
+        </button>
+      </div>
+
+      <div style={{ marginBottom: '20px' }}>
+        <input
+          value={incrementAmount}
+          onChange={e => setIncrementAmount(e.target.value)}
+          style={{ margin: '0 5px', padding: '5px' }}
+        />
+        <button
+          onClick={() => dispatch(incrementByAmount(incrementValue))}
+          style={{ margin: '0 5px', padding: '10px 20px' }}
+        >
+          Add Amount
+        </button>
+      </div>
+
+      <div>
+        <button
+          onClick={() => dispatch(reset())}
+          style={{
+            padding: '10px 20px',
+            backgroundColor: '#ff6b6b',
+            color: 'white',
+          }}
+        >
+          Reset
+        </button>
+      </div>
     </div>
   );
-};
-
-export default Counter;
+}
