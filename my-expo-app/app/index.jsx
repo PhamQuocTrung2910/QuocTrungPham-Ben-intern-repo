@@ -1,27 +1,44 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Link } from 'expo-router';
-import Dragon from '../assets/img/dragon.png';
+import ThemedView from '../components/ThemedView';
+import ThemedLogo from '../components/ThemedLogo';
+import Spacer from '../components/Spacer';
+import ThemedText from '../components/ThemedText';
+
+const links = [
+  { href: '/about', label: 'About Page' },
+  { href: '/contact', label: 'Contact Page' },
+  { href: '/intern', label: 'Intern Page' },
+  { href: '/login', label: 'Login Page' },
+  { href: '/register', label: 'Register Page' },
+  { href: '/profile', label: 'Profile Page' },
+  { href: '/create', label: 'Create Page' },
+  { href: '/recipe', label: "Recipe's Page" },
+];
 
 const Home = () => {
   return (
-    <View style={styles.container}>
-      <Image source={Dragon} style={styles.img} />
-      <Text style={styles.text}>Chicken</Text>
-      <Text style={{ marginTop: 10, marginBottom: 30 }}>Wing</Text>
+    <ThemedView style={styles.container}>
+      <ThemedLogo />
+      <Spacer />
 
-      <Link href={'/about'} style={styles.link}>
-        {' '}
-        About Page
-      </Link>
-      <Link href={'/contact'} style={styles.link}>
-        {' '}
-        Contact Page
-      </Link>
-      <Link href={'/intern'} style={styles.link}>
-        {' '}
-        Intern Page
-      </Link>
-    </View>
+      <ThemedText style={styles.title} title={true}>
+        Immaginary Recipes
+      </ThemedText>
+      <ThemedText style={styles.title}>For Fantasy World</ThemedText>
+
+      <Spacer />
+
+      <View style={styles.table}>
+        {links.map(link => (
+          <View key={link.href} style={styles.tableRow}>
+            <Link href={link.href} style={styles.link}>
+              <ThemedText>{link.label}</ThemedText>
+            </Link>
+          </View>
+        ))}
+      </View>
+    </ThemedView>
   );
 };
 
@@ -32,19 +49,28 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ffffffff',
   },
-  text: {
+  title: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
   },
-
-  img: {
-    marginVertical: 50,
+  table: {
+    width: '80%',
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 8,
+    backgroundColor: '#f9f9f9',
+    paddingVertical: 10,
+  },
+  tableRow: {
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+    borderColor: '#eee',
+    paddingVertical: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   link: {
-    marginVertical: 10,
-    borderBottomWidth: 1,
+    borderBottomWidth: 0,
   },
 });

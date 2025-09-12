@@ -4,9 +4,9 @@
   - React Native styling is inspired by CSS but it isn’t the same thing.
     - Definition method:
       - CSS is declared in .css files or < style > blocks, then applied via
-        class selectors.\
+        class selectors.
       - React Native Styles are JavaScript objects, defined inline or through
-        StyleSheet.create().\
+        StyleSheet.create().
 
     - Cascading and inheritance:
       - CSS uses the cascading styles that can “flow down” from parent elements
