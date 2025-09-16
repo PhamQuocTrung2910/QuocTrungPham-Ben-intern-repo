@@ -3,6 +3,7 @@ import globals from 'globals';
 import pluginReact from 'eslint-plugin-react';
 import markdown from '@eslint/markdown';
 import css from '@eslint/css';
+import pluginJest from 'eslint-plugin-jest';
 
 export default [
   // Base JavaScript configuration
@@ -12,7 +13,9 @@ export default [
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+      },
       ecmaVersion: 'latest',
       sourceType: 'module',
       parserOptions: {
@@ -33,6 +36,22 @@ export default [
       react: {
         version: 'detect',
       },
+    },
+  },
+
+  // Jest configuration
+  {
+    files: ['**/*.test.{js,jsx,mjs,cjs}'],
+    plugins: {
+      jest: pluginJest,
+    },
+    languageOptions: {
+      globals: {
+        ...globals.jest, // <-- adds test, expect, etc.
+      },
+    },
+    rules: {
+      ...pluginJest.configs.recommended.rules,
     },
   },
 
