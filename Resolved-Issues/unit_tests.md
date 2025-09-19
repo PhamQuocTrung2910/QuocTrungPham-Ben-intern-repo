@@ -81,3 +81,47 @@
   with @testing-library/jest-dom. These challenges highlight the importance of
   correctly setting up the testing environment and learning the proper utilities
   for simulating realistic user behavior.
+
+📌 Mocking API Calls in Jest
+
+![Code for the User List Component](UserListComponent.png)
+![Code for the Test](UserListTestComponent.png)
+![Output](UserListTestComponentSuccess.png)
+
+- Research how to mock API calls in Jest using jest.fn() and jest.mock().
+
+- Mocking API calls in Jest can be done using either jest.fn() or jest.mock().
+  With jest.fn(), you can replace functions like fetch with a mocked version
+  that returns a predefined response. For example, you can use
+  jest.fn().mockResolvedValueOnce() to simulate a successful API response or
+  mockRejectedValueOnce() to simulate a failed request. On the other hand,
+  jest.mock() allows you to replace an entire module with a mock implementation.
+  This is particularly useful when you want to mock a library such as axios or a
+  custom API utility module. By mocking the API calls, you can control the data
+  returned, test edge cases, and avoid making real network requests, which makes
+  tests faster and more reliable.
+
+- Why is it important to mock API calls in tests?
+
+- Mocking API calls in tests is important for several reasons. First, it ensures
+  consistency: real APIs can change, have downtime, or return unexpected data,
+  which could make tests flaky. Second, it allows tests to run faster because
+  they don’t need to wait for network requests. Third, it helps maintain
+  isolation in unit tests, allowing you to focus on the behavior of the
+  component or function without depending on external systems. Additionally,
+  mocking enables testing of error handling and edge cases that might be
+  difficult or unsafe to reproduce with real API calls, such as network failures
+  or specific response formats.
+
+- What are some common pitfalls when testing asynchronous code?
+
+- When testing asynchronous code, there are several common pitfalls to watch out
+  for. One frequent issue is not waiting for promises to resolve, which can lead
+  to tests passing or failing incorrectly. Tools like async/await, waitFor, and
+  findBy in React Testing Library help handle these timing issues. Another
+  pitfall is side effects from previous tests, such as leftover mocked responses
+  or modified global objects like fetch, which can interfere with subsequent
+  tests. It’s also easy to forget error handling paths, resulting in untested
+  failure scenarios. Finally, overly complex async logic can make tests flaky if
+  timing assumptions are implicit, so explicit synchronization and careful
+  cleanup are essential.
