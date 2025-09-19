@@ -125,3 +125,47 @@
   failure scenarios. Finally, overly complex async logic can make tests flaky if
   timing assumptions are implicit, so explicit synchronization and careful
   cleanup are essential.
+
+📌 Testing Redux with Jest
+
+![Code for the Redux Counter Slice Component](CounterSliceComponent.png)
+![Code for the Test](CounterSliceComponentTest.png)
+![Output](CounterSliceComponentTestSuccess.png)
+
+- Research how to test Redux reducers and actions in Jest.
+
+- Testing Redux reducers and actions in Jest involves isolating the state logic
+  from the UI and verifying that actions produce the expected state changes. For
+  reducers, you typically provide an initial state and an action, then assert
+  that the resulting state matches what you expect. For example, if you have a
+  counter reducer with increment and decrement actions, you would call the
+  reducer with an initial value and each action, then check that the state
+  updates correctly. Testing asynchronous actions or thunks often requires a
+  mock store or a real Redux store configured in the test. You can dispatch the
+  async action and wait for it to complete, then verify the state or the actions
+  that were dispatched.
+
+- What was the most challenging part of testing Redux?
+
+- The most challenging part of testing Redux is often handling asynchronous
+  actions. Unlike synchronous reducers, async thunks or actions involve
+  promises, API calls, or delays, which means tests must account for timing and
+  resolution. Developers frequently need to mock API calls or use jest.fn() to
+  simulate asynchronous behavior. Ensuring that these mocks behave like the real
+  API without introducing flaky tests can be tricky. Additionally, testing
+  actions in isolation sometimes requires more boilerplate, such as setting up a
+  mock store or using configureStore from Redux Toolkit, which can be cumbersome
+  for newcomers.
+
+- How do Redux tests differ from React component tests?
+
+- Redux tests differ from React component tests in that they focus purely on
+  state logic and data flow, rather than UI rendering or user interaction.
+  Component tests, often written with tools like React Testing Library, involve
+  rendering components, simulating user events, and asserting that the UI
+  updates correctly. Redux tests, by contrast, directly test the reducer
+  functions and action creators without involving the DOM. This separation makes
+  Redux tests faster and more deterministic because they do not depend on the
+  browser environment or component lifecycle, but it also means they don’t catch
+  integration issues between the UI and the store. Essentially, Redux tests
+  validate state management, while component tests validate UI behavior.
