@@ -169,3 +169,6 @@
   browser environment or component lifecycle, but it also means they don’t catch
   integration issues between the UI and the store. Essentially, Redux tests
   validate state management, while component tests validate UI behavior.
+
+- Github Repo Link:
+  https://github.com/PhamQuocTrung2910/QuocTrungPham-Ben-intern-repo.git
