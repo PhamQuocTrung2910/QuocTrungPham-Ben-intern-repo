@@ -355,3 +355,13 @@ Important Terminology:
 - Key takeaway: useCallback is most effective in performance-sensitive
   situations, especially with large component trees or memoized child
   components. Otherwise, it may complicate code without noticeable benefits.
+
+- Problems Faced: During the setup, one of the main difficulties I encountered
+  was making sure I was following the correct version of the Tailwind + Vite
+  guide, since outdated documentation caused some initial confusion. Once I
+  found the updated steps, everything worked as expected. To verify that
+  Tailwind was integrated correctly, I added a test class to display blue text
+  and confirmed it rendered in the browser (see screenshot included above). This
+  gave me confidence that the configuration was successful. I believe this setup
+  process will be very useful in future projects, as I now understand how to
+  quickly integrate Tailwind with modern React environments.

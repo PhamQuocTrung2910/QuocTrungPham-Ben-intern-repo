@@ -11,8 +11,8 @@
     - Use draft PRs for work-in-progress code to encourage feedback before
       completion.
   - Benefits:
-    - Builds familiarity with GitHub/GitLab workflow, branching strategy, and
-      review process.
+    - Builds familiarity with GitHub workflow, branching strategy, and review
+      process.
     - Ensures early visibility into coding style, conventions, and CI/CD checks.
     - Promotes collaboration instead of siloed development.
   - Outcome: A smoother onboarding process where contributors get hands-on
