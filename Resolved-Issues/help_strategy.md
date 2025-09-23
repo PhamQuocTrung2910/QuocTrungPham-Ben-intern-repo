@@ -45,3 +45,12 @@
   for a structured decision-making framework.
 
 - Miro Flow CHart: ![Descision Making FLow CHart](FlowChart.png)
+- ![Proof that this is my Miro Account](ProofMiroOwner.png)
+- By refering to the 3 factor: the complexity of the proble, the sensitivity of
+  the information, and the urgency of the task i stuctured the flowchart in a
+  manner that would allow to to account for most situations related to app
+  development. Even if the issue is not code related like in the flowchart i
+  would still be able to resolve it using the same work flow. I initially faced
+  problems with which of the factors to account for first however i was able to
+  determine that sensitivity should always be the top priority when working with
+  an app that prides itself on customer confidentiality.
