@@ -41,16 +41,17 @@ jest.mock('../../constants/Colors', () => ({
   },
 }));
 
-jest.mock('expo-router', () => ({
-  Link: ({ children, style, ...props }) => {
-    const { TouchableOpacity } = import('react-native');
-    return (
+// ✅ Fix: require inside the mock
+jest.mock('expo-router', () => {
+  const { TouchableOpacity } = import('react-native');
+  return {
+    Link: ({ children, style, ...props }) => (
       <TouchableOpacity style={style} {...props}>
         {children}
       </TouchableOpacity>
-    );
-  },
-}));
+    ),
+  };
+});
 
 jest.spyOn(api, 'getUsers').mockResolvedValue([
   { id: 1, name: 'Mocked User 1' },

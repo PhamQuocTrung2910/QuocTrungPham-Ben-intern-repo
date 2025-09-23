@@ -258,4 +258,4 @@ const handleTapPress = useCallback(() => {
 ```
 
 - Optimized intern.jsx running in the simulator:
-  ![Optimized Interface in the App](OptimizedInterface.png)
+  ![Optimized Interface in the App running on Android](OptimizedInterface.png)
