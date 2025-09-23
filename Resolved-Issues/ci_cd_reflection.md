@@ -121,4 +121,8 @@
      organizations require structured, scalable, and compliance-focused
      pipelines.
 
-- Screenshots: ![Pull Request](PullRequest.png)
+- Screenshots:
+  ![Pull Request in Proccess](CI-Workflow-processing-on-Pull-Request.png)
+  ![Pull Request Success](<CI- Workflow-working-on-Pull-Request.png>)
+  ![Workflow](CI-Workdlow-Success.png)
+  ![CI Workflow on Local Device](CI-Workdlow-LocalDevice.png)
