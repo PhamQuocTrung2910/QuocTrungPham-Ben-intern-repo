@@ -811,17 +811,17 @@ References:
 
 📌 Writing Unit Tests for Clean Code
 
-1. Research the importance of unit testing in software development.
+- Research the importance of unit testing in software development.
 
-Unit testing is critical in software development because it verifies that
-individual functions or modules work correctly before integrating them into the
-larger system/code base. It helps detect bugs early, reducing the cost and
-effort of fixing issues later. Unit tests also provide a safety net for
-developers when refactoring code, ensuring that changes do not introduce
-regressions. They promote better design practices, maintainability, and team
-collaboration by making code behavior explicit and predictable. Additionally,
-unit tests improve confidence in code quality, making deployments safer and more
-reliable.
+- Unit testing is critical in software development because it verifies that
+  individual functions or modules work correctly before integrating them into
+  the larger system/code base. It helps detect bugs early, reducing the cost and
+  effort of fixing issues later. Unit tests also provide a safety net for
+  developers when refactoring code, ensuring that changes do not introduce
+  regressions. They promote better design practices, maintainability, and team
+  collaboration by making code behavior explicit and predictable. Additionally,
+  unit tests improve confidence in code quality, making deployments safer and
+  more reliable.
 
 1. Choose a testing framework (e.g., Jest for JavaScript, PyTest for Python).
 
@@ -867,3 +867,6 @@ only catch bugs but also drive improvements in overall code quality.
   - No test for very large negative numbers or mixed extreme values
     - Extreme positive + extreme negative combinations could be tested to ensure
       consistency.
+
+![Sum Code](SumCode.png) ![Sum Test](SumTest.png)
+![Sum Test Output](SumTestSuccess.png)
