@@ -177,3 +177,21 @@ describe('Contact Screen', () => {
 ```
 
 - Output: ![Test Output](RNJestTestSuccess.png)
+
+- Issues Faced: When I was working on tests for the Contact screen, I ran into
+  an unexpected problem with mocking one of the navigation components. At first
+  everything looked fine, but when I ran the test suite, Jest kept throwing
+  confusing errors about invalid components and experimental modules. I tried a
+  couple of fixes that seemed logical, but each time I got a new error that
+  looked even stranger than the last.
+
+The interesting part was realizing the issue wasn’t with my component at all—it
+was how Jest handles mocked dependencies. I learned that Jest is very strict
+about what you can and can’t reference inside a mock. What finally solved the
+problem was restructuring the mock so that everything it needed was defined
+directly inside the mock itself.
+
+It felt like a small breakthrough, because once I understood the rule, the
+errors suddenly made sense. It was a reminder that sometimes the hardest part of
+testing isn’t the component you’re testing, but figuring out how the testing
+framework expects you to “pretend” things work.
