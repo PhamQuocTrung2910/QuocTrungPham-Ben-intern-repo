@@ -56,8 +56,16 @@
 1. Move at least one task through the Kanban process and update its status
    correctly.
 
-- While i have seen some of the KanBan Board during the stand up meeting with
-  Jeremy's screen i'm currently unable to access the Focus Bear KanBan board.
+- I accessed the Focus Bear Kanban board and practiced moving a task through the
+  workflow. Specifically, I moved the card Things to add to onboarding from the
+  To Do column directly to Done, as the items listed there had already been
+  completed and verified against the onboarding documentation. This exercise
+  helped me understand how to update task statuses in practice and reinforced
+  how Kanban makes progress visible to the whole team. By moving the task
+  myself, I confirmed that I have the necessary access to the board and can
+  contribute to maintaining accurate task tracking.
+  ![Kanban Board](KanbanBoard.png)
+  ![Kanban Board Moved Task from To Do -> Done](KanbanBoardMovedTask.png)
 
 1. Identify one way you can improve task tracking in your role.
 
