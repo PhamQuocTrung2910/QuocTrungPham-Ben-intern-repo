@@ -256,3 +256,6 @@ const handleTapPress = useCallback(() => {
   ]).start();
 }, [addLog, fadeAnim, animationConfigs.timing.duration]);
 ```
+
+- Optimized intern.jsx running in the simulator:
+  ![Optimized Interface in the App](OptimizedInterface.png)
