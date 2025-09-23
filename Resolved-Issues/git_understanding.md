@@ -272,7 +272,7 @@ Summary:
 - An overly detailed commit message.
 - A well-structured commit message.
 
-![Git Commit Messages - Vague, Long, and Well-Structured](image28.png)
+![Git Commit Messages - Vague, Long, and Well-Structured](GitCommit.png)
 
 📌 Creating & Reviewing Pull Requests
 
