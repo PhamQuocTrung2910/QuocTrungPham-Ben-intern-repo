@@ -120,3 +120,5 @@
    - In essence, small teams favor simplicity and agility, while larger
      organizations require structured, scalable, and compliance-focused
      pipelines.
+
+- Screenshots: ![Pull Request](PullRequest.png)
