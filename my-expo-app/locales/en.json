@@ -1,0 +1,33 @@
+{
+  "intern": {
+    "header_title": "Gesture & Animation Playground",
+    "header_subtitle": "Optimized & Expo Compatible",
+    "processing": "Processing...",
+    "touch_me": "Touch me!",
+    "activity_log": "Activity Log:",
+    "instructions_title": "Available Gestures:",
+    "instructions_drag": "🖱️ Drag to move with momentum",
+    "instructions_tap": "👆 Single tap for fade effect",
+    "instructions_double_tap": "👆👆 Double tap to reset position",
+    "instructions_long": "⏰ Hold 1sec for long press",
+    "instructions_heavy": "⚙️ Heavy task demonstrates performance",
+    "button_reset": "Reset",
+    "button_heavy": "Heavy Task",
+    "button_shake": "Shake",
+    "alert_longpress_title": "Long Press",
+    "alert_longpress_message": "Long press detected!",
+    "alert_dismiss": "OK",
+    "alert_task_title": "Task Complete",
+    "alert_task_message": "Result: {{result}}\nTime: {{time}}ms",
+    "log_tap": "👆 Tap detected",
+    "log_long": "⏰ Long press detected",
+    "log_dismissed": "✅ Alert dismissed",
+    "log_reset": "🔄 Reset complete",
+    "log_heavy_start": "🔥 Starting heavy task...",
+    "log_heavy_done": "⚡ Completed in {{time}}ms",
+    "log_shake": "📳 Shake animation",
+    "log_pan_start": "🖱️ Pan started",
+    "log_pan_end": "🖱️ Pan ended",
+    "welcome_log": "Welcome! Start interacting..."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "intern": {
+    "header_title": "Área de gestos y animación",
+    "header_subtitle": "Optimizado y compatible con Expo",
+    "processing": "Procesando...",
+    "touch_me": "¡Tócame!",
+    "activity_log": "Registro de actividad:",
+    "instructions_title": "Gestos disponibles:",
+    "instructions_drag": "🖱️ Arrastra para mover con inercia",
+    "instructions_tap": "👆 Toque simple para efecto de desvanecimiento",
+    "instructions_double_tap": "👆👆 Doble toque para restablecer posición",
+    "instructions_long": "⏰ Mantén 1s para pulsación larga",
+    "instructions_heavy": "⚙️ La tarea pesada muestra rendimiento",
+    "button_reset": "Restablecer",
+    "button_heavy": "Tarea Pesada",
+    "button_shake": "Sacudir",
+    "alert_longpress_title": "Pulsación larga",
+    "alert_longpress_message": "¡Pulsación larga detectada!",
+    "alert_dismiss": "OK",
+    "alert_task_title": "Tarea completa",
+    "alert_task_message": "Resultado: {{result}}\nTiempo: {{time}}ms",
+    "log_tap": "👆 Toque detectado",
+    "log_long": "⏰ Pulsación larga detectada",
+    "log_dismissed": "✅ Alerta cerrada",
+    "log_reset": "🔄 Restablecimiento completo",
+    "log_heavy_start": "🔥 Iniciando tarea pesada...",
+    "log_heavy_done": "⚡ Completado en {{time}}ms",
+    "log_shake": "📳 Animación de sacudida",
+    "log_pan_start": "🖱️ Arrastre iniciado",
+    "log_pan_end": "🖱️ Arrastre finalizado",
+    "welcome_log": "¡Bienvenido! Empieza a interactuar..."
+  }
+}
