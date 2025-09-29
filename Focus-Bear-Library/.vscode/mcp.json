@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "Sentry": {
+      "url": "https://mcp.sentry.dev/mcp/swinburne-university-of-tec-qd/react-native",
+      "type": "http"
+    }
+  }
+}

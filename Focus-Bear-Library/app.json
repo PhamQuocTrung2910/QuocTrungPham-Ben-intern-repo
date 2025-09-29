@@ -2,11 +2,16 @@
   "expo": {
     "name": "Focus-Bear-Library",
     "slug": "Focus-Bear-Library",
+    "scheme": "focusbear",
     "version": "1.0.0",
+    "extra": {
+      "apiUrl": "https://api.focusbear.com"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "deepLinks": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -20,10 +25,21 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "package": "com.focusbearlibrary",
       "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "react-native",
+          "organization": "swinburne-university-of-tec-qd"
+        }
+      ]
+    ]
   }
 }
